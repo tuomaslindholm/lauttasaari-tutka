@@ -1,0 +1,142 @@
+{
+  "updatedAt": "2026-08-19T11:43:44.675Z",
+  "count": 5,
+  "listings": [
+    {
+      "source": "oikotie",
+      "id": "24638804",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804",
+      "rooms": 3,
+      "size": 81.5,
+      "rent": 1637,
+      "address": "Vattuniemenkatu 16a D, Helsinki",
+      "district": "Lauttasaari",
+      "title": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään elokuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata ",
+      "text": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään elokuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata  3h+k+las.parv.",
+      "image": null,
+      "published": "2026-08-12T10:28:22Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "sallittu",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/gm8737"
+        }
+      ],
+      "availableFrom": "2026-10-01"
+    },
+    {
+      "source": "oikotie",
+      "id": "24610128",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24610128",
+      "rooms": 3,
+      "size": 70.5,
+      "rent": 1399,
+      "address": "Lauttasaarentie 19 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa läpitalon kolmio Lauttasaaressa\n \nSelkeä vuokrakoti hyvien yhteyksien äärellä\n \nValoisassa läpitalon kolmiossa on selkeä pohjaratkaisu ja m",
+      "text": "Valoisa läpitalon kolmio Lauttasaaressa\n \nSelkeä vuokrakoti hyvien yhteyksien äärellä\n \nValoisassa läpitalon kolmiossa on selkeä pohjaratkaisu ja m 3h+k",
+      "image": null,
+      "published": "2026-07-26T18:30:16Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "sallittu",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24610128"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/ge7336"
+        }
+      ],
+      "availableFrom": "2026-09-01"
+    },
+    {
+      "source": "oikotie",
+      "id": "24558775",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24558775",
+      "rooms": 3,
+      "size": 81.5,
+      "rent": 1599,
+      "address": "Vattuniemenkatu 16a B, Helsinki",
+      "district": "Lauttasaari",
+      "title": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään elokuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata ",
+      "text": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään elokuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata  3h+k+las.parv.",
+      "image": null,
+      "published": "2026-06-23T13:30:10Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "sallittu",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24558775"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/fp6443"
+        }
+      ],
+      "availableFrom": "2026-08-03"
+    },
+    {
+      "source": "oikotie",
+      "id": "24612307",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24612307",
+      "rooms": 3,
+      "size": 72.5,
+      "rent": 1750,
+      "address": "Melkonkatu 21, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Lauttasaari Melkonkatu 21, 3h,k, sauna  eur 1750/kk",
+      "text": "Lauttasaari Melkonkatu 21, 3h,k, sauna  eur 1750/kk 3h + k + s + p",
+      "image": null,
+      "published": "2026-07-28T06:55:51Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "kielletty?",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24612307"
+        }
+      ],
+      "availableFrom": "2026-09-03"
+    },
+    {
+      "source": "oikotie",
+      "id": "17752945",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17752945",
+      "rooms": 3,
+      "size": 65,
+      "rent": 1700,
+      "address": "Haahkatie 10, Helsinki",
+      "district": "Lauttasaari",
+      "title": "WeHost Haahkatie 10",
+      "text": "WeHost Haahkatie 10 3h + kk + p",
+      "image": null,
+      "published": "2023-11-04T11:56:56Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "kielletty?",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17752945"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/ab4888"
+        }
+      ],
+      "availableFrom": "2026-06-02"
+    }
+  ]
+}
