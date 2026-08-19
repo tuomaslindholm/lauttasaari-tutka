@@ -1,0 +1,60 @@
+name: Lauttasaari-tutka
+
+# Ajaa kerääjän n. 20 min välein, lähettää Telegram-hälytykset,
+# tallentaa tilan (seen.json) takaisin repoon ja julkaisee PWA:n GitHub Pagesiin.
+on:
+  schedule:
+    - cron: "*/20 * * * *" # HUOM: GitHubin ajastus voi viivästyä muutaman minuutin
+  workflow_dispatch: {} # mahdollistaa manuaalisen ajon napista
+
+permissions:
+  contents: write # tilan committaamiseen
+  pages: write
+  id-token: write
+
+concurrency:
+  group: tutka
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Aja kerääjä
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
+        run: node src/index.js
+
+      - name: Tallenna tila takaisin
+        run: |
+          git config user.name "tutka-bot"
+          git config user.email "tutka@users.noreply.github.com"
+          git add data/seen.json data/listings.json pwa/listings.json
+          git commit -m "tutka: päivitä tila $(date -u +%FT%TZ)" || echo "ei muutoksia"
+          git push || echo "push ohitettu"
+
+      # PWA:n julkaisu Pagesiin on VALINNAINEN. Jos et ota Pagesia käyttöön,
+      # nämä vain ohitetaan eivätkä kaada hälytyksiä (continue-on-error).
+      - name: Lataa PWA Pagesiin
+        continue-on-error: true
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: pwa
+
+  deploy:
+    needs: run
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
