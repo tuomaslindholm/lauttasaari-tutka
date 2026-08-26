@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T05:54:48.489Z",
+  "updatedAt": "2026-08-26T06:59:56.311Z",
   "count": 5,
   "listings": [
     {
@@ -130,6 +130,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17752945"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/ab4888"
         }
       ],
       "availableFrom": "2026-06-02"
