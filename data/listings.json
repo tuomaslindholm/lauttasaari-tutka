@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-27T08:51:41.612Z",
+  "updatedAt": "2026-08-27T19:46:35.415Z",
   "count": 5,
   "listings": [
     {
@@ -11,8 +11,8 @@
       "rent": 1637,
       "address": "Vattuniemenkatu 16a D, Helsinki",
       "district": "Lauttasaari",
-      "title": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään elokuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata ",
-      "text": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään elokuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata  3h+k+las.parv.",
+      "title": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään syyskuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata",
+      "text": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään syyskuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata 3h+k+las.parv.",
       "image": null,
       "published": "2026-08-12T10:28:22Z",
       "balcony": true,
@@ -22,6 +22,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/gm8737"
         }
       ],
       "availableFrom": "2026-10-01"
@@ -46,6 +50,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24610128"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/ge7336"
         }
       ],
       "availableFrom": "2026-09-01"
@@ -56,11 +64,11 @@
       "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24558775",
       "rooms": 3,
       "size": 81.5,
-      "rent": 1599,
+      "rent": 1555,
       "address": "Vattuniemenkatu 16a B, Helsinki",
       "district": "Lauttasaari",
-      "title": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään elokuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata ",
-      "text": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään elokuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata  3h+k+las.parv.",
+      "title": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään syyskuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata",
+      "text": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään syyskuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata 3h+k+las.parv.",
       "image": null,
       "published": "2026-06-23T13:30:10Z",
       "balcony": true,
@@ -72,8 +80,8 @@
           "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24558775"
         },
         {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24523619"
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/fp6443"
         }
       ],
       "availableFrom": "2026-08-03"
@@ -122,6 +130,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17752945"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/ab4888"
         }
       ],
       "availableFrom": "2026-06-02"
