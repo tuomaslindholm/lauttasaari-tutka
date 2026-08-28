@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-28T04:10:24.118Z",
-  "count": 5,
+  "updatedAt": "2026-08-28T16:43:48.173Z",
+  "count": 6,
   "listings": [
     {
       "source": "oikotie",
@@ -130,9 +130,37 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17752945"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/ab4888"
         }
       ],
       "availableFrom": "2026-06-02"
+    },
+    {
+      "source": "oikotie",
+      "id": "24665256",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24665256",
+      "rooms": 4,
+      "size": 82,
+      "rent": 1800,
+      "address": "Veneentekijänkaari 3 B 35, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Asunto sijaitsee arvostetulla, rauhallisella ja lapsiystävällisellä alueella Helsingin Lauttasaaressa. Palvelut löytyvät läheltä ja loista",
+      "text": "Asunto sijaitsee arvostetulla, rauhallisella ja lapsiystävällisellä alueella Helsingin Lauttasaaressa. Palvelut löytyvät läheltä ja loista 4h+k+s+lasitettu parveke",
+      "image": null,
+      "published": "2026-08-28T14:50:08Z",
+      "balcony": false,
+      "parking": true,
+      "pets": "epävarma",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24665256"
+        }
+      ],
+      "availableFrom": "2026-10-01"
     }
   ]
 }
