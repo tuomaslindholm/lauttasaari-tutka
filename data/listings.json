@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-29T00:55:38.372Z",
-  "count": 6,
+  "updatedAt": "2026-08-29T07:48:11.347Z",
+  "count": 5,
   "listings": [
     {
       "source": "oikotie",
@@ -133,29 +133,6 @@
         }
       ],
       "availableFrom": "2026-10-01"
-    },
-    {
-      "source": "vuokraovi",
-      "id": "2656841",
-      "url": "https://www.vuokraovi.com/kohde/ge7336",
-      "rooms": 3,
-      "size": 70.5,
-      "rent": 1399,
-      "address": "Lauttasaarentie 19 A, Lauttasaari Helsinki",
-      "district": "Lauttasaari Helsinki",
-      "title": "3h + k — Lauttasaarentie 19 A",
-      "text": "3h + k Lauttasaarentie 19 A Lauttasaari Helsinki SATO Vuokraus / Helsinki",
-      "image": null,
-      "published": "2026-07-27T02:57:08.985Z",
-      "balcony": false,
-      "parking": false,
-      "pets": "epävarma",
-      "sources": [
-        {
-          "source": "vuokraovi",
-          "url": "https://www.vuokraovi.com/kohde/ge7336"
-        }
-      ]
     }
   ]
 }
