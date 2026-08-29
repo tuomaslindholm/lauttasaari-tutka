@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T16:43:48.173Z",
+  "updatedAt": "2026-08-29T00:55:38.372Z",
   "count": 6,
   "listings": [
     {
@@ -29,34 +29,6 @@
         }
       ],
       "availableFrom": "2026-10-01"
-    },
-    {
-      "source": "oikotie",
-      "id": "24610128",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24610128",
-      "rooms": 3,
-      "size": 70.5,
-      "rent": 1399,
-      "address": "Lauttasaarentie 19 A, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Valoisa läpitalon kolmio Lauttasaaressa\n \nSelkeä vuokrakoti hyvien yhteyksien äärellä\n \nValoisassa läpitalon kolmiossa on selkeä pohjaratkaisu ja m",
-      "text": "Valoisa läpitalon kolmio Lauttasaaressa\n \nSelkeä vuokrakoti hyvien yhteyksien äärellä\n \nValoisassa läpitalon kolmiossa on selkeä pohjaratkaisu ja m 3h+k",
-      "image": null,
-      "published": "2026-07-26T18:30:16Z",
-      "balcony": true,
-      "parking": false,
-      "pets": "sallittu",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24610128"
-        },
-        {
-          "source": "vuokraovi",
-          "url": "https://www.vuokraovi.com/kohde/ge7336"
-        }
-      ],
-      "availableFrom": "2026-09-01"
     },
     {
       "source": "oikotie",
@@ -161,6 +133,29 @@
         }
       ],
       "availableFrom": "2026-10-01"
+    },
+    {
+      "source": "vuokraovi",
+      "id": "2656841",
+      "url": "https://www.vuokraovi.com/kohde/ge7336",
+      "rooms": 3,
+      "size": 70.5,
+      "rent": 1399,
+      "address": "Lauttasaarentie 19 A, Lauttasaari Helsinki",
+      "district": "Lauttasaari Helsinki",
+      "title": "3h + k — Lauttasaarentie 19 A",
+      "text": "3h + k Lauttasaarentie 19 A Lauttasaari Helsinki SATO Vuokraus / Helsinki",
+      "image": null,
+      "published": "2026-07-27T02:57:08.985Z",
+      "balcony": false,
+      "parking": false,
+      "pets": "epävarma",
+      "sources": [
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/ge7336"
+        }
+      ]
     }
   ]
 }
