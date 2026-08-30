@@ -1,7 +1,31 @@
 {
-  "updatedAt": "2026-08-30T19:43:00.671Z",
-  "count": 6,
+  "updatedAt": "2026-08-30T22:37:49.699Z",
+  "count": 7,
   "listings": [
+    {
+      "source": "oikotie",
+      "id": "24665959",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24665959",
+      "rooms": 3,
+      "size": 80.5,
+      "rent": 1800,
+      "address": "Melkonkatu 9, Helsinki",
+      "district": "Lauttasaari",
+      "title": "A fantastic family apartment near the sea and many services. Upea perheasunto merellisessä Lauttasaaressa palveluiden äärellä.",
+      "text": "A fantastic family apartment near the sea and many services. Upea perheasunto merellisessä Lauttasaaressa palveluiden äärellä. 3h + avok + s + p",
+      "image": null,
+      "published": "2026-08-30T20:40:06Z",
+      "balcony": true,
+      "parking": true,
+      "pets": "epävarma",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24665959"
+        }
+      ],
+      "availableFrom": "2026-10-01"
+    },
     {
       "source": "oikotie",
       "id": "24665908",
