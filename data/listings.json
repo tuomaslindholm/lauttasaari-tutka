@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-31T15:00:20.962Z",
-  "count": 7,
+  "updatedAt": "2026-08-31T20:47:35.854Z",
+  "count": 9,
   "listings": [
     {
       "source": "oikotie",
@@ -49,6 +49,53 @@
         }
       ],
       "availableFrom": "2026-09-30"
+    },
+    {
+      "source": "oikotie",
+      "id": "24669627",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24669627",
+      "rooms": 3,
+      "size": 62,
+      "rent": 1420,
+      "address": "Ruukinlahdentie 2, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Tyylikäs läpitalon kolmio Lauttasaaressa puiston laidalla",
+      "text": "Tyylikäs läpitalon kolmio Lauttasaaressa puiston laidalla 3h + k + parveke/terassi",
+      "image": null,
+      "published": "2026-08-31T16:47:23Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "sallittu",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24669627"
+        }
+      ],
+      "availableFrom": "2026-12-01"
+    },
+    {
+      "source": "qasa",
+      "id": "1451869",
+      "url": "https://qasa.com/fi/fi/home/1451869",
+      "rooms": 3,
+      "size": 62,
+      "rent": 1420,
+      "address": "Ruukinlahdentie, Lauttasaari, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Tyylikäs läpitalon kolmio Lauttasaaressa puiston laidalla",
+      "text": "Tyylikäs läpitalon kolmio Lauttasaaressa puiston laidalla Valoisa ja tyylikäs läpitalon 62 m² kolmio rauhallisessa Pohjois-Lauttasaaressa, aivan Ruukinlahdenpuiston vieressä. Asunnon toimiva pohjaratkaisu, avokeittiö ja etelään avautuva parveke tekevät siitä viihtyisän kodin niin yhdelle, pariskunnalle kuin pienelle perheellekin. Asunto sijaitsee 1. kerroksessa, mutta ei katutasossa. \n\nMakuuhuoneista avautuvat vehreät näkymät puistoon. Metro & Kauppakeskus Lauttis (450m) sekä ulkoilu- ja liikuntamahdollisuudet ovat kaikki kävelyetäisyydellä \n\nVuokraan sisältyy asunto sekä ullakkokomero & alakerrassa sijaitseva perunakellari. Vesimaksu on 20 €/hlö/kk. Taloyhtiön saunavuoro on haluttaessa saatavilla 20 €/kk lisämaksusta. Vuokralainen tekee oman sähkösopimuksen.\n\nLuottotiedot tarkistetaan. Kotivakuutus vastuuvakuutuksella vaaditaan.\n\nAsunto vapautuu 1.12.2026 (tai sopimuksen mukaan).\n\nYleinen näyttö sunnuntaina 6.9.2026 klo 13.00. Mikäli ajankohta ei sovi, yksityisnäytöstä voidaan sopia erikseen. apartment",
+      "image": null,
+      "published": "2026-08-31T16:47:20Z",
+      "pets": "sallittu",
+      "balcony": true,
+      "parking": false,
+      "sources": [
+        {
+          "source": "qasa",
+          "url": "https://qasa.com/fi/fi/home/1451869"
+        }
+      ]
     },
     {
       "source": "oikotie",
