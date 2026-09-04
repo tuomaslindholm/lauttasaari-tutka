@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T11:28:59.225Z",
+  "updatedAt": "2026-09-04T15:06:07.333Z",
   "count": 10,
   "listings": [
     {
@@ -127,7 +127,7 @@
       "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24558775",
       "rooms": 3,
       "size": 81.5,
-      "rent": 1555,
+      "rent": 1499,
       "address": "Vattuniemenkatu 16a B, Helsinki",
       "district": "Lauttasaari",
       "title": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään syyskuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata",
@@ -141,10 +141,6 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24558775"
-        },
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24523619"
         }
       ],
       "availableFrom": "2026-08-03"
