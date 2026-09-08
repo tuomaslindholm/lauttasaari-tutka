@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-08T08:56:10.170Z",
-  "count": 12,
+  "updatedAt": "2026-09-08T13:29:40.113Z",
+  "count": 11,
   "listings": [
     {
       "source": "oikotie",
@@ -191,30 +191,6 @@
         }
       ],
       "availableFrom": "2026-08-03"
-    },
-    {
-      "source": "oikotie",
-      "id": "24678004",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24678004",
-      "rooms": 3,
-      "size": 71.5,
-      "rent": 1380,
-      "address": "Lauttasaarentie 15 B, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Kodikas ja tilava kolmio erinomaisella sijainnilla Lauttasaaressa\n\nTervetuloa viihtymään Lauttasaareen! Tässä kodikkaassa ja avarassa kolmiossa on ",
-      "text": "Kodikas ja tilava kolmio erinomaisella sijainnilla Lauttasaaressa\n\nTervetuloa viihtymään Lauttasaareen! Tässä kodikkaassa ja avarassa kolmiossa on  3h, k, kph, parveke",
-      "image": null,
-      "published": "2026-09-04T07:02:10Z",
-      "balcony": true,
-      "parking": false,
-      "pets": "kielletty?",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24678004"
-        }
-      ],
-      "availableFrom": "2026-10-01"
     },
     {
       "source": "oikotie",
