@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-08T04:14:15.944Z",
-  "count": 10,
+  "updatedAt": "2026-09-08T08:56:10.170Z",
+  "count": 12,
   "listings": [
     {
       "source": "oikotie",
@@ -49,6 +49,53 @@
         }
       ],
       "availableFrom": "2026-09-30"
+    },
+    {
+      "source": "oikotie",
+      "id": "24683158",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24683158",
+      "rooms": 3,
+      "size": 73,
+      "rent": 1700,
+      "address": "Pohjoiskaari 6, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Läpitalon kolmio Lauttasaaressa merinäköalalla",
+      "text": "Läpitalon kolmio Lauttasaaressa merinäköalalla 3h + k + parveke/terassi",
+      "image": null,
+      "published": "2026-09-08T05:48:57Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "sallittu",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24683158"
+        }
+      ],
+      "availableFrom": "2026-10-03"
+    },
+    {
+      "source": "qasa",
+      "id": "1457962",
+      "url": "https://qasa.com/fi/fi/home/1457962",
+      "rooms": 3,
+      "size": 73,
+      "rent": 1700,
+      "address": "Pohjoiskaari, Lauttasaari, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Läpitalon kolmio Lauttasaaressa merinäköalalla",
+      "text": "Läpitalon kolmio Lauttasaaressa merinäköalalla Vuokrataan upea ja avara 73,5 m² läpitalon kolmio keskeiseltä paikalta Lauttasaaresta, vain 2,5 kilometrin päästä Helsingin keskustasta. Tässä ylimmän kerroksen (5/5, hissillinen) kodissa yhdistyvät 1940-luvun talon charmi, toimiva pohjaratkaisu ja merelliset näkymät. Olohuoneesta aukeaa esteetön merinäköala itään aamuauringon suuntaan. Molemmat makuuhuoneet sijaitsevat puolestaan lännen puolella, suojaisan ja hiljaisen sisäpihan äärellä. Suuremmasta makuuhuoneesta on käynti omalle parvekkeelle. Säilytystilaa on runsaasti kaapistojen ansiosta, ja vuokralaisen käytössä on lisäksi kellarikomero.\n\nTaloyhtiö sijaitsee vanhassa Lauttasaaressa, joka tunnetaan vehreydestä ja loistavista kulkuyhteyksistä. Asunnosta on vain 300 metriä lähimmälle bussipysäkille, josta pääsee Helsingin keskustaan 10 minuutissa ja 700 metriä Lauttis-ostoskeskukseen, jossa sijaitsee metro ja kaikki lähipalvelut kuten S- ja K-ryhmän kaupat, apteekki ja Alko.  Läheltä asuntoa löytyy loistavat kahvilat mukaan lukien ikoninen Mutteri kahvila ja ranskalainen kahvila-leipomo Le Jardin. Myös ulkoilusta kiinnostuneille sijainti on erinomainen: saaren ympäri kiertävälle lenkkipolulle pääsee suoraan taloyhtiön edestä.\n\nTaloyhtiö on erittäin rauhallinen ja ilmapiiri erinomainen. Taloyhtiössä on jo suuret remontit tehtynä, joten vuokralainen pääsee nauttimaan asumisesta ilman häiriötä.\n\nTähän kotiin etsitään luotettavia, siistejä ja rauhallisia vuokralaisia. Lemmikit ovat tervetulleita sopimuksen mukaan.\n\nVuokrasopimus on toistaiseksi voimassa oleva, sitoutuminen vähintään 12 kuukaudeksi (ensimmäinen mahdollinen irtisanomisajan alkamispäivä 11 kk sopimuksen alkamisesta). Vuokravakuus 3 400 €/ 2 kk vuokra. Vuokralainen tekee oman sähkösopimuksen ja ottaa laajan kotivakuutuksen vastuuosineen.  Jälleenvuokraus on kielletty.\n\nOlethan yhteydessä, jos olet kiinnostunut asunnosta. Kerrothan lyhyesti itsestäsi ja elämäntilanteestasi. Asuntoa esitellään vain valikoiduille kandidaateille.\n\n\n apartment",
+      "image": null,
+      "published": "2026-09-08T05:48:48Z",
+      "pets": "sallittu",
+      "balcony": true,
+      "parking": false,
+      "sources": [
+        {
+          "source": "qasa",
+          "url": "https://qasa.com/fi/fi/home/1457962"
+        }
+      ]
     },
     {
       "source": "oikotie",
