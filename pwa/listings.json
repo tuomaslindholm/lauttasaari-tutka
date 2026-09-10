@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-10T06:38:26.603Z",
-  "count": 10,
+  "updatedAt": "2026-09-10T11:51:22.365Z",
+  "count": 9,
   "listings": [
     {
       "source": "oikotie",
@@ -147,34 +147,6 @@
         }
       ],
       "availableFrom": "2026-10-09"
-    },
-    {
-      "source": "oikotie",
-      "id": "24558775",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24558775",
-      "rooms": 3,
-      "size": 81.5,
-      "rent": 1499,
-      "address": "Vattuniemenkatu 16a B, Helsinki",
-      "district": "Lauttasaari",
-      "title": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään syyskuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata",
-      "text": "KAMPANJA: 1 kuukausi ilmaista asumisaikaa!\n\nEdellyttää sopimuksen aloitusta viimeistään syyskuun aikana. Kampanjan yhteydessä mahdollisuus vuokrata 3h+k+las.parv.",
-      "image": null,
-      "published": "2026-06-23T13:30:10Z",
-      "balcony": true,
-      "parking": false,
-      "pets": "sallittu",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24558775"
-        },
-        {
-          "source": "vuokraovi",
-          "url": "https://www.vuokraovi.com/kohde/fv4738"
-        }
-      ],
-      "availableFrom": "2026-08-03"
     },
     {
       "source": "oikotie",
