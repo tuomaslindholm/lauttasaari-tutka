@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-11T09:09:13.875Z",
-  "count": 9,
+  "updatedAt": "2026-09-11T13:39:26.912Z",
+  "count": 8,
   "listings": [
     {
       "source": "oikotie",
@@ -126,7 +126,7 @@
       "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804",
       "rooms": 3,
       "size": 81.5,
-      "rent": 1637,
+      "rent": 1588,
       "address": "Vattuniemenkatu 16a D, Helsinki",
       "district": "Lauttasaari",
       "title": "Opiskelijat: 5 % pysyvä alennus kuukausivuokrasta! Mahdollisuus vuokrata asunto myös ilman vakuutta. Vakuudeton sopimus edellyttää puhtaita luottot",
@@ -192,33 +192,13 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17752945"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/ab4888"
         }
       ],
       "availableFrom": "2027-06-03"
-    },
-    {
-      "source": "oikotie",
-      "id": "24665256",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24665256",
-      "rooms": 4,
-      "size": 82,
-      "rent": 1800,
-      "address": "Veneentekijänkaari 3 B 35, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Asunto sijaitsee arvostetulla, rauhallisella ja lapsiystävällisellä alueella Helsingin Lauttasaaressa. Palvelut löytyvät läheltä ja loista",
-      "text": "Asunto sijaitsee arvostetulla, rauhallisella ja lapsiystävällisellä alueella Helsingin Lauttasaaressa. Palvelut löytyvät läheltä ja loista 4h+k+s+lasitettu parveke",
-      "image": null,
-      "published": "2026-08-28T14:50:08Z",
-      "balcony": false,
-      "parking": true,
-      "pets": "epävarma",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24665256"
-        }
-      ],
-      "availableFrom": "2026-10-01"
     }
   ]
 }
