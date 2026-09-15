@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-15T01:20:17.120Z",
-  "count": 4,
+  "updatedAt": "2026-09-15T06:21:55.969Z",
+  "count": 5,
   "listings": [
     {
       "source": "oikotie",
@@ -53,6 +53,30 @@
         }
       ],
       "availableFrom": "2026-10-09"
+    },
+    {
+      "source": "oikotie",
+      "id": "24693102",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24693102",
+      "rooms": 3,
+      "size": 67,
+      "rent": 1295,
+      "address": "Ruukinlahdentie 6 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Kodikas kulmahuoneistokolmio hyvällä paikalla Lauttasaaressa. \n\nVaaleat seinät, laminaatti- ja parkettilattia ja isot, valoa tuovatt ikkunat tekevä",
+      "text": "Kodikas kulmahuoneistokolmio hyvällä paikalla Lauttasaaressa. \n\nVaaleat seinät, laminaatti- ja parkettilattia ja isot, valoa tuovatt ikkunat tekevä 3h+k+kph+lasitettu p",
+      "image": null,
+      "published": "2026-09-15T04:03:08Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "epävarma",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24693102"
+        }
+      ],
+      "availableFrom": "2026-10-01"
     },
     {
       "source": "oikotie",
