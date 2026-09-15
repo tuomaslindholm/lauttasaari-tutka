@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-15T17:08:31.655Z",
-  "count": 5,
+  "updatedAt": "2026-09-15T20:17:56.172Z",
+  "count": 6,
   "listings": [
     {
       "source": "oikotie",
@@ -53,6 +53,30 @@
         }
       ],
       "availableFrom": "2026-10-09"
+    },
+    {
+      "source": "oikotie",
+      "id": "24694716",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24694716",
+      "rooms": 4,
+      "size": 90,
+      "rent": 1690,
+      "address": "Lauttasaarentie 20-22 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Kuudennen kerroksen tilava läpitalon koti avarilla näkymillä ja lasitetulla parvekkeella.\n\nHuoneistossa on kiva pohjaratkaisu, jossa makuuhuoneet o",
+      "text": "Kuudennen kerroksen tilava läpitalon koti avarilla näkymillä ja lasitetulla parvekkeella.\n\nHuoneistossa on kiva pohjaratkaisu, jossa makuuhuoneet o 4h+avok+kph+wc+lp",
+      "image": null,
+      "published": "2026-09-15T19:03:11Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "epävarma",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24694716"
+        }
+      ],
+      "availableFrom": "2026-10-15"
     },
     {
       "source": "oikotie",
