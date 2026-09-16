@@ -1,7 +1,31 @@
 {
-  "updatedAt": "2026-09-16T17:17:04.719Z",
-  "count": 6,
+  "updatedAt": "2026-09-16T20:15:47.597Z",
+  "count": 7,
   "listings": [
+    {
+      "source": "oikotie",
+      "id": "24696383",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24696383",
+      "rooms": 3,
+      "size": 86,
+      "rent": 1530,
+      "address": "Luoteisväylä 32 B 18, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Kotoisa kolmio vehreässä ja merellisessä Katajaharjussa  |  Ensimmäiset 3kk vuokra -15%",
+      "text": "Kotoisa kolmio vehreässä ja merellisessä Katajaharjussa  |  Ensimmäiset 3kk vuokra -15% 3h + k + p",
+      "image": null,
+      "published": "2026-09-16T19:42:58Z",
+      "balcony": true,
+      "parking": true,
+      "pets": "sallittu",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24696383"
+        }
+      ],
+      "availableFrom": "2024-11-01"
+    },
     {
       "source": "oikotie",
       "id": "24665908",
