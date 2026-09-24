@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-24T00:53:06.141Z",
+  "updatedAt": "2026-09-24T06:00:38.702Z",
   "count": 5,
   "listings": [
     {
@@ -70,6 +70,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/gm8737"
         }
       ],
       "availableFrom": "2026-10-09"
@@ -118,6 +122,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17752945"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/ab4888"
         }
       ],
       "availableFrom": "2027-06-03"
