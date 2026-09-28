@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-28T01:10:40.409Z",
-  "count": 5,
+  "updatedAt": "2026-09-28T07:03:53.714Z",
+  "count": 4,
   "listings": [
     {
       "source": "oikotie",
@@ -77,30 +77,6 @@
         }
       ],
       "availableFrom": "2026-10-09"
-    },
-    {
-      "source": "oikotie",
-      "id": "24612307",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24612307",
-      "rooms": 3,
-      "size": 72.5,
-      "rent": 1750,
-      "address": "Melkonkatu 21, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Lauttasaari Melkonkatu 21, 3h,k, sauna  eur 1750/kk",
-      "text": "Lauttasaari Melkonkatu 21, 3h,k, sauna  eur 1750/kk 3h + k + s + p",
-      "image": null,
-      "published": "2026-07-28T06:55:51Z",
-      "balcony": true,
-      "parking": false,
-      "pets": "kielletty?",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24612307"
-        }
-      ],
-      "availableFrom": "2026-09-30"
     },
     {
       "source": "oikotie",
