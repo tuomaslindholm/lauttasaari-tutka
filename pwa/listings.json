@@ -1,7 +1,31 @@
 {
-  "updatedAt": "2026-10-01T06:32:57.307Z",
+  "updatedAt": "2026-10-01T13:54:06.453Z",
   "count": 3,
   "listings": [
+    {
+      "source": "oikotie",
+      "id": "24721127",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24721127",
+      "rooms": 4,
+      "size": 81.5,
+      "rent": 1785,
+      "address": "Veneentekijänkaari 3 B 27, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Veneentekijänkaari 3 B 27",
+      "text": "Veneentekijänkaari 3 B 27 4h+k+s+lasitettu parveke",
+      "image": null,
+      "published": "2026-10-01T12:21:45Z",
+      "balcony": true,
+      "parking": true,
+      "pets": "sallittu",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24721127"
+        }
+      ],
+      "availableFrom": "2026-09-30"
+    },
     {
       "source": "oikotie",
       "id": "24665908",
@@ -25,34 +49,6 @@
         }
       ],
       "availableFrom": "2026-09-30"
-    },
-    {
-      "source": "oikotie",
-      "id": "24638804",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804",
-      "rooms": 3,
-      "size": 81.5,
-      "rent": 1588,
-      "address": "Vattuniemenkatu 16a D, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Opiskelijat: 5 % pysyvä alennus kuukausivuokrasta! Mahdollisuus vuokrata asunto myös ilman vakuutta. Vakuudeton sopimus edellyttää puhtaita luottot",
-      "text": "Opiskelijat: 5 % pysyvä alennus kuukausivuokrasta! Mahdollisuus vuokrata asunto myös ilman vakuutta. Vakuudeton sopimus edellyttää puhtaita luottot 3h+k+las.parv.",
-      "image": null,
-      "published": "2026-08-12T10:28:22Z",
-      "balcony": true,
-      "parking": false,
-      "pets": "sallittu",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804"
-        },
-        {
-          "source": "vuokraovi",
-          "url": "https://www.vuokraovi.com/kohde/gm8737"
-        }
-      ],
-      "availableFrom": "2026-10-09"
     },
     {
       "source": "oikotie",
