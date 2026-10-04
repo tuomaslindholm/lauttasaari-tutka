@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-04T06:21:04.333Z",
-  "count": 3,
+  "updatedAt": "2026-10-04T12:51:19.898Z",
+  "count": 4,
   "listings": [
     {
       "source": "oikotie",
@@ -49,6 +49,30 @@
         }
       ],
       "availableFrom": "2026-09-30"
+    },
+    {
+      "source": "oikotie",
+      "id": "24726541",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24726541",
+      "rooms": 3,
+      "size": 77,
+      "rent": 1400,
+      "address": "Meripuistotie 5, Helsinki",
+      "district": "Lauttasaari",
+      "title": "LAUTTASAARI 77m2 SOITA JA SOVI ESITTELY p. 0500 203067",
+      "text": "LAUTTASAARI 77m2 SOITA JA SOVI ESITTELY p. 0500 203067 3h + k + vh + kph + p",
+      "image": null,
+      "published": "2026-10-04T09:05:18Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "kielletty?",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24726541"
+        }
+      ],
+      "availableFrom": "heti"
     },
     {
       "source": "oikotie",
