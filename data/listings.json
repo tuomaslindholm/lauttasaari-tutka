@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-05T02:24:20.664Z",
-  "count": 5,
+  "updatedAt": "2026-10-05T09:36:26.384Z",
+  "count": 7,
   "listings": [
     {
       "source": "oikotie",
@@ -49,6 +49,58 @@
         }
       ],
       "availableFrom": "2026-09-30"
+    },
+    {
+      "source": "oikotie",
+      "id": "24638804",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804",
+      "rooms": 3,
+      "size": 81.5,
+      "rent": 1588,
+      "address": "Vattuniemenkatu 16a D, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Opiskelijat: 5 % pysyvä alennus kuukausivuokrasta! Mahdollisuus vuokrata asunto myös ilman vakuutta. Vakuudeton sopimus edellyttää puhtaita luottot",
+      "text": "Opiskelijat: 5 % pysyvä alennus kuukausivuokrasta! Mahdollisuus vuokrata asunto myös ilman vakuutta. Vakuudeton sopimus edellyttää puhtaita luottot 3h+k+las.parv.",
+      "image": null,
+      "published": "2026-08-12T10:28:22Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "sallittu",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804"
+        },
+        {
+          "source": "vuokraovi",
+          "url": "https://www.vuokraovi.com/kohde/gm8737"
+        }
+      ],
+      "availableFrom": "2026-10-09"
+    },
+    {
+      "source": "oikotie",
+      "id": "24727914",
+      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24727914",
+      "rooms": 3,
+      "size": 65.5,
+      "rent": 1445,
+      "address": "Gyldenintie 5–7, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Kolmio peruskorjatusta talosta erinomaiselta sijainnilta!\nNyt vapaana valoisa kolmio Lauttasaaressa. Asunnon parhaita pu",
+      "text": "Kolmio peruskorjatusta talosta erinomaiselta sijainnilta!\nNyt vapaana valoisa kolmio Lauttasaaressa. Asunnon parhaita pu 3H+KT",
+      "image": null,
+      "published": "2026-10-05T09:01:23Z",
+      "balcony": true,
+      "parking": false,
+      "pets": "epävarma",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24727914"
+        }
+      ],
+      "availableFrom": "heti"
     },
     {
       "source": "oikotie",
