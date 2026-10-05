@@ -1,6 +1,6 @@
 // Kevyt service worker: mahdollistaa asennuksen ja tarjoaa app-shellin offline.
 // listings.json haetaan aina verkosta (network-first), jotta data on tuoretta.
-const SHELL = "tutka-shell-v1";
+const SHELL = "tutka-shell-v2"; // versio nousee kun shell (index.html) muuttuu, jotta vanha välimuisti vaihtuu
 const SHELL_FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon.svg"];
 
 self.addEventListener("install", (e) => {

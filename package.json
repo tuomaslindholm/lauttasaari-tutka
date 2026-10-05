@@ -1,7 +1,7 @@
 {
   "name": "lauttasaari-tutka",
   "version": "1.0.0",
-  "description": "Rental-apartment radar for Lauttasaari, Helsinki. Aggregates portals and alerts to Telegram.",
+  "description": "For-sale apartment radar for Lauttasaari, Helsinki. Aggregates portals and alerts to Telegram.",
   "type": "module",
   "scripts": {
     "start": "node src/index.js",

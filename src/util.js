@@ -16,27 +16,33 @@ export async function fetchJson(url, opts = {}) {
   return r.json();
 }
 
-// Parsii vuokran mahdollisesti sotkuisesta merkkijonosta, esim. "1 795 € / kk" -> 1795
-export function parseRent(v) {
+// Parsii hinnan mahdollisesti sotkuisesta merkkijonosta, esim. "389 000 €" -> 389000.
+// Otetaan vain ensimmäinen lukuryhmä, ettei "389 000 € (vel. 120 000)" muutu yhdeksi isoksi luvuksi.
+export function parsePrice(v) {
   if (typeof v === "number") return v;
   if (!v) return null;
-  const digits = String(v).replace(/[^\d]/g, "");
+  const m = String(v).match(/\d[\d\s .]*/);
+  const digits = m ? m[0].replace(/\D/g, "") : "";
   return digits ? parseInt(digits, 10) : null;
 }
 
-// Vuokraoven roomCount-enumit numeroksi (varakeino jos roomStructurea ei voi parsia)
-const ROOM_ENUM = {
-  ONE_ROOM: 1, TWO_ROOMS: 2, THREE_ROOMS: 3, FOUR_ROOMS: 4,
-  FIVE_ROOMS: 5, SIX_ROOMS: 6, MORE_THAN_SIX_ROOMS: 7,
-};
-
-// Yrittää päätellä huoneluvun. roomStructure esim "3h + k + s" -> 3
-export function parseRooms(roomStructure, roomCountEnum) {
-  if (roomStructure) {
-    const m = String(roomStructure).match(/(\d+)\s*h/i);
-    if (m) return parseInt(m[1], 10);
+// Palauttaa ensimmäisen löytyvän arvon annetuista poluista, esim. pick(card, ["buildingData.year", "year"]).
+export function pick(obj, paths) {
+  for (const p of paths) {
+    const v = p.split(".").reduce((o, k) => (o == null ? undefined : o[k]), obj);
+    if (v !== undefined && v !== null && v !== "") return v;
   }
-  if (roomCountEnum && ROOM_ENUM[roomCountEnum]) return ROOM_ENUM[roomCountEnum];
+  return null;
+}
+
+// Rakenteinen kyllä/ei -tieto portaalilta: true / false, tai null jos tietoa ei ole.
+export function toBool(v) {
+  if (typeof v === "boolean") return v;
+  if (typeof v === "number") return v > 0;
+  if (typeof v === "string") {
+    if (/^(1|true|kyllä|yes|on)$/i.test(v.trim())) return true;
+    if (/^(0|false|ei|no|off)$/i.test(v.trim())) return false;
+  }
   return null;
 }
 

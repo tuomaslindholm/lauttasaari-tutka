@@ -1,8 +1,6 @@
 import { config } from "../config.js";
 import { fetchOikotie, fetchOikotieDetail, getAuthHeaders } from "./portals/oikotie.js";
-import { fetchVuokraovi } from "./portals/vuokraovi.js";
-import { fetchQasa } from "./portals/qasa.js";
-import { evaluate, score } from "./filter.js";
+import { evaluate, deriveFlags, rejectReasons, score, describeCriteria } from "./filter.js";
 import { loadSeen, saveSeen, saveFeed } from "./store.js";
 import { notifyNew, notifyText, telegramConfigured } from "./telegram.js";
 import { sleep } from "./util.js";
@@ -10,8 +8,6 @@ import { sleep } from "./util.js";
 async function collect() {
   const jobs = [];
   if (config.portals.oikotie) jobs.push(["oikotie", fetchOikotie]);
-  if (config.portals.vuokraovi) jobs.push(["vuokraovi", fetchVuokraovi]);
-  if (config.portals.qasa) jobs.push(["qasa", fetchQasa]);
 
   const all = [];
   for (const [name, fn] of jobs) {
@@ -29,7 +25,9 @@ async function collect() {
 
 // Deduplikointi: sama asunto voi olla monessa portaalissa.
 // Avain = katuosoite (ennen ensimmäistä pilkkua, ilman kaupunkia/kaupunginosaa)
-// + neliöt pyöristettynä. Näin Oikotie- ja Vuokraovi-versiot yhdistyvät.
+// + neliöt pyöristettynä. Yhdistetään vain PORTAALIEN välillä: saman portaalin kaksi
+// ilmoitusta samasta osoitteesta ja koosta ovat usein eri asuntoja (saman talon
+// samanlaiset huoneistot, kun huoneistonumeroa ei ilmoiteta).
 function dedupeKey(l) {
   const street = (l.address || "").split(",")[0].toLowerCase().replace(/[^a-zåäö0-9]/g, "");
   const size = l.size != null ? Math.round(l.size) : "?";
@@ -48,10 +46,13 @@ function mergeListings(a, b) {
   ];
   return {
     ...primary,
+    price: primary.price ?? other.price,
     balcony: primary.balcony || other.balcony,
-    parking: primary.parking || other.parking,
-    pets: primary.pets === "sallittu" || other.pets === "sallittu" ? "sallittu"
-      : primary.pets === "kielletty?" || other.pets === "kielletty?" ? "kielletty?" : "epävarma",
+    topFloor: primary.topFloor || other.topFloor,
+    yearBuilt: primary.yearBuilt ?? other.yearBuilt,
+    floor: primary.floor ?? other.floor,
+    floorCount: primary.floorCount ?? other.floorCount,
+    postalCode: primary.postalCode ?? other.postalCode,
     sources,
   };
 }
@@ -67,20 +68,29 @@ async function runOnce() {
     if (keep) kept.push(listing);
   }
 
-  // Deduplikointi portaalien välillä (yhdistetään saman asunnon versiot)
-  const byDedupe = new Map();
+  // Deduplikointi portaalien välillä (yhdistetään saman asunnon versiot).
+  // `key` on asunnon vakaa tunniste hälytyksille (seen) ja PWA:n suosikeille.
+  const byKey = new Map();
   for (const l of kept) {
     const dk = dedupeKey(l);
-    const existing = byDedupe.get(dk);
-    byDedupe.set(dk, existing ? mergeListings(existing, l) : { ...l, sources: [{ source: l.source, url: l.url }] });
+    const existing = byKey.get(dk);
+    if (!existing) {
+      byKey.set(dk, { ...l, key: dk, sources: [{ source: l.source, url: l.url }] });
+    } else if (existing.sources.some((s) => s.source === l.source)) {
+      const uk = `${dk}|${l.source}:${l.id}`;
+      byKey.set(uk, { ...l, key: uk, sources: [{ source: l.source, url: l.url }] });
+    } else {
+      byKey.set(dk, { ...mergeListings(existing, l), key: dk });
+    }
   }
-  const unique = [...byDedupe.values()];
+  let unique = [...byKey.values()];
 
-  // Rikastus: haetaan Oikotien yksityiskohdista tarkat parveke/autopaikka/lemmikit/vapautumispäivä.
-  // Vain uniikeille osumille (muutama kpl) -> kevyt kuormitus.
+  // Rikastus: haetaan Oikotien kohdetiedoista tarkka velaton hinta, parveke, rakennusvuosi,
+  // kerros, postinumero ja vapautumispäivä. Vain karsinnan läpäisseille -> kevyt kuormitus.
   if (config.portals.oikotie) {
     try {
       const auth = await getAuthHeaders();
+      const found = { parveke: 0, rakennusvuosi: 0, kerros: 0, postinumero: 0 };
       let enriched = 0;
       for (const l of unique) {
         const oiko = (l.sources || []).find((s) => s.source === "oikotie");
@@ -88,36 +98,58 @@ async function runOnce() {
         if (!id) continue;
         const d = await fetchOikotieDetail(id, auth);
         if (d) {
-          l.balcony = d.balcony;
-          l.parking = d.parking;
-          if (d.pets) l.pets = d.pets; // säilyy: EI karsita koskaan
-          if (d.availableFrom) l.availableFrom = d.availableFrom;
+          // Rakenteinen tieto voittaa kortin arvauksen.
+          if (d.price != null) l.price = d.price;
+          for (const k of ["yearBuilt", "floor", "floorCount", "postalCode", "availableFrom"]) {
+            if (d[k] != null) l[k] = d[k];
+          }
+          // Pitkä kuvaus mukaan tekstihakuun. Parveke: rakenteinen "kyllä" TAI maininta tekstissä
+          // (ilmoittajat jättävät kentän usein täyttämättä, ja parvekkeen puuttuminen maksaa eniten).
+          const flags = deriveFlags({ ...l, text: `${l.text} ${d.description}` });
+          l.balcony = d.balcony === true || flags.balcony;
+          l.topFloor = flags.topFloor;
+          l.yearBuilt = flags.yearBuilt;
           enriched++;
+          if (d.balcony != null) found.parveke++;
+          if (l.yearBuilt != null) found.rakennusvuosi++;
+          if (l.floor != null && l.floorCount != null) found.kerros++;
+          if (l.postalCode) found.postinumero++;
         }
         await sleep(300);
       }
-      console.log(`  ✚ rikastettu ${enriched} kohteen tarkat tiedot (parveke/autopaikka/lemmikit/vapautuu)`);
+      const summary = Object.entries(found).map(([k, n]) => `${k} ${n}`).join(", ");
+      console.log(`  ✚ rikastettu ${enriched}/${unique.length} kohdetta; tieto löytyi portaalilta: ${summary}`);
+      // Nolla löytöä kaikilta = kenttänimi todennäköisesti väärä (portaalin JSON muuttunut / arvaus meni ohi).
+      if (enriched > 0) {
+        for (const [k, n] of Object.entries(found)) {
+          if (n === 0) console.warn(`  ⚠️  ${k}: ei löytynyt yhdeltäkään kohteelta — tarkista kenttänimet (src/portals/oikotie.js)`);
+        }
+      }
     } catch (e) {
       console.error(`  Rikastus ohitettu: ${e.message}`);
     }
   }
 
-  // Järjestetään vasta rikastuksen jälkeen (parveke/autopaikka nostavat).
+  // Tarkka velaton hinta voi poiketa kortin hinnasta -> karsitaan uudelleen rikastuksen jälkeen.
+  const before = unique.length;
+  unique = unique.filter((l) => rejectReasons(l).length === 0);
+  if (unique.length < before) console.log(`  − ${before - unique.length} kohdetta karsittu tarkan hinnan perusteella`);
+
+  // Järjestetään vasta rikastuksen jälkeen (parveke, hinta, ylin kerros, 00200, vuosi nostavat).
   unique.sort((a, b) => {
     const s = score(b) - score(a);
     if (s !== 0) return s;
     return new Date(b.published || 0) - new Date(a.published || 0);
   });
 
-  console.log(`  → ${unique.length} täsmäävää kohdetta (kriteerit: ${config.minRooms}h+, ${config.minSize}m²+, ≤${config.maxRent}€)`);
+  console.log(`  → ${unique.length} täsmäävää kohdetta (kriteerit: ${describeCriteria()})`);
 
   // Uudet kohteet -> hälytys
   const seen = await loadSeen();
   const newOnes = [];
   for (const l of unique) {
-    const k = dedupeKey(l); // vakaa avain per asunto (osoite+neliöt)
-    if (!seen[k]) {
-      seen[k] = new Date().toISOString();
+    if (!seen[l.key]) {
+      seen[l.key] = new Date().toISOString();
       newOnes.push(l);
     }
   }
@@ -138,7 +170,7 @@ async function runOnce() {
     } else if (firstRun && telegramConfigured()) {
       // Ensimmäisellä ajolla ei spämmätä koko listaa — vain kerrotaan että tutka on päällä.
       await notifyText(
-        `✅ Lauttasaari-tutka käynnistetty. Seurataan ${config.minRooms}h+, ${config.minSize}m²+, ≤${config.maxRent}€/kk. ` +
+        `✅ Lauttasaari-tutka käynnistetty (myytävät asunnot). Seurataan: ${describeCriteria()}. ` +
           `Löytyi nyt ${unique.length} täsmäävää kohdetta — ilmoitan jatkossa vain uusista.`
       );
     }
@@ -147,7 +179,7 @@ async function runOnce() {
   }
 
   await saveSeen(seen);
-  await saveFeed(unique);
+  await saveFeed(unique, describeCriteria());
   return { unique, newOnes };
 }
 

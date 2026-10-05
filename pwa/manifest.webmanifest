@@ -1,7 +1,7 @@
 {
   "name": "Lauttasaari-tutka",
   "short_name": "Tutka",
-  "description": "Vuokra-asuntotutka Lauttasaareen",
+  "description": "Myytävien asuntojen tutka Lauttasaareen",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#0b6b5f",

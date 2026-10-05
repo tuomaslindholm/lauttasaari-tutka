@@ -1,42 +1,74 @@
 import { config } from "../config.js";
 import { containsAny } from "./util.js";
 
-// Palauttaa { keep, listing } — rikastaa kohteen plussamerkinnöillä ja lemmikkilipulla.
-export function evaluate(listing) {
+// Pakolliset suodattimet. Jos jokin tieto puuttuu, EI karsita (varovaisuus).
+// Palauttaa karsintasyyt (tyhjä taulukko = kohde täsmää).
+export function rejectReasons(l) {
   const reasons = [];
+  if (l.rooms != null && l.rooms < config.minRooms) reasons.push("liian vähän huoneita");
+  if (l.price != null && l.price > config.maxPrice) reasons.push("liian kallis");
+  if (config.minSize != null && l.size != null && l.size < config.minSize) reasons.push("liian pieni");
+  return reasons;
+}
 
-  // Pakolliset suodattimet. Jos jokin tieto puuttuu, EI karsita (varovaisuus),
-  // mutta merkitään epävarmaksi.
-  if (listing.rooms != null && listing.rooms < config.minRooms) reasons.push("liian vähän huoneita");
-  if (listing.size != null && listing.size < config.minSize) reasons.push("liian pieni");
-  if (listing.rent != null && listing.rent > config.maxRent) reasons.push("liian kallis");
+// "ei parveketta" / "ilman parveketta" ei saa laskea parvekkeeksi.
+function hasBalcony(text) {
+  const positive = String(text || "").replace(/\b(?:ei|ilman)\s+(?:\S+\s+)?(?:parvek|balkong)\S*/gi, " ");
+  return containsAny(positive, config.plusKeywords.balcony);
+}
 
-  const keep = reasons.length === 0;
+// Rakenteinen kerrostieto (esim. 5/5) voittaa tekstihaun. Alle 2-kerroksista taloa ei lasketa,
+// koska 1/1 on usein vain puuttuvan tiedon oletusarvo.
+function isTopFloor(l) {
+  if (l.floor != null && l.floorCount != null) return l.floorCount >= 2 && l.floor >= l.floorCount;
+  return containsAny(l.text, config.plusKeywords.topFloor);
+}
 
-  // Plussamerkinnät (eivät vaikuta karsintaan)
-  const balcony = containsAny(listing.text, config.plusKeywords.balcony);
-  const parking = containsAny(listing.text, config.plusKeywords.parking);
+function yearFromText(text) {
+  const m = String(text || "").match(/(?:rakennusvuosi|rakennettu|valmistunut|valmistumisvuosi|rak\.?\s?vuosi)\D{0,15}(1[89]\d\d|20\d\d)/i);
+  return m ? parseInt(m[1], 10) : null;
+}
 
-  // Lemmikit: EI karsita koskaan. Vain lippu.
-  // Kunnioita portaalin rakenteista tietoa (esim. Qasa) jos se on jo asetettu.
-  let pets = listing.pets || "epävarma";
-  if (pets === "epävarma") {
-    if (containsAny(listing.text, config.petKeywords.allowed)) pets = "sallittu";
-    else if (containsAny(listing.text, config.petKeywords.forbidden)) pets = "kielletty?";
-  }
-
+// Johtaa plusliput kohteen tiedoista. Kutsutaan uudelleen rikastuksen jälkeen,
+// kun tarkat kerros-/rakennusvuositiedot ovat tulleet.
+export function deriveFlags(l) {
   return {
-    keep,
-    reasons,
-    listing: { ...listing, balcony, parking, pets },
+    balcony: hasBalcony(l.text),
+    topFloor: isTopFloor(l),
+    yearBuilt: l.yearBuilt ?? yearFromText(l.text),
   };
 }
 
-// Pistemäärä feedin järjestämiseen: parveke + autopaikka nostavat, uudempi ylös.
+// Palauttaa { keep, reasons, listing } — rikastaa kohteen plusmerkinnöillä.
+export function evaluate(listing) {
+  const reasons = rejectReasons(listing);
+  return { keep: reasons.length === 0, reasons, listing: { ...listing, ...deriveFlags(listing) } };
+}
+
+// Hintapisteiden kerroin 0..1: täydet pisteet idealPricen alla, nolla maxPricessa.
+function priceFactor(price) {
+  const { idealPrice } = config.plus;
+  if (price <= idealPrice) return 1;
+  if (price >= config.maxPrice) return 0;
+  return (config.maxPrice - price) / (config.maxPrice - idealPrice);
+}
+
+// Pistemäärä feedin järjestämiseen (painot: config.weights).
 export function score(l) {
+  const w = config.weights;
   let s = 0;
-  if (l.balcony) s += 10;
-  if (l.parking) s += 6;
-  if (l.pets === "sallittu") s += 4;
+  if (l.balcony) s += w.balcony;
+  if (l.topFloor) s += w.topFloor;
+  if (l.postalCode === config.plus.postalCode) s += w.postalCode;
+  if (l.yearBuilt != null && l.yearBuilt <= config.plus.maxBuildYear) s += w.buildYear;
+  if (l.price != null) s += w.price * priceFactor(l.price);
   return s;
+}
+
+// Kriteerit tekstinä lokiin, Telegramiin ja PWA:n alatunnisteeseen.
+export function describeCriteria() {
+  const eur = (n) => n.toLocaleString("fi-FI");
+  const parts = [`${config.minRooms}h+`, `≤${eur(config.maxPrice)} € (velaton)`];
+  if (config.minSize != null) parts.push(`${config.minSize} m²+`);
+  return parts.join(" · ");
 }

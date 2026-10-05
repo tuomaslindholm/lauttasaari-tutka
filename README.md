@@ -1,26 +1,25 @@
 # 🛰️ Lauttasaari-tutka
 
-Vuokra-asuntotutka Lauttasaareen: kerää kohteet **Oikotieltä**, **Vuokraovelta** ja
-**Qasasta**, suodattaa teidän kriteereillä, **rikastaa** jokaisen kohteen tarkoilla tiedoilla
-(parveke, autopaikka, lemmikit, vapautumispäivä), lähettää **Telegram-hälytyksen** heti
-uudesta kohteesta ja tarjoaa **PWA-selailunäkymän** puhelimeen.
+Asuntotutka Lauttasaareen: kerää **myytävät asunnot Oikotieltä**, suodattaa kriteereillä,
+**rikastaa** jokaisen kohteen tarkoilla tiedoilla (velaton hinta, parveke, rakennusvuosi,
+kerros, postinumero), **pisteyttää** kohteet plussien mukaan, lähettää **Telegram-hälytyksen**
+heti uudesta kohteesta ja tarjoaa **PWA-selailunäkymän** puhelimeen.
 
-> Vaihe 2 valmis: 3 portaalia + tarkka parveke/autopaikka/lemmikit/vapautuu-rikastus +
-> Telegram + PWA. Seuraavaksi (Vaihe 3): Facebook (puoliautomaatti), WhatsApp, hintahistoria.
+> Haku on muutettu vuokra-asunnoista myytäviin. Vuokrausportaalit (Vuokraovi, Qasa) on poistettu.
+> Toistaiseksi lähteenä on vain Oikotie; Etuovi on listattu Vaihe 3 -ideoihin.
 
 ## Näin se toimii
 
 Jokaisella hakukierroksella ([`src/index.js`](src/index.js)):
 
-1. **Hae** kohteet kaikista portaaleista rinnakkain. Yhden portaalin hajoaminen ei kaada muita.
-   - *Oikotie*: kortti-API, aluekoodilla rajattu Lauttasaareen.
-   - *Vuokraovi*: Next.js-datarajapinta, Lauttasaari-rajattu reitti.
-   - *Qasa*: GraphQL-rajapinta; koska siinä ei ole kaupunginosasuodatinta, haetaan Suomen
-     uusimmat (server-side 3h+/55m²+/≤1800€) ja rajataan Lauttasaari koordinaattilaatikolla.
-2. **Suodata** kriteereillä (3h+k, 55 m²+, ≤1800 €). Puuttuvaa tietoa ei karsita.
-3. **Deduplikoi** portaalien välillä (katuosoite + neliöt) → sama asunto yhtenä, molemmat linkit.
-4. **Rikasta** Oikotien yksityiskohdista: parveke, autopaikka, lemmikit, **vapautumispäivä**.
-5. **Järjestä** niin että parvekkeelliset + autopaikalliset + lemmikit-ok nousevat kärkeen.
+1. **Hae** myytävät kohteet portaaleista (Oikotie: kortti-API, aluekoodilla rajattu Lauttasaareen).
+   Yhden portaalin hajoaminen ei kaada muita.
+2. **Suodata** kriteereillä (3h+, velaton hinta ≤475 000 €). Puuttuvaa tietoa ei karsita.
+3. **Deduplikoi** portaalien välillä (katuosoite + neliöt) → sama asunto yhtenä, kaikki linkit.
+   Saman portaalin kaksi ilmoitusta pidetään erillisinä (saman talon samankokoiset huoneistot).
+4. **Rikasta** Oikotien kohdetiedoista: parveke, rakennusvuosi, kerros, postinumero,
+   vapautumispäivä. Tarkka velaton hinta karsitaan vielä uudelleen rikastuksen jälkeen.
+5. **Pisteytä ja järjestä** plussien mukaan (ks. alla).
 6. **Hälytä** Telegramiin vain *uusista* kohteista (tila `data/seen.json`).
 7. **Tallenna** feed (`data/listings.json` + `pwa/listings.json`) PWA:ta varten.
 
@@ -28,10 +27,25 @@ Jokaisella hakukierroksella ([`src/index.js`](src/index.js)):
 
 Kaikki on tiedostossa [`config.js`](config.js):
 
-- vähintään **3h+k**, vähintään **55 m²**, vuokra enintään **1800 €/kk**
-- alue **Lauttasaari** (postinumerot 00200, 00210)
-- **parveke** ja **autopaikka** nostavat kohteen esiin (eivät karsi)
-- **lemmikit**: "kielletty"-kohteita EI karsita, ne merkitään vain lipulla (neuvoteltavissa)
+**Pakolliset (karsivat):**
+
+- vähintään **3 huonetta**
+- **velaton hinta enintään 475 000 €**
+- alue **Lauttasaari** (postinumerot 00200 ja 00210)
+
+**Plussat (eivät karsi, nostavat kohteen ylemmäs listassa).** Painot ovat `config.js`:n
+`weights`-kohdassa; suurempi pistemäärä = ylemmäs.
+
+| Plussa | Pisteet | Huomio |
+| --- | --- | --- |
+| 🌿 **Parveke** | 50 | "Aika oleellinen": painaa enemmän kuin kaikki muut plussat yhteensä (46), mutta parvekkeeton kohde ei putoa pois |
+| 💰 **Hinta** | 0–20 | Täydet pisteet ≤400 000 €, laskee lineaarisesti nollaan 475 000 €:ssa |
+| 🔝 **Ylin kerros** | 10 | Rakenteinen kerrostieto (esim. 5/5) tai maininta kuvauksessa |
+| 📮 **00200** | 8 | 00210 kelpaa mutta ei saa plussaa |
+| 🏛️ **Rakennettu ≤1960** | 8 | |
+
+Parvekkeeksi ei lasketa mainintaa "ei parveketta" / "ilman parveketta". Yhteinen kattoterassi
+ei myöskään laske parvekkeeksi (avainsanana vain `parvek`, `balkong`).
 
 ## 1. Telegram-botin luonti (kertaluontoinen, ~3 min)
 
@@ -59,7 +73,22 @@ node --env-file=.env src/index.js --watch     # jää seuraamaan (20 min välein
 ```
 
 Ensimmäisellä ajolla tutka **ei spämmää** koko listaa — se lähettää vain "käynnistetty"-viestin
-ja hälyttää jatkossa vain **uusista** kohteista.
+ja hälyttää jatkossa vain **uusista** kohteista. Vanha vuokra-asuntojen tila (`data/seen.json`)
+hylätään automaattisesti, joten siirtymä myytäviin alkaa puhtaalta pöydältä.
+
+### Tarkista ensimmäisen oikean ajon jälkeen
+
+Oikotien rajapinta ei ole julkinen eikä dokumentoitu. Rakennusvuoden, kerroksen, postinumeron
+ja parvekkeen kenttänimet on kirjoitettu useina vaihtoehtoina ([`src/portals/oikotie.js`](src/portals/oikotie.js)),
+ja ajon loki kertoo kuinka monelta kohteelta kukin tieto löytyi:
+
+```
+✚ rikastettu 24/24 kohdetta; tieto löytyi portaalilta: parveke 22, rakennusvuosi 24, kerros 24, postinumero 24
+```
+
+Jos jokin luku on 0, loki varoittaa (`⚠️ rakennusvuosi: ei löytynyt…`). Silloin kenttänimi
+täytyy lisätä `buildingInfo()`-funktioon; kohteita ei silti karsita tiedon puutteen vuoksi,
+vain kyseinen plussa jää antamatta.
 
 ## 3. Ilmainen jatkuva ajo (GitHub Actions + Pages)
 
@@ -80,8 +109,8 @@ PWA löytyy sitten osoitteesta `https://<käyttäjä>.github.io/<repo>/`.
 
 Avaa PWA-osoite puhelimen selaimessa → **Lisää aloitusnäyttöön**. Sovellus:
 
-- listaa kaikki täsmäävät kohteet (uusimmat/parhaat ylhäällä)
-- välilehdet: Kaikki · ❤️ Kiinnostaa · ✨ Uudet · 🌿 Parveke · 🗑️ Piilotetut
+- listaa kaikki täsmäävät kohteet (parhaat pisteet ylhäällä)
+- välilehdet: Kaikki · ❤️ Kiinnostaa · ✨ Uudet · 🌿 Parveke · 🔝 Ylin kerros · 🗑️ Piilotetut
 - jokaisesta suorat linkit portaaleihin + karttaan
 - "Kiinnostaa/Piilota" tallentuu puhelimeen (kummallakin oma näkymä)
 
@@ -90,8 +119,8 @@ Avaa PWA-osoite puhelimen selaimessa → **Lisää aloitusnäyttöön**. Sovellu
 ```
 config.js            # hakukriteerit
 src/index.js         # pääputki: hae → suodata → deduplikoi → hälytä → tallenna
-src/portals/         # oikotie.js, vuokraovi.js, qasa.js (helppo lisätä uusia)
-src/filter.js        # karsinta + plussamerkinnät + lemmikkilippu
+src/portals/         # oikotie.js (helppo lisätä uusia)
+src/filter.js        # karsinta + plussamerkinnät + pisteytys
 src/telegram.js      # Telegram-lähetys
 src/store.js         # tila (seen.json) + feed (listings.json)
 pwa/                 # asennettava selailunäkymä
@@ -104,20 +133,22 @@ data/                # generoitu: seen.json, listings.json
 Tee `src/portals/uusi.js`, joka vie funktion palauttaen taulukon näitä olioita:
 
 ```js
-{ source, id, url, rooms, size, rent, address, district, title, text, image, published }
+{ source, id, url, rooms, size, price, address, district, title, text, image, published,
+  yearBuilt, floor, floorCount, postalCode }   // price = velaton hinta; kolme viimeistä valinnaisia
 ```
 
 Kytke se [`src/index.js`](src/index.js):n `collect()`-funktioon ja `config.portals`-lippuun.
 Deduplikointi (osoite + neliöt) yhdistää saman asunnon eri portaaleista automaattisesti.
+Puuttuvat kentät saa jättää `null`:ksi — niitä ei karsita.
 
 ## Vaihe 3 -ideat
 
 - **Facebook**: puoliautomaatti (appi avaa valmiit ryhmähaut) — ToS-syistä ei täysautomaattia.
 - **WhatsApp-hälytykset** Telegramin rinnalle (Twilio).
-- **Lisää lähteitä**: Lumo (Kojamo), SATO, M2-Kodit (huom: nämä listaavat usein jo Oikotiessä).
-- **Hintahistoria / vuokran lasku -hälytys**.
-- **Qasan tarkka aluerajaus**: nyt bbox + Suomen uusimpien läpikäynti (`config.qasaMaxResults`).
-  Voisi tarkentua jos Qasan alue-uid saadaan selvitettyä (vaatii kirjautuneen sessiokaappauksen).
+- **Etuovi** toiseksi myyntilähteeksi (suurin myyntiportaali; osa kohteista on vain siellä).
+  Dedupe yhdistää sen Oikotien kanssa osoitteen + neliöiden perusteella.
+- **Hintahistoria / hinnanlasku-hälytys** (nyt hälytetään vain uudesta kohteesta).
+- **Postinumeron varmistus**: jos Oikotie ei anna postinumeroa, 00200-plussa jää antamatta.
 
 ## Huomioita
 

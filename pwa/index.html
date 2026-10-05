@@ -64,16 +64,18 @@
     <button class="tab" data-f="like">❤️ Kiinnostaa</button>
     <button class="tab" data-f="new">✨ Uudet</button>
     <button class="tab" data-f="balcony">🌿 Parveke</button>
+    <button class="tab" data-f="top">🔝 Ylin kerros</button>
     <button class="tab" data-f="hide">🗑️ Piilotetut</button>
   </nav>
   <main id="list"><div class="empty">Ladataan kohteita…</div></main>
   <footer id="foot"></footer>
 
   <script>
-    const LS = { like:"lt_like", hide:"lt_hide" };
+    // Omat avaimet myytäville: vanhat vuokra-asuntojen suosikit/piilotukset eivät sekoitu mukaan.
+    const LS = { like:"lt_sale_like", hide:"lt_sale_hide" };
     const get = k => JSON.parse(localStorage.getItem(k) || "{}");
     const set = (k,v) => localStorage.setItem(k, JSON.stringify(v));
-    const keyOf = l => (l.address.split(",")[0] + "|" + Math.round(l.size||0)).toLowerCase().replace(/[^a-zåäö0-9|]/g,"");
+    const keyOf = l => l.key || (l.address.split(",")[0] + "|" + Math.round(l.size||0)).toLowerCase().replace(/[^a-zåäö0-9|]/g,"");
     let data = { listings:[], updatedAt:null }, filter = "all";
 
     function fmtAgo(iso){
@@ -90,6 +92,7 @@
       if (filter==="like") items = items.filter(l=>likes[l._k]);
       else if (filter==="hide") items = items.filter(l=>hides[l._k]);
       else if (filter==="balcony") items = items.filter(l=>l.balcony && !hides[l._k]);
+      else if (filter==="top") items = items.filter(l=>l.topFloor && !hides[l._k]);
       else if (filter==="new") items = items.filter(l=>l._isNew && !hides[l._k]);
       else items = items.filter(l=>!hides[l._k]);
 
@@ -99,13 +102,14 @@
     }
 
     function card(l, liked, hidden){
-      const specs = [ (l.rooms!=null?l.rooms+"h":"?h"), (l.size!=null?l.size+" m²":""), ].filter(Boolean).join(" · ");
-      const price = l.rent!=null ? l.rent+" €/kk" : "? €/kk";
+      const floor = (l.floor!=null && l.floorCount!=null) ? l.floor+"/"+l.floorCount+" krs" : "";
+      const specs = [ (l.rooms!=null?l.rooms+"h":"?h"), (l.size!=null?l.size+" m²":""), floor ].filter(Boolean).join(" · ");
+      const price = l.price!=null ? l.price.toLocaleString("fi-FI")+" €" : "? €";
       const badges = [];
       if (l.balcony) badges.push('<span class="pill plus">🌿 parveke</span>');
-      if (l.parking) badges.push('<span class="pill plus">🅿️ autopaikka</span>');
-      if (l.pets==="sallittu") badges.push('<span class="pill plus">🐾 lemmikit ok</span>');
-      else if (l.pets==="kielletty?") badges.push('<span class="pill warn">🐾 lemmikit epävarma</span>');
+      if (l.topFloor) badges.push('<span class="pill plus">🔝 ylin kerros</span>');
+      if (l.postalCode) badges.push(`<span class="pill ${l.postalCode==="00200"?"plus":""}">📮 ${l.postalCode}</span>`);
+      if (l.yearBuilt) badges.push(`<span class="pill ${l.yearBuilt<=1960?"plus":""}">🏛️ ${l.yearBuilt}</span>`);
       if (l._isNew) badges.push('<span class="pill" style="color:var(--brand)">✨ uusi</span>');
       (l.sources||[{source:l.source,url:l.url}]).forEach(s=>badges.push(`<span class="pill src">${s.source}</span>`));
 
@@ -148,7 +152,8 @@
         data.listings.forEach(l => { l._isNew = l.published ? (now-new Date(l.published))/36e5 < 72 : false; });
         document.getElementById("meta").textContent =
           `${data.count} kohdetta · päivitetty ${fmtAgo(data.updatedAt)}`;
-        document.getElementById("foot").textContent = "Lähteet: Oikotie, Vuokraovi, Qasa · kriteerit 3h+ · 55 m²+ · ≤1800 €";
+        document.getElementById("foot").textContent =
+          "Myytävät asunnot · Lähde: Oikotie" + (data.criteria ? " · " + data.criteria : "");
         render();
       } catch(e){
         document.getElementById("list").innerHTML =

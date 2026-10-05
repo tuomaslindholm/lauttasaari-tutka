@@ -1,45 +1,46 @@
-// Hakukriteerit. Muokkaa näitä vapaasti — koko sovellus lukee tästä.
+// Hakukriteerit (myytävät asunnot). Muokkaa näitä vapaasti — koko sovellus lukee tästä.
 export const config = {
   // --- Pakolliset suodattimet (kohteet joita EI täsmää, karsitaan pois) ---
-  minRooms: 3, // 3h+k tarkoittaa vähintään 3 huonetta
-  minSize: 55, // m²
-  maxRent: 1800, // €/kk
+  minRooms: 3, // vähintään 3 huonetta
+  maxPrice: 475000, // € — VELATON hinta (ei myyntihinta + velkaosuus)
+  minSize: null, // m², null = ei rajausta
 
   // --- Alue ---
-  // Lauttasaari: postinumerot 00200 ja 00210.
+  // Lauttasaari: postinumerot 00200 (Lauttasaari) ja 00210 (Vattuniemi).
   area: {
     oikotieLocation: [1669, 4, "Lauttasaari, Helsinki"], // Oikotien aluekoodi (haettu API:sta)
     postalCodes: ["00200", "00210"],
-    // Vuokraovi ei aina anna postinumeroa listauksessa; täsmätään myös kaupunginosanimeen:
-    districtNames: ["lauttasaari", "drumsö"],
-    // Qasa ei tarjoa kaupunginosasuodatinta -> rajataan Lauttasaari lat/lon-laatikolla:
-    bbox: { minLat: 60.148, maxLat: 60.172, minLon: 24.855, maxLon: 24.905 },
   },
 
-  // --- Plussamerkinnät (eivät karsi, nostavat esiin) ---
-  // Etsitään näitä sanoja otsikosta/kuvauksesta parhaan kyvyn mukaan.
+  // --- Plussat (eivät karsi, nostavat kohteen ylemmäs listassa) ---
+  plus: {
+    idealPrice: 400000, // € — tähän asti täydet hintapisteet, ylärajaa (maxPrice) kohti pisteet laskevat nollaan
+    postalCode: "00200", // tämä postinumero on plussaa (00210 kelpaa mutta ei saa plussaa)
+    maxBuildYear: 1960, // tätä vanhempi (tai tasan tämä) talo on plussaa
+  },
+
+  // Pisteytys (suurempi = ylemmäs). Parveke on "melkein pakollinen": se painaa enemmän kuin
+  // kaikki muut plussat yhteensä (50 > 46), mutta parvekkeeton kohde ei silti putoa pois listalta.
+  weights: {
+    balcony: 50,
+    price: 20, // maksimi, skaalautuu idealPrice → maxPrice
+    topFloor: 10,
+    postalCode: 8,
+    buildYear: 8,
+  },
+
+  // Etsitään näitä sanoja otsikosta/kuvauksesta parhaan kyvyn mukaan, jos portaalin
+  // rakenteinen tieto puuttuu. "parvek" kattaa taivutukset (parveke, parvekkeella, parveketta).
   plusKeywords: {
-    balcony: ["parveke", "parvekkeel", "balkong", "terassi", "lasitettu parveke"],
-    parking: ["autopaikka", "autohalli", "autotalli", "parkki", "pysäköinti", "autopaikkam"],
-  },
-
-  // --- Lemmikit ---
-  // ÄLÄ karsi "lemmikit kielletty" -kohteita. Merkitään vain lippu jos maininta löytyy.
-  petKeywords: {
-    allowed: ["lemmikit ok", "lemmikit sallittu", "lemmikkiystäväll", "kissa ok", "koira ok", "lemmikit tervetu"],
-    forbidden: ["ei lemmikk", "lemmikit kielletty", "ei kotieläim", "lemmikkejä ei"],
+    balcony: ["parvek", "balkong"],
+    topFloor: ["ylin kerros", "ylimmässä kerroksessa", "ylimmän kerroksen", "ylimmästä kerroksesta", "kattohuoneisto"],
   },
 
   // --- Portaalit joita seurataan ---
+  // (Vuokraovi ja Qasa ovat vuokrausportaaleja, joten ne on poistettu myyntihausta.)
   portals: {
     oikotie: true,
-    vuokraovi: true,
-    qasa: true,
   },
-
-  // Qasalla ei ole aluesuodatinta -> haetaan Suomen uusimmat (3h+/55m²+/≤1800€) ja
-  // rajataan Lauttasaareen bbox:illa. Montako uusinta käydään läpi per ajo:
-  qasaMaxResults: 600,
 
   // --- Ajastus watch-tilassa ---
   pollMinutes: 20,
