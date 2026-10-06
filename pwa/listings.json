@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T14:28:12.528Z",
+  "updatedAt": "2026-10-06T19:49:37.067Z",
   "count": 26,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -54,33 +54,6 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24711797"
-        }
-      ]
-    },
-    {
-      "source": "oikotie",
-      "id": "24684988",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24684988",
-      "rooms": 3,
-      "size": 60.5,
-      "price": 390000,
-      "address": "Koillisväylä 9b A, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Erinomainen kulmahuoneisto kivenheiton päässä Lauttiksen kattavista palveluista ja loistavista liikenneyhteyksistä. Huoletonta asumista hyvin hoide",
-      "text": "Erinomainen kulmahuoneisto kivenheiton päässä Lauttiksen kattavista palveluista ja loistavista liikenneyhteyksistä. Huoletonta asumista hyvin hoide 3h+k+las.parveke",
-      "image": null,
-      "published": "2026-09-08T20:17:08Z",
-      "yearBuilt": 1961,
-      "floor": 4,
-      "floorCount": 5,
-      "postalCode": "00200",
-      "balcony": true,
-      "topFloor": false,
-      "key": "koillisväylä9ba|61",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24684988"
         }
       ]
     },
@@ -518,6 +491,34 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24667228"
         }
       ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24721700",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24721700",
+      "rooms": 3,
+      "size": 78,
+      "price": 449000,
+      "address": "Vattuniemenkatu 16b C, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa ja kaunis perheasunto Lauttasaaressa – 3h + työpiste + lasitettu parveke (78 m²)",
+      "text": "Valoisa ja kaunis perheasunto Lauttasaaressa – 3h + työpiste + lasitettu parveke (78 m²) 3h + k + työpiste + kph + erillinen wc + lasitettu parveke",
+      "image": null,
+      "published": "2026-10-06T17:21:27Z",
+      "yearBuilt": 1972,
+      "floor": 1,
+      "floorCount": 5,
+      "postalCode": "00210",
+      "balcony": true,
+      "topFloor": false,
+      "key": "vattuniemenkatu16bc|78",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24721700"
+        }
+      ],
+      "availableFrom": "heti"
     },
     {
       "source": "oikotie",
