@@ -1,4 +1,6 @@
 // Telegram-lähetys ilman ulkoisia riippuvuuksia (Bot API + fetch).
+import { config } from "../config.js";
+
 const TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const CHAT_IDS = (process.env.TELEGRAM_CHAT_IDS || "")
   .split(",")
@@ -34,13 +36,17 @@ function esc(s) {
 export function formatListing(l) {
   const badges = [];
   if (l.balcony) badges.push("🌿 parveke");
-  if (l.parking) badges.push("🅿️ autopaikka");
-  if (l.pets === "sallittu") badges.push("🐾 lemmikit ok");
-  else if (l.pets === "kielletty?") badges.push("🐾 lemmikit epävarma");
+  if (l.topFloor) badges.push("🔝 ylin kerros");
+  if (l.postalCode === config.plus.postalCode) badges.push(`📮 ${esc(l.postalCode)}`);
+  if (l.yearBuilt != null && l.yearBuilt <= config.plus.maxBuildYear) badges.push(`🏛️ vuosi ${l.yearBuilt}`);
 
   const rooms = l.rooms != null ? `${l.rooms}h` : "?h";
   const size = l.size != null ? `${l.size} m²` : "? m²";
-  const rent = l.rent != null ? `${l.rent} €/kk` : "? €/kk";
+  const price = l.price != null ? `${l.price.toLocaleString("fi-FI")} € (velaton)` : "? €";
+  const building = [
+    l.floor != null && l.floorCount != null ? `${l.floor}/${l.floorCount} krs` : null,
+    l.yearBuilt != null ? `rak. ${l.yearBuilt}` : null,
+  ].filter(Boolean).join(" · ");
   const avail = l.availableFrom ? `📅 vapautuu ${esc(l.availableFrom)}` : null;
 
   // Kaikki lähteet linkkeinä
@@ -50,8 +56,9 @@ export function formatListing(l) {
 
   return [
     `🏠 <b>${esc(l.title)}</b>`,
-    `${rooms} · ${size} · ${rent}`,
+    `${rooms} · ${size} · ${price}`,
     `📍 ${esc(l.address)}`,
+    building || null,
     avail,
     badges.length ? badges.join("  ") : null,
     links,
@@ -63,7 +70,7 @@ export function formatListing(l) {
 // Lähettää yhden ilmoituksen kaikille vastaanottajille.
 export async function notifyNew(listing) {
   if (!telegramConfigured()) return false;
-  const text = "🔔 <b>Uusi kohde Lauttasaaressa</b>\n\n" + formatListing(listing);
+  const text = "🔔 <b>Uusi myytävä kohde Lauttasaaressa</b>\n\n" + formatListing(listing);
   for (const id of CHAT_IDS) await send(id, text);
   return true;
 }
