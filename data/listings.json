@@ -1,154 +1,714 @@
 {
-  "updatedAt": "2026-10-06T07:26:13.804Z",
-  "count": 6,
+  "updatedAt": "2026-10-06T08:40:46.229Z",
+  "count": 26,
+  "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
       "source": "oikotie",
-      "id": "24721127",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24721127",
-      "rooms": 4,
-      "size": 81.5,
-      "rent": 1785,
-      "address": "Veneentekijänkaari 3 B 27, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Veneentekijänkaari 3 B 27",
-      "text": "Veneentekijänkaari 3 B 27 4h+k+s+lasitettu parveke",
-      "image": null,
-      "published": "2026-10-01T12:21:45Z",
-      "balcony": true,
-      "parking": true,
-      "pets": "sallittu",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24721127"
-        }
-      ],
-      "availableFrom": "2026-11-01"
-    },
-    {
-      "source": "oikotie",
-      "id": "24665908",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24665908",
+      "id": "24677570",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24677570",
       "rooms": 3,
-      "size": 77.5,
-      "rent": 1690,
-      "address": "Sotkatie 3A1, Helsinki",
+      "size": 60.5,
+      "price": 398000,
+      "address": "Lauttasaarentie 13, Helsinki",
       "district": "Lauttasaari",
-      "title": "Valoisa parvekkeellinen kolmio Lauttasaaressa, Koivusaaren metroaseman vieressä",
-      "text": "Valoisa parvekkeellinen kolmio Lauttasaaressa, Koivusaaren metroaseman vieressä 3h + k + p + kph + wc",
+      "title": "Valoisa koti Lauttasaaren sydämessä\n\nAsunnon sijainti on sinulle lähes täydellinen joka arvostat vaivatonta arkea ja Lauttasaaren ainutlaatuista tu",
+      "text": "Valoisa koti Lauttasaaren sydämessä\n\nAsunnon sijainti on sinulle lähes täydellinen joka arvostat vaivatonta arkea ja Lauttasaaren ainutlaatuista tu 3h, k, kph/wc, lasitettu parveke.",
       "image": null,
-      "published": "2026-08-29T10:41:22Z",
+      "published": "2026-09-03T18:05:27Z",
+      "yearBuilt": 1954,
+      "floor": 2,
+      "floorCount": 4,
+      "postalCode": null,
       "balcony": true,
-      "parking": true,
-      "pets": "kielletty?",
+      "topFloor": false,
+      "key": "lauttasaarentie13|61",
       "sources": [
         {
           "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24665908"
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24677570"
         }
-      ],
-      "availableFrom": "2026-09-30"
+      ]
     },
     {
       "source": "oikotie",
-      "id": "24638804",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804",
+      "id": "24711797",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24711797",
       "rooms": 3,
-      "size": 81.5,
-      "rent": 1588,
-      "address": "Vattuniemenkatu 16a D, Helsinki",
+      "size": 53,
+      "price": 338000,
+      "address": "Hakolahdentie 23 A, Helsinki",
       "district": "Lauttasaari",
-      "title": "Opiskelijat: 5 % pysyvä alennus kuukausivuokrasta! Mahdollisuus vuokrata asunto myös ilman vakuutta. Vakuudeton sopimus edellyttää puhtaita luottot",
-      "text": "Opiskelijat: 5 % pysyvä alennus kuukausivuokrasta! Mahdollisuus vuokrata asunto myös ilman vakuutta. Vakuudeton sopimus edellyttää puhtaita luottot 3h+k+las.parv.",
+      "title": "Unelmiesi kodin avaimet odottavat sinua Hakolahdentien pientaloalueella!\n\nTervetuloa tutustumaan tähän harvoin myynnissä olevaan, sympaattiseen pie",
+      "text": "Unelmiesi kodin avaimet odottavat sinua Hakolahdentien pientaloalueella!\n\nTervetuloa tutustumaan tähän harvoin myynnissä olevaan, sympaattiseen pie",
       "image": null,
-      "published": "2026-08-12T10:28:22Z",
+      "published": "2026-09-27T09:02:12Z",
+      "yearBuilt": 1961,
+      "floor": 1,
+      "floorCount": 2,
+      "postalCode": null,
       "balcony": true,
-      "parking": false,
-      "pets": "sallittu",
+      "topFloor": false,
+      "key": "hakolahdentie23a|53",
       "sources": [
         {
           "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24638804"
-        },
-        {
-          "source": "vuokraovi",
-          "url": "https://www.vuokraovi.com/kohde/gm8737"
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24711797"
         }
-      ],
-      "availableFrom": "2026-10-09"
+      ]
     },
     {
       "source": "oikotie",
-      "id": "24726758",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24726758",
+      "id": "24684988",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24684988",
       "rooms": 3,
-      "size": 72.5,
-      "rent": 1750,
-      "address": "Melkonkatu 21, Helsinki",
+      "size": 60.5,
+      "price": 390000,
+      "address": "Koillisväylä 9b A, Helsinki",
       "district": "Lauttasaari",
-      "title": "Lauttasaari Melkonkatu 21, 3h,k, sauna  eur 1750/kk",
-      "text": "Lauttasaari Melkonkatu 21, 3h,k, sauna  eur 1750/kk 3h + k + s + p",
+      "title": "Erinomainen kulmahuoneisto kivenheiton päässä Lauttiksen kattavista palveluista ja loistavista liikenneyhteyksistä. Huoletonta asumista hyvin hoide",
+      "text": "Erinomainen kulmahuoneisto kivenheiton päässä Lauttiksen kattavista palveluista ja loistavista liikenneyhteyksistä. Huoletonta asumista hyvin hoide 3h+k+las.parveke",
       "image": null,
-      "published": "2026-10-04T13:24:46Z",
+      "published": "2026-09-08T20:17:08Z",
+      "yearBuilt": 1961,
+      "floor": 4,
+      "floorCount": 5,
+      "postalCode": null,
       "balcony": true,
-      "parking": false,
-      "pets": "kielletty?",
+      "topFloor": false,
+      "key": "koillisväylä9ba|61",
       "sources": [
         {
           "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24726758"
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24684988"
         }
-      ],
-      "availableFrom": "2026-11-15"
+      ]
     },
     {
       "source": "oikotie",
-      "id": "24726541",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24726541",
+      "id": "24663660",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24663660",
+      "rooms": 3,
+      "size": 74,
+      "price": 375000,
+      "address": "Vattuniemenkatu 4, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Viihtyisä kolmio loistosijainnilla meren läheisyydessä!\n\nTervetuloa Vattuniemen eteläkärkeen,  jossa arjen palvelut, luonto ja merenranta ovat kaik",
+      "text": "Viihtyisä kolmio loistosijainnilla meren läheisyydessä!\n\nTervetuloa Vattuniemen eteläkärkeen,  jossa arjen palvelut, luonto ja merenranta ovat kaik 3h+k+kph+vh+lasit. parveke",
+      "image": null,
+      "published": "2026-08-28T05:58:00Z",
+      "yearBuilt": 1975,
+      "floor": 1,
+      "floorCount": 6,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "vattuniemenkatu4|74",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24663660"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24625560",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24625560",
+      "rooms": 3,
+      "size": 66,
+      "price": 349000,
+      "address": "Särkiniementie 19 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa, putkiremontoitu kolmio merellisessä Lauttasaaressa!",
+      "text": "Valoisa, putkiremontoitu kolmio merellisessä Lauttasaaressa! 3h+k+kph+p",
+      "image": null,
+      "published": "2026-08-03T19:57:07Z",
+      "yearBuilt": 1974,
+      "floor": 5,
+      "floorCount": 8,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "särkiniementie19a|66",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24625560"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24624829",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24624829",
       "rooms": 3,
       "size": 77,
-      "rent": 1400,
-      "address": "Meripuistotie 5, Helsinki",
+      "price": 399000,
+      "address": "Lauttasaarentie 12 A, Helsinki",
       "district": "Lauttasaari",
-      "title": "LAUTTASAARI 77m2 SOITA JA SOVI ESITTELY p. 0500 203067",
-      "text": "LAUTTASAARI 77m2 SOITA JA SOVI ESITTELY p. 0500 203067 3h + k + vh + kph + p",
+      "title": "Kaikki Lauttasaaren parhaat puolet kotiovellasi! \n\nTässä kodissa on paljon sellaista, mitä moni etsii: toimiva pohjaratkaisu, reilun kokoiset huone",
+      "text": "Kaikki Lauttasaaren parhaat puolet kotiovellasi! \n\nTässä kodissa on paljon sellaista, mitä moni etsii: toimiva pohjaratkaisu, reilun kokoiset huone 3h+k+s",
       "image": null,
-      "published": "2026-10-04T09:05:18Z",
+      "published": "2026-08-03T12:27:51Z",
+      "yearBuilt": 1984,
+      "floor": 2,
+      "floorCount": 3,
+      "postalCode": null,
       "balcony": true,
-      "parking": false,
-      "pets": "kielletty?",
+      "topFloor": false,
+      "key": "lauttasaarentie12a|77",
       "sources": [
         {
           "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24726541"
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24624829"
         }
       ],
       "availableFrom": "heti"
     },
     {
       "source": "oikotie",
-      "id": "17752945",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17752945",
+      "id": "24520513",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24520513",
       "rooms": 3,
-      "size": 65,
-      "rent": 1700,
-      "address": "Haahkatie 10, Helsinki",
+      "size": 57,
+      "price": 398000,
+      "address": "Koillisväylä 15 A, Helsinki",
       "district": "Lauttasaari",
-      "title": "WeHost Haahkatie 10",
-      "text": "WeHost Haahkatie 10 3h + kk + p",
+      "title": "Ihastuttava tehokolmio Kotkavuoren upeissa maisemissa!",
+      "text": "Ihastuttava tehokolmio Kotkavuoren upeissa maisemissa! 3h+kt+kph+khh+las.parv.",
       "image": null,
-      "published": "2023-11-04T11:56:56Z",
+      "published": "2026-05-29T20:02:07Z",
+      "yearBuilt": 1972,
+      "floor": 1,
+      "floorCount": 3,
+      "postalCode": null,
       "balcony": true,
-      "parking": false,
-      "pets": "kielletty?",
+      "topFloor": false,
+      "key": "koillisväylä15a|57",
       "sources": [
         {
           "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17752945"
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24520513"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24492682",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24492682",
+      "rooms": 3,
+      "size": 54,
+      "price": 326000,
+      "address": "Luoteisväylä 19, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa kulmahuoneisto meren äärellä",
+      "text": "Valoisa kulmahuoneisto meren äärellä 3h, k, kph, las.parveke",
+      "image": null,
+      "published": "2026-05-15T11:22:16Z",
+      "yearBuilt": 1963,
+      "floor": 2,
+      "floorCount": 3,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "luoteisväylä19|54",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24492682"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24487158",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24487158",
+      "rooms": 3,
+      "size": 66,
+      "price": 447000,
+      "address": "Meripuistotie 1 C, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Meripuistotie 1, Lauttasaaren Kotkavuori – Läpitalon kolmio, jossa on harmonia ja valoa.",
+      "text": "Meripuistotie 1, Lauttasaaren Kotkavuori – Läpitalon kolmio, jossa on harmonia ja valoa.",
+      "image": null,
+      "published": "2026-05-12T08:31:14Z",
+      "yearBuilt": 1940,
+      "floor": 2,
+      "floorCount": 6,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "meripuistotie1c|66",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24487158"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24287129",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24287129",
+      "rooms": 3,
+      "size": 66,
+      "price": 426000,
+      "address": "Lauttasaarenmäki 2 G, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Etsitkö unelmiesi kotia Lauttasaaresta?\nTämä uudehko kolmio tarjoaa kaiken, mitä voit toivoa! Ensimmäinen asuinkerros, esteettömyys ja hyvä pohjara",
+      "text": "Etsitkö unelmiesi kotia Lauttasaaresta?\nTämä uudehko kolmio tarjoaa kaiken, mitä voit toivoa! Ensimmäinen asuinkerros, esteettömyys ja hyvä pohjara 3h+kt+s",
+      "image": null,
+      "published": "2026-01-15T09:40:20Z",
+      "yearBuilt": 2020,
+      "floor": 1,
+      "floorCount": 8,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "lauttasaarenmäki2g|66",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24287129"
         }
       ],
-      "availableFrom": "2027-06-03"
+      "availableFrom": "heti"
+    },
+    {
+      "source": "oikotie",
+      "id": "24679652",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24679652",
+      "rooms": 3,
+      "size": 68.5,
+      "price": 428000,
+      "address": "Katajaharjuntie 2-4 C, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Kodikas kolmio meren läheisyydessä\n\nKatajanharjuntie 2:ssa löytyy kodikas ja viihtyisä koti hyvällä pohjaratkaisulla. Viihtyvyyttä lisää vuonna 2",
+      "text": "Kodikas kolmio meren läheisyydessä\n\nKatajanharjuntie 2:ssa löytyy kodikas ja viihtyisä koti hyvällä pohjaratkaisulla. Viihtyvyyttä lisää vuonna 2 3h, k",
+      "image": null,
+      "published": "2026-09-05T06:40:13Z",
+      "yearBuilt": 1963,
+      "floor": 1,
+      "floorCount": 5,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "katajaharjuntie24c|69",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24679652"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24384569",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24384569",
+      "rooms": 3,
+      "size": 74,
+      "price": 458000,
+      "address": "Kauppaneuvoksentie 12 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Lauttasaaren paraatipaikalla viihtyisä koti",
+      "text": "Lauttasaaren paraatipaikalla viihtyisä koti 3-4h+k+kph+vh+parv.",
+      "image": null,
+      "published": "2026-03-13T07:23:07Z",
+      "yearBuilt": 1942,
+      "floor": 1,
+      "floorCount": 4,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "kauppaneuvoksentie12a|74",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24384569"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "23032098",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23032098",
+      "rooms": 3,
+      "size": 54,
+      "price": 466000,
+      "address": "Pohjoiskaari 34-38 D 54, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Sirius – Klassista kauneutta ja uutta elämää Lauttasaaressa",
+      "text": "Sirius – Klassista kauneutta ja uutta elämää Lauttasaaressa 3h+kt+p",
+      "image": null,
+      "published": "2025-04-11T12:21:00Z",
+      "yearBuilt": 2027,
+      "floor": 3,
+      "floorCount": 3,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": true,
+      "key": "pohjoiskaari3438d54|54",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23032098"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24655527",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24655527",
+      "rooms": 3,
+      "size": 66.5,
+      "price": 430000,
+      "address": "Särkiniementie 7 D, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Merellistä ja huoletonta asumista Vattuniemen parhaiden puolien äärellä.\n\nTämä ensimmäisen kerroksen 66,5 m²:n kolmio tarjoaa toimivan pohjaratka",
+      "text": "Merellistä ja huoletonta asumista Vattuniemen parhaiden puolien äärellä.\n\nTämä ensimmäisen kerroksen 66,5 m²:n kolmio tarjoaa toimivan pohjaratka 3h+k+s (YJ:2H+K+S)",
+      "image": null,
+      "published": "2026-08-24T07:01:03Z",
+      "yearBuilt": 2009,
+      "floor": 1,
+      "floorCount": 7,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "särkiniementie7d|67",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24655527"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24480358",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24480358",
+      "rooms": 3,
+      "size": 74.4,
+      "price": 468000,
+      "address": "Pajalahdentie 27 D, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Lauttasaaressa, ”onnellisten saarella”, on nyt tarjolla ihanan valoisa kolmannen kerroksen päätyhuoneisto, jonka lukuisista ikkunoista auringonvalo",
+      "text": "Lauttasaaressa, ”onnellisten saarella”, on nyt tarjolla ihanan valoisa kolmannen kerroksen päätyhuoneisto, jonka lukuisista ikkunoista auringonvalo 3h+k+kph+wc+parveke (yhj. 3 huon. palv.h. keitt.)",
+      "image": null,
+      "published": "2026-05-07T12:47:18Z",
+      "yearBuilt": 1940,
+      "floor": 3,
+      "floorCount": 4,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "pajalahdentie27d|74",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24480358"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24667228",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24667228",
+      "rooms": 3,
+      "size": 65.5,
+      "price": 446400,
+      "address": "Melkonkatu 20 as. 04, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa kulmahuoneisto ja lasitettu parveke\n\nTämän toisen kerroksen, 65,5-neliösen kolmion oleskelutilat kiertyvät valoisina lasitetun parvekkeen",
+      "text": "Valoisa kulmahuoneisto ja lasitettu parveke\n\nTämän toisen kerroksen, 65,5-neliösen kolmion oleskelutilat kiertyvät valoisina lasitetun parvekkeen 2-3h+kt+s",
+      "image": null,
+      "published": "2026-08-31T05:46:45Z",
+      "yearBuilt": 2027,
+      "floor": 2,
+      "floorCount": 8,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "melkonkatu20as04|66",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24667228"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24714934",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24714934",
+      "rooms": 3,
+      "size": 67.5,
+      "price": 448000,
+      "address": "Puistokaari 2, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Heti vapaa kolmio hyvästä yhtiöstä",
+      "text": "Heti vapaa kolmio hyvästä yhtiöstä 3h, k, kph, las.parveke",
+      "image": null,
+      "published": "2026-09-28T19:20:09Z",
+      "yearBuilt": 1968,
+      "floor": 2,
+      "floorCount": 3,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "puistokaari2|68",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24714934"
+        }
+      ],
+      "availableFrom": "heti"
+    },
+    {
+      "source": "oikotie",
+      "id": "23024834",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23024834",
+      "rooms": 3,
+      "size": 53.5,
+      "price": 456500,
+      "address": "Pohjoiskaari 34-38 D 51, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Sirius – Klassista kauneutta ja uutta elämää Lauttasaaressa",
+      "text": "Sirius – Klassista kauneutta ja uutta elämää Lauttasaaressa 3h+kt",
+      "image": null,
+      "published": "2025-04-10T15:17:06Z",
+      "yearBuilt": 2027,
+      "floor": 2,
+      "floorCount": 3,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "pohjoiskaari3438d51|54",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23024834"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24552722",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24552722",
+      "rooms": 3,
+      "size": 64.5,
+      "price": 464500,
+      "address": "Vattuniemenkatu 10 B, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa läpitalon kolmio merellisessä Vattuniemessä",
+      "text": "Valoisa läpitalon kolmio merellisessä Vattuniemessä 3h +kt + kph + s + las.parv",
+      "image": null,
+      "published": "2026-06-18T07:52:08Z",
+      "yearBuilt": 2001,
+      "floor": 7,
+      "floorCount": 8,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "vattuniemenkatu10b|65",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24552722"
+        }
+      ],
+      "availableFrom": "heti"
+    },
+    {
+      "source": "oikotie",
+      "id": "24707728",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728",
+      "rooms": 3,
+      "size": 59,
+      "price": 471000,
+      "address": "Lauttasaarenmäki 4 B, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa kulmahuoneisto Myllykallion vieressä",
+      "text": "Valoisa kulmahuoneisto Myllykallion vieressä 3h+kt+kph+lasitettu parveke",
+      "image": null,
+      "published": "2026-09-24T09:52:10Z",
+      "yearBuilt": 2019,
+      "floor": 2,
+      "floorCount": 6,
+      "postalCode": null,
+      "balcony": true,
+      "topFloor": false,
+      "key": "lauttasaarenmäki4b|59",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24701715",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24701715",
+      "rooms": 3,
+      "size": 56,
+      "price": 389000,
+      "address": "Lounaisväylä 1 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa kolmio vehreässä Myllykalliossa!",
+      "text": "Valoisa kolmio vehreässä Myllykalliossa! 3h, avokeittiö, kph",
+      "image": null,
+      "published": "2026-09-21T07:12:07Z",
+      "yearBuilt": 1959,
+      "floor": 2,
+      "floorCount": 2,
+      "postalCode": null,
+      "balcony": false,
+      "topFloor": true,
+      "key": "lounaisväylä1a|56",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24701715"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24608057",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24608057",
+      "rooms": 3,
+      "size": 51,
+      "price": 393000,
+      "address": "Taivaanvuohentie 9, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa ja tyylikäs kolmio Lauttasaaressa",
+      "text": "Valoisa ja tyylikäs kolmio Lauttasaaressa 3h+avok+kph",
+      "image": null,
+      "published": "2026-07-24T11:16:08Z",
+      "yearBuilt": 1954,
+      "floor": 2,
+      "floorCount": 4,
+      "postalCode": null,
+      "balcony": false,
+      "topFloor": false,
+      "key": "taivaanvuohentie9|51",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24608057"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24648313",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24648313",
+      "rooms": 3,
+      "size": 67,
+      "price": 409000,
+      "address": "Lauttasaarentie 47 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Tyylikäs läpitalon asunto huippusijainnilla",
+      "text": "Tyylikäs läpitalon asunto huippusijainnilla 3h, avok, kph (Yj:2h+k)",
+      "image": null,
+      "published": "2026-08-18T18:28:07Z",
+      "yearBuilt": 1938,
+      "floor": 4,
+      "floorCount": 5,
+      "postalCode": null,
+      "balcony": false,
+      "topFloor": false,
+      "key": "lauttasaarentie47a|67",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24648313"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24698562",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24698562",
+      "rooms": 3,
+      "size": 56,
+      "price": 425000,
+      "address": "Pohjoiskaari 4 B, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Hyväkuntoinen kolmio merinäkymin",
+      "text": "Hyväkuntoinen kolmio merinäkymin 3h, avok, kph",
+      "image": null,
+      "published": "2026-09-18T07:22:12Z",
+      "yearBuilt": 1937,
+      "floor": 4,
+      "floorCount": 5,
+      "postalCode": null,
+      "balcony": false,
+      "topFloor": false,
+      "key": "pohjoiskaari4b|56",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24698562"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24633516",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24633516",
+      "rooms": 3,
+      "size": 60,
+      "price": 395000,
+      "address": "Lauttasaarentie 20-22 F, Helsinki",
+      "district": "Lauttasaari",
+      "title": "VALOISA JA MUUTTOVALMIS KOTI LAUTTASAAREN SYDÄMESSÄ – OMA TONTTI!",
+      "text": "VALOISA JA MUUTTOVALMIS KOTI LAUTTASAAREN SYDÄMESSÄ – OMA TONTTI! 3h+kk+kph",
+      "image": null,
+      "published": "2026-08-09T05:02:10Z",
+      "yearBuilt": 1970,
+      "floor": 1,
+      "floorCount": 7,
+      "postalCode": null,
+      "balcony": false,
+      "topFloor": false,
+      "key": "lauttasaarentie2022f|60",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24633516"
+        }
+      ],
+      "availableFrom": "heti"
+    },
+    {
+      "source": "oikotie",
+      "id": "24443293",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293",
+      "rooms": 3,
+      "size": 60.3,
+      "price": 450000,
+      "address": "Pajalahdentie 9 A 13, Helsinki",
+      "district": "Lauttasaari",
+      "title": "    Harvinaisen tilava koti Pajalahdentiellä. Virallinen kaksio, mutta käytännössä 3h + designparvi",
+      "text": "    Harvinaisen tilava koti Pajalahdentiellä. Virallinen kaksio, mutta käytännössä 3h + designparvi 2h + k",
+      "image": null,
+      "published": "2026-04-17T06:43:15Z",
+      "yearBuilt": 1940,
+      "floor": 4,
+      "floorCount": 6,
+      "postalCode": null,
+      "balcony": false,
+      "topFloor": false,
+      "key": "pajalahdentie9a13|60",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293"
+        }
+      ]
     }
   ]
 }
