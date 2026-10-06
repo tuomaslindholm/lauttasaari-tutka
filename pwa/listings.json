@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-06T00:43:33.262Z",
-  "count": 7,
+  "updatedAt": "2026-10-06T07:26:13.804Z",
+  "count": 6,
   "listings": [
     {
       "source": "oikotie",
@@ -77,30 +77,6 @@
         }
       ],
       "availableFrom": "2026-10-09"
-    },
-    {
-      "source": "oikotie",
-      "id": "24727914",
-      "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24727914",
-      "rooms": 3,
-      "size": 65.5,
-      "rent": 1445,
-      "address": "Gyldenintie 5–7, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Kolmio peruskorjatusta talosta erinomaiselta sijainnilta!\nNyt vapaana valoisa kolmio Lauttasaaressa. Asunnon parhaita pu",
-      "text": "Kolmio peruskorjatusta talosta erinomaiselta sijainnilta!\nNyt vapaana valoisa kolmio Lauttasaaressa. Asunnon parhaita pu 3H+KT",
-      "image": null,
-      "published": "2026-10-05T09:01:23Z",
-      "balcony": true,
-      "parking": false,
-      "pets": "epävarma",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/24727914"
-        }
-      ],
-      "availableFrom": "heti"
     },
     {
       "source": "oikotie",
