@@ -19,14 +19,16 @@ export async function getAuthHeaders() {
   return { "OTA-token": token, "OTA-loaded": loaded, "OTA-cuid": cuid };
 }
 
-// Rakennusvuosi, kerros ja postinumero löytyvät kortista ja kohdetiedoista (adData) osin eri
-// kenttänimillä, joten kokeillaan useita. Puuttuva tieto palautuu null:na eikä karsi kohdetta.
+// Rakennusvuosi, kerros ja postinumero löytyvät kortista (buildingData) ja kohdetiedoista (adData)
+// osin eri kenttänimillä, joten kokeillaan useita. Kortissa ei ole postinumeroa, kohdetiedoissa on.
+// Puuttuva tieto palautuu null:na eikä karsi kohdetta.
 // Tarkoituksella EI skannata koko oliota: ilmoittajan/välittäjän toimiston postinumero
 // ei saa sekoittua asunnon omaan.
 function intOrNull(v) {
   const n = parseInt(v, 10);
   return Number.isFinite(n) ? n : null;
 }
+
 
 function buildingInfo(o) {
   const year = intOrNull(
@@ -47,13 +49,14 @@ function buildingInfo(o) {
   );
 
   const zip = pick(o, [
+    "zipCodeInfo", // kohdetiedot: adData.zipCodeInfo (varmistettu oikealla datalla)
+    "address.zipCode.name", // kohdetiedot: kohteen oma address-olio
     "buildingData.zipCode", "buildingData.postalCode", "buildingData.zip",
     "zipCode", "postalCode", "zip", "postcode",
-    "location.zipCode", "location.postalCode",
   ]);
   const postalCode =
     String(zip ?? "").match(/\b\d{5}\b/)?.[0] ||
-    String(pick(o, ["buildingData.address", "address"]) ?? "").match(/\b\d{5}\b/)?.[0] ||
+    String(pick(o, ["address.formattedAddress", "buildingData.address"]) ?? "").match(/\b\d{5}\b/)?.[0] ||
     null;
 
   return { yearBuilt: year >= 1800 && year <= 2100 ? year : null, floor, floorCount, postalCode };
@@ -73,11 +76,11 @@ export async function fetchOikotieDetail(id, headers) {
     }
     return {
       balcony: toBool(ad.balcony), // null = portaali ei kerro -> jää tekstihaun varaan
-      // Vain jos portaali nimeää hinnan velattomaksi; muuten jää voimaan kortin hinta.
-      price: parsePrice(pick(ad, ["debtFreePrice", "priceUnencumbered", "unencumberedPrice"])),
+      // priceData.price = velaton hinta, priceSell = myyntihinta ilman velkaosuutta (varmistettu oikealla datalla).
+      price: parsePrice(j.priceData?.price),
       description: [ad.description, ad.freeText].filter((s) => typeof s === "string").join(" "),
       availableFrom,
-      ...buildingInfo(ad),
+      ...buildingInfo({ ...ad, address: j.address }),
     };
   } catch {
     return null;
@@ -109,8 +112,8 @@ export async function fetchOikotie() {
         url: c.url,
         rooms: typeof c.rooms === "number" ? c.rooms : null,
         size: typeof c.size === "number" ? c.size : parseFloat(c.size) || null,
-        // Velaton hinta (korttien price-kenttä; tarkentuu rikastuksessa).
-        price: parsePrice(pick(c, ["debtFreePrice", "priceUnencumbered", "price"])),
+        // Kortin price = velaton hinta (sama arvo kuin kohdetietojen priceData.price).
+        price: parsePrice(c.price),
         address: [c.buildingData?.address, c.district, "Helsinki"].filter(Boolean).join(", ") || label,
         district: c.district || "Lauttasaari",
         title: c.description || c.roomConfiguration || "Myytävä asunto",

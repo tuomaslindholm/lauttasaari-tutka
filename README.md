@@ -76,19 +76,27 @@ Ensimmäisellä ajolla tutka **ei spämmää** koko listaa — se lähettää va
 ja hälyttää jatkossa vain **uusista** kohteista. Vanha vuokra-asuntojen tila (`data/seen.json`)
 hylätään automaattisesti, joten siirtymä myytäviin alkaa puhtaalta pöydältä.
 
-### Tarkista ensimmäisen oikean ajon jälkeen
+### Oikotien kentät (varmistettu oikealla datalla 6.10.2026)
 
-Oikotien rajapinta ei ole julkinen eikä dokumentoitu. Rakennusvuoden, kerroksen, postinumeron
-ja parvekkeen kenttänimet on kirjoitettu useina vaihtoehtoina ([`src/portals/oikotie.js`](src/portals/oikotie.js)),
-ja ajon loki kertoo kuinka monelta kohteelta kukin tieto löytyi:
+Oikotien rajapinta ei ole julkinen eikä dokumentoitu, joten kenttänimet voivat muuttua.
+Tutka lukee ne näin ([`src/portals/oikotie.js`](src/portals/oikotie.js)):
+
+| Tieto | Lähde |
+| --- | --- |
+| Velaton hinta | kortin `price` (= kohdetietojen `priceData.price`; `priceSell` on myyntihinta ilman velkaosuutta) |
+| Rakennusvuosi, kerros | kortin `buildingData.year`, `floor`, `floorCount` |
+| Postinumero | kohdetietojen `adData.zipCodeInfo` (kortissa ei ole) |
+| Parveke | kohdetietojen `adData.balcony` + maininta kuvauksessa |
+
+Ajon loki kertoo kuinka monelta kohteelta kukin tieto löytyi:
 
 ```
-✚ rikastettu 24/24 kohdetta; tieto löytyi portaalilta: parveke 22, rakennusvuosi 24, kerros 24, postinumero 24
+✚ rikastettu 26/26 kohdetta; tieto löytyi portaalilta: parveke 24, rakennusvuosi 26, kerros 26, postinumero 26
 ```
 
-Jos jokin luku on 0, loki varoittaa (`⚠️ rakennusvuosi: ei löytynyt…`). Silloin kenttänimi
-täytyy lisätä `buildingInfo()`-funktioon; kohteita ei silti karsita tiedon puutteen vuoksi,
-vain kyseinen plussa jää antamatta.
+Jos jokin luku putoaa nollaan, loki varoittaa (`⚠️ postinumero: ei löytynyt…`): silloin Oikotie
+on todennäköisesti muuttanut kenttää, ja uusi nimi lisätään `buildingInfo()`-funktioon.
+Kohteita ei silti karsita tiedon puutteen vuoksi, vain kyseinen plussa jää antamatta.
 
 ## 3. Ilmainen jatkuva ajo (GitHub Actions + Pages)
 
@@ -148,7 +156,6 @@ Puuttuvat kentät saa jättää `null`:ksi — niitä ei karsita.
 - **Etuovi** toiseksi myyntilähteeksi (suurin myyntiportaali; osa kohteista on vain siellä).
   Dedupe yhdistää sen Oikotien kanssa osoitteen + neliöiden perusteella.
 - **Hintahistoria / hinnanlasku-hälytys** (nyt hälytetään vain uudesta kohteesta).
-- **Postinumeron varmistus**: jos Oikotie ei anna postinumeroa, 00200-plussa jää antamatta.
 
 ## Huomioita
 
