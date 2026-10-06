@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-06T08:40:46.229Z",
+  "updatedAt": "2026-10-06T08:49:11.756Z",
   "count": 26,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -19,7 +19,7 @@
       "yearBuilt": 1954,
       "floor": 2,
       "floorCount": 4,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "lauttasaarentie13|61",
@@ -46,7 +46,7 @@
       "yearBuilt": 1961,
       "floor": 1,
       "floorCount": 2,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "hakolahdentie23a|53",
@@ -73,7 +73,7 @@
       "yearBuilt": 1961,
       "floor": 4,
       "floorCount": 5,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "koillisväylä9ba|61",
@@ -81,60 +81,6 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24684988"
-        }
-      ]
-    },
-    {
-      "source": "oikotie",
-      "id": "24663660",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24663660",
-      "rooms": 3,
-      "size": 74,
-      "price": 375000,
-      "address": "Vattuniemenkatu 4, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Viihtyisä kolmio loistosijainnilla meren läheisyydessä!\n\nTervetuloa Vattuniemen eteläkärkeen,  jossa arjen palvelut, luonto ja merenranta ovat kaik",
-      "text": "Viihtyisä kolmio loistosijainnilla meren läheisyydessä!\n\nTervetuloa Vattuniemen eteläkärkeen,  jossa arjen palvelut, luonto ja merenranta ovat kaik 3h+k+kph+vh+lasit. parveke",
-      "image": null,
-      "published": "2026-08-28T05:58:00Z",
-      "yearBuilt": 1975,
-      "floor": 1,
-      "floorCount": 6,
-      "postalCode": null,
-      "balcony": true,
-      "topFloor": false,
-      "key": "vattuniemenkatu4|74",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24663660"
-        }
-      ]
-    },
-    {
-      "source": "oikotie",
-      "id": "24625560",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24625560",
-      "rooms": 3,
-      "size": 66,
-      "price": 349000,
-      "address": "Särkiniementie 19 A, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Valoisa, putkiremontoitu kolmio merellisessä Lauttasaaressa!",
-      "text": "Valoisa, putkiremontoitu kolmio merellisessä Lauttasaaressa! 3h+k+kph+p",
-      "image": null,
-      "published": "2026-08-03T19:57:07Z",
-      "yearBuilt": 1974,
-      "floor": 5,
-      "floorCount": 8,
-      "postalCode": null,
-      "balcony": true,
-      "topFloor": false,
-      "key": "särkiniementie19a|66",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24625560"
         }
       ]
     },
@@ -154,7 +100,7 @@
       "yearBuilt": 1984,
       "floor": 2,
       "floorCount": 3,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "lauttasaarentie12a|77",
@@ -182,7 +128,7 @@
       "yearBuilt": 1972,
       "floor": 1,
       "floorCount": 3,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "koillisväylä15a|57",
@@ -209,7 +155,7 @@
       "yearBuilt": 1963,
       "floor": 2,
       "floorCount": 3,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "luoteisväylä19|54",
@@ -236,7 +182,7 @@
       "yearBuilt": 1940,
       "floor": 2,
       "floorCount": 6,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "meripuistotie1c|66",
@@ -263,7 +209,7 @@
       "yearBuilt": 2020,
       "floor": 1,
       "floorCount": 8,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "lauttasaarenmäki2g|66",
@@ -291,7 +237,7 @@
       "yearBuilt": 1963,
       "floor": 1,
       "floorCount": 5,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "katajaharjuntie24c|69",
@@ -318,7 +264,7 @@
       "yearBuilt": 1942,
       "floor": 1,
       "floorCount": 4,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "kauppaneuvoksentie12a|74",
@@ -345,7 +291,7 @@
       "yearBuilt": 2027,
       "floor": 3,
       "floorCount": 3,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": true,
       "key": "pohjoiskaari3438d54|54",
@@ -358,28 +304,55 @@
     },
     {
       "source": "oikotie",
-      "id": "24655527",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24655527",
+      "id": "24663660",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24663660",
       "rooms": 3,
-      "size": 66.5,
-      "price": 430000,
-      "address": "Särkiniementie 7 D, Helsinki",
+      "size": 74,
+      "price": 375000,
+      "address": "Vattuniemenkatu 4, Helsinki",
       "district": "Lauttasaari",
-      "title": "Merellistä ja huoletonta asumista Vattuniemen parhaiden puolien äärellä.\n\nTämä ensimmäisen kerroksen 66,5 m²:n kolmio tarjoaa toimivan pohjaratka",
-      "text": "Merellistä ja huoletonta asumista Vattuniemen parhaiden puolien äärellä.\n\nTämä ensimmäisen kerroksen 66,5 m²:n kolmio tarjoaa toimivan pohjaratka 3h+k+s (YJ:2H+K+S)",
+      "title": "Viihtyisä kolmio loistosijainnilla meren läheisyydessä!\n\nTervetuloa Vattuniemen eteläkärkeen,  jossa arjen palvelut, luonto ja merenranta ovat kaik",
+      "text": "Viihtyisä kolmio loistosijainnilla meren läheisyydessä!\n\nTervetuloa Vattuniemen eteläkärkeen,  jossa arjen palvelut, luonto ja merenranta ovat kaik 3h+k+kph+vh+lasit. parveke",
       "image": null,
-      "published": "2026-08-24T07:01:03Z",
-      "yearBuilt": 2009,
+      "published": "2026-08-28T05:58:00Z",
+      "yearBuilt": 1975,
       "floor": 1,
-      "floorCount": 7,
-      "postalCode": null,
+      "floorCount": 6,
+      "postalCode": "00210",
       "balcony": true,
       "topFloor": false,
-      "key": "särkiniementie7d|67",
+      "key": "vattuniemenkatu4|74",
       "sources": [
         {
           "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24655527"
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24663660"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24625560",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24625560",
+      "rooms": 3,
+      "size": 66,
+      "price": 349000,
+      "address": "Särkiniementie 19 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa, putkiremontoitu kolmio merellisessä Lauttasaaressa!",
+      "text": "Valoisa, putkiremontoitu kolmio merellisessä Lauttasaaressa! 3h+k+kph+p",
+      "image": null,
+      "published": "2026-08-03T19:57:07Z",
+      "yearBuilt": 1974,
+      "floor": 5,
+      "floorCount": 8,
+      "postalCode": "00210",
+      "balcony": true,
+      "topFloor": false,
+      "key": "särkiniementie19a|66",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24625560"
         }
       ]
     },
@@ -399,7 +372,7 @@
       "yearBuilt": 1940,
       "floor": 3,
       "floorCount": 4,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "pajalahdentie27d|74",
@@ -407,33 +380,6 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24480358"
-        }
-      ]
-    },
-    {
-      "source": "oikotie",
-      "id": "24667228",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24667228",
-      "rooms": 3,
-      "size": 65.5,
-      "price": 446400,
-      "address": "Melkonkatu 20 as. 04, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Valoisa kulmahuoneisto ja lasitettu parveke\n\nTämän toisen kerroksen, 65,5-neliösen kolmion oleskelutilat kiertyvät valoisina lasitetun parvekkeen",
-      "text": "Valoisa kulmahuoneisto ja lasitettu parveke\n\nTämän toisen kerroksen, 65,5-neliösen kolmion oleskelutilat kiertyvät valoisina lasitetun parvekkeen 2-3h+kt+s",
-      "image": null,
-      "published": "2026-08-31T05:46:45Z",
-      "yearBuilt": 2027,
-      "floor": 2,
-      "floorCount": 8,
-      "postalCode": null,
-      "balcony": true,
-      "topFloor": false,
-      "key": "melkonkatu20as04|66",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24667228"
         }
       ]
     },
@@ -453,7 +399,7 @@
       "yearBuilt": 1968,
       "floor": 2,
       "floorCount": 3,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "puistokaari2|68",
@@ -481,7 +427,7 @@
       "yearBuilt": 2027,
       "floor": 2,
       "floorCount": 3,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
       "key": "pohjoiskaari3438d51|54",
@@ -489,6 +435,87 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23024834"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24655527",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24655527",
+      "rooms": 3,
+      "size": 66.5,
+      "price": 430000,
+      "address": "Särkiniementie 7 D, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Merellistä ja huoletonta asumista Vattuniemen parhaiden puolien äärellä.\n\nTämä ensimmäisen kerroksen 66,5 m²:n kolmio tarjoaa toimivan pohjaratka",
+      "text": "Merellistä ja huoletonta asumista Vattuniemen parhaiden puolien äärellä.\n\nTämä ensimmäisen kerroksen 66,5 m²:n kolmio tarjoaa toimivan pohjaratka 3h+k+s (YJ:2H+K+S)",
+      "image": null,
+      "published": "2026-08-24T07:01:03Z",
+      "yearBuilt": 2009,
+      "floor": 1,
+      "floorCount": 7,
+      "postalCode": "00210",
+      "balcony": true,
+      "topFloor": false,
+      "key": "särkiniementie7d|67",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24655527"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24707728",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728",
+      "rooms": 3,
+      "size": 59,
+      "price": 471000,
+      "address": "Lauttasaarenmäki 4 B, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa kulmahuoneisto Myllykallion vieressä",
+      "text": "Valoisa kulmahuoneisto Myllykallion vieressä 3h+kt+kph+lasitettu parveke",
+      "image": null,
+      "published": "2026-09-24T09:52:10Z",
+      "yearBuilt": 2019,
+      "floor": 2,
+      "floorCount": 6,
+      "postalCode": "00200",
+      "balcony": true,
+      "topFloor": false,
+      "key": "lauttasaarenmäki4b|59",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
+      "id": "24667228",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24667228",
+      "rooms": 3,
+      "size": 65.5,
+      "price": 446400,
+      "address": "Melkonkatu 20 as. 04, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa kulmahuoneisto ja lasitettu parveke\n\nTämän toisen kerroksen, 65,5-neliösen kolmion oleskelutilat kiertyvät valoisina lasitetun parvekkeen",
+      "text": "Valoisa kulmahuoneisto ja lasitettu parveke\n\nTämän toisen kerroksen, 65,5-neliösen kolmion oleskelutilat kiertyvät valoisina lasitetun parvekkeen 2-3h+kt+s",
+      "image": null,
+      "published": "2026-08-31T05:46:45Z",
+      "yearBuilt": 2027,
+      "floor": 2,
+      "floorCount": 8,
+      "postalCode": "00210",
+      "balcony": true,
+      "topFloor": false,
+      "key": "melkonkatu20as04|66",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24667228"
         }
       ]
     },
@@ -508,7 +535,7 @@
       "yearBuilt": 2001,
       "floor": 7,
       "floorCount": 8,
-      "postalCode": null,
+      "postalCode": "00210",
       "balcony": true,
       "topFloor": false,
       "key": "vattuniemenkatu10b|65",
@@ -519,33 +546,6 @@
         }
       ],
       "availableFrom": "heti"
-    },
-    {
-      "source": "oikotie",
-      "id": "24707728",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728",
-      "rooms": 3,
-      "size": 59,
-      "price": 471000,
-      "address": "Lauttasaarenmäki 4 B, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Valoisa kulmahuoneisto Myllykallion vieressä",
-      "text": "Valoisa kulmahuoneisto Myllykallion vieressä 3h+kt+kph+lasitettu parveke",
-      "image": null,
-      "published": "2026-09-24T09:52:10Z",
-      "yearBuilt": 2019,
-      "floor": 2,
-      "floorCount": 6,
-      "postalCode": null,
-      "balcony": true,
-      "topFloor": false,
-      "key": "lauttasaarenmäki4b|59",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728"
-        }
-      ]
     },
     {
       "source": "oikotie",
@@ -563,7 +563,7 @@
       "yearBuilt": 1959,
       "floor": 2,
       "floorCount": 2,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": false,
       "topFloor": true,
       "key": "lounaisväylä1a|56",
@@ -590,7 +590,7 @@
       "yearBuilt": 1954,
       "floor": 2,
       "floorCount": 4,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": false,
       "topFloor": false,
       "key": "taivaanvuohentie9|51",
@@ -617,7 +617,7 @@
       "yearBuilt": 1938,
       "floor": 4,
       "floorCount": 5,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": false,
       "topFloor": false,
       "key": "lauttasaarentie47a|67",
@@ -644,7 +644,7 @@
       "yearBuilt": 1937,
       "floor": 4,
       "floorCount": 5,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": false,
       "topFloor": false,
       "key": "pohjoiskaari4b|56",
@@ -671,7 +671,7 @@
       "yearBuilt": 1970,
       "floor": 1,
       "floorCount": 7,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": false,
       "topFloor": false,
       "key": "lauttasaarentie2022f|60",
@@ -699,7 +699,7 @@
       "yearBuilt": 1940,
       "floor": 4,
       "floorCount": 6,
-      "postalCode": null,
+      "postalCode": "00200",
       "balcony": false,
       "topFloor": false,
       "key": "pajalahdentie9a13|60",
