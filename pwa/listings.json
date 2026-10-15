@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-15T12:07:29.803Z",
-  "count": 26,
+  "updatedAt": "2026-10-15T17:10:46.826Z",
+  "count": 25,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
@@ -547,33 +547,6 @@
         }
       ],
       "availableFrom": "heti"
-    },
-    {
-      "source": "oikotie",
-      "id": "24701715",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24701715",
-      "rooms": 3,
-      "size": 56,
-      "price": 389000,
-      "address": "Lounaisväylä 1 A, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Valoisa kolmio vehreässä Myllykalliossa!",
-      "text": "Valoisa kolmio vehreässä Myllykalliossa! 3h, avokeittiö, kph",
-      "image": null,
-      "published": "2026-09-21T07:12:07Z",
-      "yearBuilt": 1959,
-      "floor": 2,
-      "floorCount": 2,
-      "postalCode": "00200",
-      "balcony": false,
-      "topFloor": true,
-      "key": "lounaisväylä1a|56",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24701715"
-        }
-      ]
     },
     {
       "source": "oikotie",
