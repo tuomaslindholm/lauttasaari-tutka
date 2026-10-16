@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-16T06:22:27.950Z",
-  "count": 25,
+  "updatedAt": "2026-10-16T11:54:32.028Z",
+  "count": 24,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
@@ -358,34 +358,6 @@
     },
     {
       "source": "oikotie",
-      "id": "24714934",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24714934",
-      "rooms": 3,
-      "size": 67.5,
-      "price": 448000,
-      "address": "Puistokaari 2, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Heti vapaa kolmio hyvästä yhtiöstä",
-      "text": "Heti vapaa kolmio hyvästä yhtiöstä 3h, k, kph, las.parveke",
-      "image": null,
-      "published": "2026-09-28T19:20:09Z",
-      "yearBuilt": 1968,
-      "floor": 2,
-      "floorCount": 3,
-      "postalCode": "00200",
-      "balcony": true,
-      "topFloor": false,
-      "key": "puistokaari2|68",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24714934"
-        }
-      ],
-      "availableFrom": "heti"
-    },
-    {
-      "source": "oikotie",
       "id": "23024834",
       "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23024834",
       "rooms": 3,
@@ -635,7 +607,7 @@
       "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24633516",
       "rooms": 3,
       "size": 60,
-      "price": 395000,
+      "price": 369000,
       "address": "Lauttasaarentie 20-22 F, Helsinki",
       "district": "Lauttasaari",
       "title": "VALOISA JA MUUTTOVALMIS KOTI LAUTTASAAREN SYDÄMESSÄ – OMA TONTTI!",
