@@ -33,7 +33,8 @@ function yearFromText(text) {
 // kun tarkat kerros-/rakennusvuositiedot ovat tulleet.
 export function deriveFlags(l) {
   return {
-    balcony: hasBalcony(l.text),
+    // Portaalin rakenteinen "parveke: kyllä" (esim. Etuovin hakusuodatin) ei saa hukkua tekstihaun alle.
+    balcony: l.balcony === true || hasBalcony(l.text),
     topFloor: isTopFloor(l),
     yearBuilt: l.yearBuilt ?? yearFromText(l.text),
   };
