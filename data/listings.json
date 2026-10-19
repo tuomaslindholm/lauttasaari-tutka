@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-19T07:37:11.047Z",
-  "count": 24,
+  "updatedAt": "2026-10-19T14:59:28.132Z",
+  "count": 23,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
@@ -396,37 +396,6 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23024834"
-        }
-      ]
-    },
-    {
-      "source": "oikotie",
-      "id": "24655527",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24655527",
-      "rooms": 3,
-      "size": 66.5,
-      "price": 430000,
-      "address": "Särkiniementie 7 D, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Merellistä ja huoletonta asumista Vattuniemen parhaiden puolien äärellä.\n\nTämä ensimmäisen kerroksen 66,5 m²:n kolmio tarjoaa toimivan pohjaratka",
-      "text": "Merellistä ja huoletonta asumista Vattuniemen parhaiden puolien äärellä.\n\nTämä ensimmäisen kerroksen 66,5 m²:n kolmio tarjoaa toimivan pohjaratka 3h+k+s (YJ:2H+K+S)",
-      "image": null,
-      "published": "2026-08-24T07:01:03Z",
-      "yearBuilt": 2009,
-      "floor": 1,
-      "floorCount": 7,
-      "postalCode": "00210",
-      "balcony": true,
-      "topFloor": false,
-      "key": "särkiniementie7d|67",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24655527"
-        },
-        {
-          "source": "etuovi",
-          "url": "https://www.etuovi.com/kohde/20377567"
         }
       ]
     },
