@@ -6,21 +6,31 @@ kerros, postinumero), **pisteyttää** kohteet plussien mukaan, lähettää **Te
 heti uudesta kohteesta ja tarjoaa **PWA-selailunäkymän** puhelimeen.
 
 > Haku on muutettu vuokra-asunnoista myytäviin. Vuokrausportaalit (Vuokraovi, Qasa) on poistettu.
-> Toistaiseksi lähteenä on vain Oikotie; Etuovi on listattu Vaihe 3 -ideoihin.
+> Lähteinä ovat Oikotie ja Etuovi. Oikotie on laajempi: 19.10.2026 kaikki 9 Etuovin kriteereihin
+> täsmäävää kohdetta löytyivät jo Oikotiesta samalla hinnalla, joten Etuovi tuo lähinnä varmuutta
+> ja mahdolliset vain-Etuovessa-kohteet.
 
 ## Näin se toimii
 
 Jokaisella hakukierroksella ([`src/index.js`](src/index.js)):
 
-1. **Hae** myytävät kohteet portaaleista (Oikotie: kortti-API, aluekoodilla rajattu Lauttasaareen).
-   Yhden portaalin hajoaminen ei kaada muita.
+1. **Hae** myytävät kohteet portaaleista. Yhden portaalin hajoaminen ei kaada muita.
+   - *Oikotie*: kortti-API, aluekoodilla rajattu Lauttasaareen.
+   - *Etuovi*: selainrajapinta (`/api/v3/announcements/search/listpage`, ei kirjautumista). Haetaan
+     vapaatekstillä "lauttasaari" ja "vattuniemi" (jälkimmäinen löytää kohteita, joita edellinen ei),
+     ja tulokset rajataan kaupunginosan nimellä tai koordinaattilaatikolla, koska haku palauttaa
+     myös muita paikkakuntia. Parveke saadaan erillisellä `apartmentHasBalcony`-haulla.
 2. **Suodata** kriteereillä (3h+, velaton hinta ≤475 000 €). Puuttuvaa tietoa ei karsita.
-3. **Deduplikoi** portaalien välillä (katuosoite + neliöt) → sama asunto yhtenä, kaikki linkit.
-   Saman portaalin kaksi ilmoitusta pidetään erillisinä (saman talon samankokoiset huoneistot).
+3. **Deduplikoi** portaalien välillä → sama asunto yhtenä, kaikki linkit. Sama asunto tunnistetaan
+   osoitteesta + neliöistä tai (kun osoitteet ovat eri tarkkuudella) samasta talosta, neliöistä ±1
+   ja täsmälleen samasta velattomasta hinnasta. Saman portaalin kaksi ilmoitusta pidetään erillisinä
+   (saman talon samankokoiset huoneistot).
 4. **Rikasta** Oikotien kohdetiedoista: parveke, rakennusvuosi, kerros, postinumero,
    vapautumispäivä. Tarkka velaton hinta karsitaan vielä uudelleen rikastuksen jälkeen.
 5. **Pisteytä ja järjestä** plussien mukaan (ks. alla).
-6. **Hälytä** Telegramiin vain *uusista* kohteista (tila `data/seen.json`).
+6. **Hälytä** Telegramiin vain *uusista* kohteista (tila `data/seen.json`). Uuden portaalin
+   ensimmäisellä ajolla sen valmiit kohteet merkitään hiljaa nähdyiksi, ettei koko lista lähde
+   hälytyksinä. Hälytyksiä lähetetään vain `main`-haarasta, jotta koe-ajot eivät hälytä tuplia.
 7. **Tallenna** feed (`data/listings.json` + `pwa/listings.json`) PWA:ta varten.
 
 ## Kriteerit (muokattavissa)
@@ -94,6 +104,11 @@ Ajon loki kertoo kuinka monelta kohteelta kukin tieto löytyi:
 ✚ rikastettu 26/26 kohdetta; tieto löytyi portaalilta: parveke 24, rakennusvuosi 26, kerros 26, postinumero 26
 ```
 
+Etuovin kentät ([`src/portals/etuovi.js`](src/portals/etuovi.js)): hinta `searchPrice` (= velaton, sama
+kuin Oikotien), huoneet `roomCount`, neliöt `area`, kerros `floorLevel`/`housingCompanyFloorCount`,
+rakennusvuosi `constructionFinishedYear`, parveke hakusuodattimesta. Postinumeroa listaus ei kerro;
+se haetaan kohdetiedoista vain Etuovi-yksinoloille (Oikotien kohdetiedot kattavat muut).
+
 Jos jokin luku putoaa nollaan, loki varoittaa (`⚠️ postinumero: ei löytynyt…`): silloin Oikotie
 on todennäköisesti muuttanut kenttää, ja uusi nimi lisätään `buildingInfo()`-funktioon.
 Kohteita ei silti karsita tiedon puutteen vuoksi, vain kyseinen plussa jää antamatta.
@@ -127,7 +142,7 @@ Avaa PWA-osoite puhelimen selaimessa → **Lisää aloitusnäyttöön**. Sovellu
 ```
 config.js            # hakukriteerit
 src/index.js         # pääputki: hae → suodata → deduplikoi → hälytä → tallenna
-src/portals/         # oikotie.js (helppo lisätä uusia)
+src/portals/         # oikotie.js, etuovi.js (helppo lisätä uusia)
 src/filter.js        # karsinta + plussamerkinnät + pisteytys
 src/telegram.js      # Telegram-lähetys
 src/store.js         # tila (seen.json) + feed (listings.json)
@@ -153,8 +168,6 @@ Puuttuvat kentät saa jättää `null`:ksi — niitä ei karsita.
 
 - **Facebook**: puoliautomaatti (appi avaa valmiit ryhmähaut) — ToS-syistä ei täysautomaattia.
 - **WhatsApp-hälytykset** Telegramin rinnalle (Twilio).
-- **Etuovi** toiseksi myyntilähteeksi (suurin myyntiportaali; osa kohteista on vain siellä).
-  Dedupe yhdistää sen Oikotien kanssa osoitteen + neliöiden perusteella.
 - **Hintahistoria / hinnanlasku-hälytys** (nyt hälytetään vain uudesta kohteesta).
 
 ## Huomioita

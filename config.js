@@ -10,6 +10,11 @@ export const config = {
   area: {
     oikotieLocation: [1669, 4, "Lauttasaari, Helsinki"], // Oikotien aluekoodi (haettu API:sta)
     postalCodes: ["00200", "00210"],
+    // Etuovi hakee vapaatekstillä ja palauttaa myös muita paikkakuntia (Turku, Espoo, Ruoholahti...),
+    // joten tulokset rajataan: kaupunginosan nimi TAI koordinaattilaatikko (kattaa Lauttasaaren eteläkärjen).
+    etuoviSearchTerms: ["lauttasaari", "vattuniemi"], // Vattuniemi-haku löytää ilmoituksia, joita Lauttasaari-haku ei
+    districtNames: ["lauttasaari", "vattuniemi"],
+    bbox: { minLat: 60.14, maxLat: 60.173, minLon: 24.85, maxLon: 24.905 },
   },
 
   // --- Plussat (eivät karsi, nostavat kohteen ylemmäs listassa) ---
@@ -40,6 +45,7 @@ export const config = {
   // (Vuokraovi ja Qasa ovat vuokrausportaaleja, joten ne on poistettu myyntihausta.)
   portals: {
     oikotie: true,
+    etuovi: true,
   },
 
   // --- Ajastus watch-tilassa ---
