@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-21T16:06:53.277Z",
+  "updatedAt": "2026-10-21T20:15:07.462Z",
   "count": 21,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -347,6 +347,33 @@
     },
     {
       "source": "oikotie",
+      "id": "24707728",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728",
+      "rooms": 3,
+      "size": 59,
+      "price": 456000,
+      "address": "Lauttasaarenmäki 4 B, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Valoisa kulmahuoneisto Myllykallion vieressä",
+      "text": "Valoisa kulmahuoneisto Myllykallion vieressä 3h+kt+kph+lasitettu parveke",
+      "image": null,
+      "published": "2026-09-24T09:52:10Z",
+      "yearBuilt": 2019,
+      "floor": 2,
+      "floorCount": 6,
+      "postalCode": "00200",
+      "balcony": true,
+      "topFloor": false,
+      "key": "lauttasaarenmäki4b|59",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728"
+        }
+      ]
+    },
+    {
+      "source": "oikotie",
       "id": "23024834",
       "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23024834",
       "rooms": 3,
@@ -369,33 +396,6 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23024834"
-        }
-      ]
-    },
-    {
-      "source": "oikotie",
-      "id": "24707728",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728",
-      "rooms": 3,
-      "size": 59,
-      "price": 471000,
-      "address": "Lauttasaarenmäki 4 B, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Valoisa kulmahuoneisto Myllykallion vieressä",
-      "text": "Valoisa kulmahuoneisto Myllykallion vieressä 3h+kt+kph+lasitettu parveke",
-      "image": null,
-      "published": "2026-09-24T09:52:10Z",
-      "yearBuilt": 2019,
-      "floor": 2,
-      "floorCount": 6,
-      "postalCode": "00200",
-      "balcony": true,
-      "topFloor": false,
-      "key": "lauttasaarenmäki4b|59",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728"
         }
       ]
     },
