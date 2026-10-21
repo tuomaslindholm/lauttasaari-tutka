@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-20T22:12:19.755Z",
-  "count": 22,
+  "updatedAt": "2026-10-21T00:41:33.706Z",
+  "count": 21,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
@@ -425,34 +425,6 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24667228"
         }
       ]
-    },
-    {
-      "source": "oikotie",
-      "id": "24721700",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24721700",
-      "rooms": 3,
-      "size": 78,
-      "price": 449000,
-      "address": "Vattuniemenkatu 16b C, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Valoisa ja kaunis perheasunto Lauttasaaressa – 3h + työpiste + lasitettu parveke (78 m²)",
-      "text": "Valoisa ja kaunis perheasunto Lauttasaaressa – 3h + työpiste + lasitettu parveke (78 m²) 3h + k + työpiste + kph + erillinen wc + lasitettu parveke",
-      "image": null,
-      "published": "2026-10-06T17:21:27Z",
-      "yearBuilt": 1972,
-      "floor": 1,
-      "floorCount": 5,
-      "postalCode": "00210",
-      "balcony": true,
-      "topFloor": false,
-      "key": "vattuniemenkatu16bc|78",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24721700"
-        }
-      ],
-      "availableFrom": "heti"
     },
     {
       "source": "oikotie",
