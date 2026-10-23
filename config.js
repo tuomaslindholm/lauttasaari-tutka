@@ -48,6 +48,11 @@ export const config = {
     etuovi: true,
   },
 
+  // Kohdetiedot (parveke, rakennusvuosi, postinumero...) haetaan portaalilta uudelleen vasta tämän
+  // tuntimäärän jälkeen. Uudet kohteet ja hinnanmuutokset haetaan heti jokaisella ajolla, joten
+  // hälytykset eivät hidastu; tämä vain vähentää portaalien kuormaa (ajoja on ~96 vuorokaudessa).
+  detailRefreshHours: 12,
+
   // --- Ajastus watch-tilassa ---
   pollMinutes: 20,
 };
