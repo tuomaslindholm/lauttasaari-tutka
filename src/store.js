@@ -32,6 +32,12 @@ export async function saveSeen(seen) {
   await writeFile(SEEN_FILE, JSON.stringify({ __kind: SEEN_KIND, ...seen }, null, 2));
 }
 
+// Edellisen ajon feed (rikastetut tiedot toimivat kohdetietojen välimuistina).
+export async function loadFeed() {
+  const j = await readJson(FEED_FILE, null);
+  return Array.isArray(j?.listings) ? j.listings : [];
+}
+
 // Tallentaa nykyisen feedin (kaikki aktiiviset osumat) PWA:ta varten.
 export async function saveFeed(listings, criteria) {
   await mkdir(DATA_DIR, { recursive: true });

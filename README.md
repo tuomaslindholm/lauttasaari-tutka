@@ -27,6 +27,7 @@ Jokaisella hakukierroksella ([`src/index.js`](src/index.js)):
    (saman talon samankokoiset huoneistot).
 4. **Rikasta** Oikotien kohdetiedoista: parveke, rakennusvuosi, kerros, postinumero,
    vapautumispäivä. Tarkka velaton hinta karsitaan vielä uudelleen rikastuksen jälkeen.
+   Jo haetut tiedot pysyvät välimuistissa 12 h (ks. "Kuorma portaaleille" alla).
 5. **Pisteytä ja järjestä** plussien mukaan (ks. alla).
 6. **Hälytä** Telegramiin vain *uusista* kohteista (tila `data/seen.json`). Uuden portaalin
    ensimmäisellä ajolla sen valmiit kohteet merkitään hiljaa nähdyiksi, ettei koko lista lähde
@@ -122,11 +123,50 @@ Jotta tutka pyörii vaikka kone on kiinni:
    - `TELEGRAM_BOT_TOKEN`
    - `TELEGRAM_CHAT_IDS`
 3. Repo → **Settings → Pages → Source: GitHub Actions**.
-4. Valmis. [`.github/workflows/tutka.yml`](.github/workflows/tutka.yml) ajaa kerääjän n. 20 min
-   välein, lähettää hälytykset, tallentaa tilan ja julkaisee PWA:n. Voit myös ajaa käsin:
+4. Valmis. [`.github/workflows/tutka.yml`](.github/workflows/tutka.yml) ajaa kerääjän, lähettää
+   hälytykset, tallentaa tilan ja julkaisee PWA:n. Voit myös ajaa käsin:
    repo → **Actions → Lauttasaari-tutka → Run workflow**.
+5. Ota käyttöön ulkoinen ajastin (alla), jotta ajot tulevat luotettavasti ja tiheään.
 
 PWA löytyy sitten osoitteesta `https://<käyttäjä>.github.io/<repo>/`.
+
+### Ajastin: cron-job.org (käytössä 23.10.2026 alkaen)
+
+GitHubin oma `schedule`-ajastus ei riitä: tässä repossa se ajoi tutkaa vain 3–8 kertaa päivässä
+(mitattu 29.9.–19.10.2026: ajoväli mediaaniltaan 4,8 h, pisimmillään 9,9 h), vaikka työnkulussa
+lukee `*/20`. Uusi kohde saattoi siis odottaa hälytystä monta tuntia. Siksi ajon käynnistää
+ulkoinen palvelu, [cron-job.org](https://cron-job.org) (ilmainen), **15 minuutin välein**.
+
+Ajastin kutsuu GitHubin rajapintaa, joka käynnistää työnkulun (`workflow_dispatch`):
+
+| Asetus | Arvo |
+| --- | --- |
+| URL | `https://api.github.com/repos/tuomaslindholm/lauttasaari-tutka/actions/workflows/tutka.yml/dispatches` |
+| Menetelmä | `POST`, pyynnön sisältö `{"ref":"main"}` |
+| Otsikot | `Authorization: Bearer <token>`, `Accept: application/vnd.github+json`, `X-GitHub-Api-Version: 2022-11-28`, `Content-Type: application/json` |
+| Aikataulu | 15 minuutin välein (Europe/Helsinki) |
+| Onnistunut vastaus | `204 No Content` |
+
+- **Token ei kuulu repoon** (repo on julkinen). Se on vain cron-job.org:n Authorization-otsikossa.
+  Se on GitHubin *fine-grained personal access token* `tutka-ajastin`, jolla on ainoastaan tämän repon
+  oikeus *Actions: Read and write*.
+- **Token vanhenee 30.1.2027.** Silloin cron-job.org lähettää epäonnistumisilmoituksen (401) ja
+  tutka palaa GitHubin hitaaseen omaan ajastukseen. Uusiminen: GitHub →
+  [Settings → Developer settings → Fine-grained tokens](https://github.com/settings/personal-access-tokens)
+  → `tutka-ajastin` → **Regenerate token**, ja liitä uusi arvo cron-job.org:n Authorization-otsikkoon
+  muodossa `Bearer <token>`. Samalla kannattaa tarkistaa `X-GitHub-Api-Version`: GitHub ilmoittaa
+  version `2022-11-28` poistuvan käytöstä 10.3.2028.
+- GitHubin oma `schedule` jää varmistukseksi. Työnkulun `concurrency` estää päällekkäiset ajot.
+- Jokainen ajo tallentaa tilan repoon, joten botin `tutka: päivitä tila` -committeja kertyy
+  noin 96 vuorokaudessa. Se on tarkoituksellista.
+
+### Kuorma portaaleille
+
+Ajoja on tiheään, joten jo haettuja kohdetietoja (parveke, rakennusvuosi, kerros, postinumero)
+ei haeta joka kerta uudestaan: edellisen ajon feed toimii välimuistina, ja kohde haetaan uudelleen
+vasta `config.detailRefreshHours` (12 h) jälkeen. **Uudet kohteet ja hinnanmuutokset haetaan heti**,
+joten hälytykset eivät hidastu. Jos haku epäonnistuu, käytetään edellisen ajon tietoja. Lokista
+näkee tilanteen: `rikastettu 24/24 kohdetta (haettu 0, välimuistista 24)`.
 
 ## 4. PWA:n asennus puhelimeen
 

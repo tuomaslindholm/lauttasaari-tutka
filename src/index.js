@@ -2,7 +2,7 @@ import { config } from "../config.js";
 import { fetchOikotie, fetchOikotieDetail, getAuthHeaders } from "./portals/oikotie.js";
 import { fetchEtuovi, fetchEtuoviDetail } from "./portals/etuovi.js";
 import { evaluate, deriveFlags, rejectReasons, score, describeCriteria } from "./filter.js";
-import { loadSeen, saveSeen, saveFeed } from "./store.js";
+import { loadSeen, saveSeen, saveFeed, loadFeed } from "./store.js";
 import { notifyNew, notifyText, telegramConfigured } from "./telegram.js";
 import { sleep } from "./util.js";
 
@@ -77,6 +77,14 @@ function mergeListings(a, b) {
   };
 }
 
+// Edellisen ajon rikastetut tiedot, joita ei haeta uudelleen ennen kuin ne vanhenevat.
+const CACHED_FIELDS = ["price", "yearBuilt", "floor", "floorCount", "postalCode", "availableFrom", "topFloor", "detailAt"];
+function applyCached(l, prev) {
+  for (const k of CACHED_FIELDS) if (prev[k] != null) l[k] = prev[k];
+  // Parveke: tämän ajon tieto (esim. Etuovin hakusuodatin) TAI aiemmin todettu.
+  l.balcony = l.balcony === true || prev.balcony === true;
+}
+
 async function runOnce() {
   console.log(`\n[${new Date().toLocaleString("fi-FI")}] Haetaan...`);
   const raw = await collect();
@@ -109,23 +117,44 @@ async function runOnce() {
   // Rikastus: haetaan kohdetiedoista tarkka velaton hinta, parveke, rakennusvuosi, kerros,
   // postinumero ja vapautumispäivä. Oikotien kohdetiedot kelpaavat myös Oikotiesta löytyville
   // Etuovi-kohteille; vain Etuovi-yksinolot haetaan Etuovin omista kohdetiedoista.
-  // Vain karsinnan läpäisseille -> kevyt kuormitus.
+  // Välimuisti: jo rikastettu kohde (edellisessä feedissä) haetaan uudelleen vasta
+  // config.detailRefreshHours jälkeen tai jos sen hinta on muuttunut. Uudet kohteet heti.
   try {
-    const auth = config.portals.oikotie ? await getAuthHeaders() : null;
+    const prevByKey = new Map((await loadFeed()).map((p) => [p.key, p]));
+    const ttlMs = config.detailRefreshHours * 3600 * 1000;
+    let auth = null;
+    let authFailed = false;
+    const oikotieAuth = async () => {
+      if (!auth && !authFailed) {
+        try {
+          auth = await getAuthHeaders();
+        } catch (e) {
+          authFailed = true;
+          console.error(`  Oikotie-tunnisteet: ${e.message}`);
+        }
+      }
+      return auth;
+    };
     const found = { parveke: 0, rakennusvuosi: 0, kerros: 0, postinumero: 0 };
-    let enriched = 0;
+    let fetched = 0;
+    let cached = 0;
     for (const l of unique) {
-      const oiko = l.sources.find((s) => s.source === "oikotie");
-      const etuo = l.sources.find((s) => s.source === "etuovi");
+      const prev = prevByKey.get(l.key);
+      const fresh = Boolean(prev?.detailAt) && Date.now() - Date.parse(prev.detailAt) < ttlMs && prev.price === l.price;
       let d = null;
-      if (oiko && auth) {
-        const id = oiko.url.match(/\/(\d+)(?:$|\?)/)?.[1];
-        d = id ? await fetchOikotieDetail(id, auth) : null;
-        await sleep(300);
-      } else if (!oiko && etuo) {
-        const fid = etuo.url.match(/\/kohde\/([^/?#]+)/)?.[1];
-        d = fid ? await fetchEtuoviDetail(fid) : null;
-        await sleep(300);
+      if (!fresh) {
+        const oiko = l.sources.find((s) => s.source === "oikotie");
+        const etuo = l.sources.find((s) => s.source === "etuovi");
+        if (oiko) {
+          const id = oiko.url.match(/\/(\d+)(?:$|\?)/)?.[1];
+          const a = id ? await oikotieAuth() : null;
+          d = a ? await fetchOikotieDetail(id, a) : null;
+          await sleep(300);
+        } else if (etuo) {
+          const fid = etuo.url.match(/\/kohde\/([^/?#]+)/)?.[1];
+          d = fid ? await fetchEtuoviDetail(fid) : null;
+          await sleep(300);
+        }
       }
       if (d) {
         // Rakenteinen tieto voittaa listauksen arvauksen.
@@ -139,19 +168,26 @@ async function runOnce() {
         l.balcony = d.balcony === true || flags.balcony;
         l.topFloor = flags.topFloor;
         l.yearBuilt = flags.yearBuilt;
-        enriched++;
+        l.detailAt = new Date().toISOString();
+        fetched++;
         if (d.balcony != null) found.parveke++;
         if (l.yearBuilt != null) found.rakennusvuosi++;
         if (l.floor != null && l.floorCount != null) found.kerros++;
         if (l.postalCode) found.postinumero++;
+      } else if (prev?.detailAt) {
+        // Tuore välimuisti, tai haku epäonnistui: käytetään edellisen ajon tietoja (detailAt säilyy,
+        // joten vanhentunut tieto yritetään hakea uudelleen seuraavalla ajolla).
+        applyCached(l, prev);
+        cached++;
       }
     }
-    const summary = Object.entries(found).map(([k, n]) => `${k} ${n}`).join(", ");
-    console.log(`  ✚ rikastettu ${enriched}/${unique.length} kohdetta; tieto löytyi portaalilta: ${summary}`);
-    // Nolla löytöä kaikilta = kenttänimi todennäköisesti väärä (portaalin JSON muuttunut).
-    if (enriched > 0) {
+    console.log(`  ✚ rikastettu ${fetched + cached}/${unique.length} kohdetta (haettu ${fetched}, välimuistista ${cached})`);
+    if (fetched > 0) {
+      const summary = Object.entries(found).map(([k, n]) => `${k} ${n}`).join(", ");
+      console.log(`    haetuista tieto löytyi portaalilta: ${summary}`);
+      // Nolla löytöä kaikilta = kenttänimi todennäköisesti väärä (portaalin JSON muuttunut).
       for (const [k, n] of Object.entries(found)) {
-        if (n === 0) console.warn(`  ⚠️  ${k}: ei löytynyt yhdeltäkään kohteelta — tarkista kenttänimet (src/portals/)`);
+        if (n === 0) console.warn(`  ⚠️  ${k}: ei löytynyt yhdeltäkään haetulta kohteelta — tarkista kenttänimet (src/portals/)`);
       }
     }
   } catch (e) {
