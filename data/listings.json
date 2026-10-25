@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T13:01:05.710Z",
+  "updatedAt": "2026-10-25T13:15:56.781Z",
   "count": 21,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -29,7 +29,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24711797"
         }
       ],
-      "detailAt": "2026-10-25T01:01:13.100Z"
+      "detailAt": "2026-10-25T13:15:51.476Z"
     },
     {
       "source": "oikotie",
@@ -58,7 +58,7 @@
         }
       ],
       "availableFrom": "heti",
-      "detailAt": "2026-10-25T01:01:16.528Z"
+      "detailAt": "2026-10-25T13:15:54.858Z"
     },
     {
       "source": "oikotie",
@@ -86,7 +86,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24520513"
         }
       ],
-      "detailAt": "2026-10-25T01:01:13.590Z"
+      "detailAt": "2026-10-25T13:15:51.954Z"
     },
     {
       "source": "oikotie",
@@ -114,7 +114,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24492682"
         }
       ],
-      "detailAt": "2026-10-25T01:01:17.008Z"
+      "detailAt": "2026-10-25T13:15:55.336Z"
     },
     {
       "source": "oikotie",
@@ -207,7 +207,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24679652"
         }
       ],
-      "detailAt": "2026-10-25T01:01:14.074Z"
+      "detailAt": "2026-10-25T13:15:52.422Z"
     },
     {
       "source": "oikotie",
@@ -267,7 +267,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23032098"
         }
       ],
-      "detailAt": "2026-10-25T01:01:18.549Z"
+      "detailAt": "2026-10-25T13:15:56.777Z"
     },
     {
       "source": "oikotie",
@@ -295,7 +295,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24663660"
         }
       ],
-      "detailAt": "2026-10-25T01:01:15.066Z"
+      "detailAt": "2026-10-25T13:15:53.380Z"
     },
     {
       "source": "oikotie",
@@ -355,7 +355,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24480358"
         }
       ],
-      "detailAt": "2026-10-25T01:01:17.501Z"
+      "detailAt": "2026-10-25T13:15:55.822Z"
     },
     {
       "source": "oikotie",
@@ -383,7 +383,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24707728"
         }
       ],
-      "detailAt": "2026-10-25T01:01:12.601Z"
+      "detailAt": "2026-10-25T13:15:51.001Z"
     },
     {
       "source": "oikotie",
@@ -411,7 +411,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23024834"
         }
       ],
-      "detailAt": "2026-10-25T01:01:16.045Z"
+      "detailAt": "2026-10-25T13:15:54.362Z"
     },
     {
       "source": "oikotie",
@@ -439,7 +439,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24667228"
         }
       ],
-      "detailAt": "2026-10-25T01:01:14.572Z"
+      "detailAt": "2026-10-25T13:15:52.894Z"
     },
     {
       "source": "oikotie",
@@ -532,7 +532,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24648313"
         }
       ],
-      "detailAt": "2026-10-25T01:01:15.552Z"
+      "detailAt": "2026-10-25T13:15:53.864Z"
     },
     {
       "source": "oikotie",
@@ -625,7 +625,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293"
         }
       ],
-      "detailAt": "2026-10-25T01:01:17.981Z"
+      "detailAt": "2026-10-25T13:15:56.292Z"
     }
   ]
 }
