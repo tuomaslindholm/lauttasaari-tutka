@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T19:15:48.423Z",
+  "updatedAt": "2026-10-25T19:31:00.846Z",
   "count": 21,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -536,6 +536,34 @@
     },
     {
       "source": "oikotie",
+      "id": "24443293",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293",
+      "rooms": 3,
+      "size": 60.3,
+      "price": 419000,
+      "address": "Pajalahdentie 9 A 13, Helsinki",
+      "district": "Lauttasaari",
+      "title": "40-luvun tunnelmaa ja designparvi – 3h Lauttasaaressa",
+      "text": "40-luvun tunnelmaa ja designparvi – 3h Lauttasaaressa 3h + avok + vh + kph + parvi (yj. 2h+kk)",
+      "image": null,
+      "published": "2026-04-17T06:43:15Z",
+      "yearBuilt": 1940,
+      "floor": 4,
+      "floorCount": 6,
+      "postalCode": "00200",
+      "balcony": false,
+      "topFloor": false,
+      "key": "pajalahdentie9a13|60",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293"
+        }
+      ],
+      "detailAt": "2026-10-25T19:31:00.834Z"
+    },
+    {
+      "source": "oikotie",
       "id": "24698562",
       "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24698562",
       "rooms": 3,
@@ -598,34 +626,6 @@
       ],
       "availableFrom": "heti",
       "detailAt": "2026-10-25T11:01:07.375Z"
-    },
-    {
-      "source": "oikotie",
-      "id": "24443293",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293",
-      "rooms": 3,
-      "size": 60.3,
-      "price": 450000,
-      "address": "Pajalahdentie 9 A 13, Helsinki",
-      "district": "Lauttasaari",
-      "title": "    Harvinaisen tilava koti Pajalahdentiellä. Virallinen kaksio, mutta käytännössä 3h + designparvi",
-      "text": "    Harvinaisen tilava koti Pajalahdentiellä. Virallinen kaksio, mutta käytännössä 3h + designparvi 2h + k",
-      "image": null,
-      "published": "2026-04-17T06:43:15Z",
-      "yearBuilt": 1940,
-      "floor": 4,
-      "floorCount": 6,
-      "postalCode": "00200",
-      "balcony": false,
-      "topFloor": false,
-      "key": "pajalahdentie9a13|60",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293"
-        }
-      ],
-      "detailAt": "2026-10-25T13:15:56.292Z"
     }
   ]
 }
