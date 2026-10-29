@@ -1,8 +1,36 @@
 {
-  "updatedAt": "2026-10-29T09:45:49.019Z",
-  "count": 21,
+  "updatedAt": "2026-10-29T10:01:12.465Z",
+  "count": 22,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
+    {
+      "source": "oikotie",
+      "id": "24760856",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24760856",
+      "rooms": 3,
+      "size": 63,
+      "price": 392000,
+      "address": "Vaskiniementie 7 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Lauttasaarelaisen kodin ikkunoista katse osuu puiden lehvästöön, sillä ensimmäinen kerros on sopivasti koholla maan tasosta.\n\nSisällä vallitsee r",
+      "text": "Lauttasaarelaisen kodin ikkunoista katse osuu puiden lehvästöön, sillä ensimmäinen kerros on sopivasti koholla maan tasosta.\n\nSisällä vallitsee r 3h+k+p",
+      "image": null,
+      "published": "2026-10-29T09:56:05Z",
+      "yearBuilt": 1963,
+      "floor": 1,
+      "floorCount": 2,
+      "postalCode": "00200",
+      "balcony": true,
+      "topFloor": false,
+      "key": "vaskiniementie7a|63",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24760856"
+        }
+      ],
+      "detailAt": "2026-10-29T10:01:11.586Z"
+    },
     {
       "source": "oikotie",
       "id": "24711797",
