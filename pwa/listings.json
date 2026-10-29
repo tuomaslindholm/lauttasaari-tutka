@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T05:45:51.682Z",
+  "updatedAt": "2026-10-29T06:01:11.674Z",
   "count": 21,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -140,6 +140,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24487158"
+        },
+        {
+          "source": "etuovi",
+          "url": "https://www.etuovi.com/kohde/80508480"
         }
       ],
       "detailAt": "2026-10-29T00:01:25.899Z"
@@ -196,6 +200,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24287129"
+        },
+        {
+          "source": "etuovi",
+          "url": "https://www.etuovi.com/kohde/612024"
         }
       ],
       "availableFrom": "heti",
@@ -225,6 +233,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24384569"
+        },
+        {
+          "source": "etuovi",
+          "url": "https://www.etuovi.com/kohde/80441164"
         }
       ],
       "detailAt": "2026-10-29T00:01:26.372Z"
@@ -309,6 +321,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24625560"
+        },
+        {
+          "source": "etuovi",
+          "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
       "detailAt": "2026-10-29T00:01:24.950Z"
@@ -449,6 +465,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24552722"
+        },
+        {
+          "source": "etuovi",
+          "url": "https://www.etuovi.com/kohde/80516742"
         }
       ],
       "availableFrom": "heti",
@@ -478,6 +498,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24608057"
+        },
+        {
+          "source": "etuovi",
+          "url": "https://www.etuovi.com/kohde/ge3429"
         }
       ],
       "detailAt": "2026-10-29T00:01:25.421Z"
@@ -563,6 +587,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24698562"
+        },
+        {
+          "source": "etuovi",
+          "url": "https://www.etuovi.com/kohde/80533268"
         }
       ],
       "detailAt": "2026-10-29T00:01:23.946Z"
@@ -591,6 +619,10 @@
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24633516"
+        },
+        {
+          "source": "etuovi",
+          "url": "https://www.etuovi.com/kohde/80522085"
         }
       ],
       "availableFrom": "heti",
