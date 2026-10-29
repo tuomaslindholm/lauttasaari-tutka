@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-28T23:45:48.758Z",
+  "updatedAt": "2026-10-29T00:01:26.391Z",
   "count": 21,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -142,7 +142,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24487158"
         }
       ],
-      "detailAt": "2026-10-28T11:45:56.127Z"
+      "detailAt": "2026-10-29T00:01:25.899Z"
     },
     {
       "source": "oikotie",
@@ -199,7 +199,7 @@
         }
       ],
       "availableFrom": "heti",
-      "detailAt": "2026-10-28T11:45:54.562Z"
+      "detailAt": "2026-10-29T00:01:24.473Z"
     },
     {
       "source": "oikotie",
@@ -227,7 +227,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24384569"
         }
       ],
-      "detailAt": "2026-10-28T11:45:56.616Z"
+      "detailAt": "2026-10-29T00:01:26.372Z"
     },
     {
       "source": "oikotie",
@@ -311,7 +311,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24625560"
         }
       ],
-      "detailAt": "2026-10-28T11:45:55.057Z"
+      "detailAt": "2026-10-29T00:01:24.950Z"
     },
     {
       "source": "oikotie",
@@ -452,7 +452,7 @@
         }
       ],
       "availableFrom": "heti",
-      "detailAt": "2026-10-28T11:45:53.546Z"
+      "detailAt": "2026-10-29T00:01:23.470Z"
     },
     {
       "source": "oikotie",
@@ -480,7 +480,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24608057"
         }
       ],
-      "detailAt": "2026-10-28T11:45:55.565Z"
+      "detailAt": "2026-10-29T00:01:25.421Z"
     },
     {
       "source": "oikotie",
@@ -565,7 +565,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24698562"
         }
       ],
-      "detailAt": "2026-10-28T11:45:54.033Z"
+      "detailAt": "2026-10-29T00:01:23.946Z"
     },
     {
       "source": "oikotie",
@@ -594,7 +594,7 @@
         }
       ],
       "availableFrom": "heti",
-      "detailAt": "2026-10-28T11:45:53.043Z"
+      "detailAt": "2026-10-29T00:01:22.992Z"
     }
   ]
 }
