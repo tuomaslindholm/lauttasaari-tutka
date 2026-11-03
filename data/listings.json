@@ -1,8 +1,37 @@
 {
-  "updatedAt": "2026-11-03T11:15:52.817Z",
+  "updatedAt": "2026-11-03T11:31:06.683Z",
   "count": 22,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
+    {
+      "source": "oikotie",
+      "id": "24770078",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24770078",
+      "rooms": 3,
+      "size": 77,
+      "price": 379000,
+      "address": "Lauttasaarentie 12 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Kaikki Lauttasaaren parhaat puolet kotiovellasi! \n\nTässä kodissa on paljon sellaista, mitä moni etsii: toimiva pohjaratkaisu, reilun kokoiset huone",
+      "text": "Kaikki Lauttasaaren parhaat puolet kotiovellasi! \n\nTässä kodissa on paljon sellaista, mitä moni etsii: toimiva pohjaratkaisu, reilun kokoiset huone 3h+k+s",
+      "image": null,
+      "published": "2026-11-03T11:27:05Z",
+      "yearBuilt": 1984,
+      "floor": 2,
+      "floorCount": 3,
+      "postalCode": "00200",
+      "balcony": true,
+      "topFloor": false,
+      "key": "lauttasaarentie12a|77",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24770078"
+        }
+      ],
+      "availableFrom": "heti",
+      "detailAt": "2026-11-03T11:31:06.676Z"
+    },
     {
       "source": "oikotie",
       "id": "24760856",
@@ -58,35 +87,6 @@
         }
       ],
       "detailAt": "2026-11-03T09:31:10.633Z"
-    },
-    {
-      "source": "oikotie",
-      "id": "24624829",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24624829",
-      "rooms": 3,
-      "size": 77,
-      "price": 399000,
-      "address": "Lauttasaarentie 12 A, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Kaikki Lauttasaaren parhaat puolet kotiovellasi! \n\nTässä kodissa on paljon sellaista, mitä moni etsii: toimiva pohjaratkaisu, reilun kokoiset huone",
-      "text": "Kaikki Lauttasaaren parhaat puolet kotiovellasi! \n\nTässä kodissa on paljon sellaista, mitä moni etsii: toimiva pohjaratkaisu, reilun kokoiset huone 3h+k+s",
-      "image": null,
-      "published": "2026-08-03T12:27:51Z",
-      "yearBuilt": 1984,
-      "floor": 2,
-      "floorCount": 3,
-      "postalCode": "00200",
-      "balcony": true,
-      "topFloor": false,
-      "key": "lauttasaarentie12a|77",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24624829"
-        }
-      ],
-      "availableFrom": "heti",
-      "detailAt": "2026-11-03T09:31:13.795Z"
     },
     {
       "source": "oikotie",
