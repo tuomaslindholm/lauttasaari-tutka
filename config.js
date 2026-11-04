@@ -24,12 +24,14 @@ export const config = {
     maxBuildYear: 1960, // tätä vanhempi (tai tasan tämä) talo on plussaa
   },
 
-  // Pisteytys (suurempi = ylemmäs). Parveke on "melkein pakollinen": se painaa enemmän kuin
-  // kaikki muut plussat yhteensä (50 > 46), mutta parvekkeeton kohde ei silti putoa pois listalta.
+  // Pisteytys (suurempi = ylemmäs). Ylin kerros on tärkein: se painaa enemmän kuin kaikki muut
+  // plussat yhteensä (90 > 86), joten ylimmän kerroksen kohteet nousevat aina listan kärkeen.
+  // Niiden sisällä (ja muilla) järjestävät parveke ("melkein pakollinen"), hinta ja muut.
+  // Mikään ei karsi kohdetta pois listalta.
   weights: {
+    topFloor: 90,
     balcony: 50,
     price: 20, // maksimi, skaalautuu idealPrice → maxPrice
-    topFloor: 10,
     postalCode: 8,
     buildYear: 8,
   },
