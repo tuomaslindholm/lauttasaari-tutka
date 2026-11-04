@@ -1,8 +1,36 @@
 {
-  "updatedAt": "2026-11-04T06:15:50.161Z",
+  "updatedAt": "2026-11-04T06:31:04.081Z",
   "count": 22,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
+    {
+      "source": "oikotie",
+      "id": "23032098",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23032098",
+      "rooms": 3,
+      "size": 54,
+      "price": 466000,
+      "address": "Pohjoiskaari 34-38 D 54, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Sirius – Klassista kauneutta ja uutta elämää Lauttasaaressa",
+      "text": "Sirius – Klassista kauneutta ja uutta elämää Lauttasaaressa 3h+kt+p",
+      "image": null,
+      "published": "2025-04-11T12:21:00Z",
+      "yearBuilt": 2027,
+      "floor": 3,
+      "floorCount": 3,
+      "postalCode": "00200",
+      "balcony": true,
+      "topFloor": true,
+      "key": "pohjoiskaari3438d54|54",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23032098"
+        }
+      ],
+      "detailAt": "2026-11-03T21:45:59.771Z"
+    },
     {
       "source": "oikotie",
       "id": "24770078",
@@ -268,34 +296,6 @@
         }
       ],
       "detailAt": "2026-11-04T01:45:55.654Z"
-    },
-    {
-      "source": "oikotie",
-      "id": "23032098",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23032098",
-      "rooms": 3,
-      "size": 54,
-      "price": 466000,
-      "address": "Pohjoiskaari 34-38 D 54, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Sirius – Klassista kauneutta ja uutta elämää Lauttasaaressa",
-      "text": "Sirius – Klassista kauneutta ja uutta elämää Lauttasaaressa 3h+kt+p",
-      "image": null,
-      "published": "2025-04-11T12:21:00Z",
-      "yearBuilt": 2027,
-      "floor": 3,
-      "floorCount": 3,
-      "postalCode": "00200",
-      "balcony": true,
-      "topFloor": true,
-      "key": "pohjoiskaari3438d54|54",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/23032098"
-        }
-      ],
-      "detailAt": "2026-11-03T21:45:59.771Z"
     },
     {
       "source": "oikotie",
