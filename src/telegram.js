@@ -70,7 +70,11 @@ export function formatListing(l) {
 // Lähettää yhden ilmoituksen kaikille vastaanottajille.
 export async function notifyNew(listing) {
   if (!telegramConfigured()) return false;
-  const text = "🔔 <b>Uusi myytävä kohde Lauttasaaressa</b>\n\n" + formatListing(listing);
+  // Ylin kerros on tärkein kriteeri, joten sen kohteet erottuvat hälytyksen otsikossa.
+  const heading = listing.topFloor
+    ? "🔝🔔 <b>UUSI YLIN KERROS -KOHDE Lauttasaaressa</b>"
+    : "🔔 <b>Uusi myytävä kohde Lauttasaaressa</b>";
+  const text = heading + "\n\n" + formatListing(listing);
   for (const id of CHAT_IDS) await send(id, text);
   return true;
 }

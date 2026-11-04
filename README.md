@@ -49,9 +49,9 @@ Kaikki on tiedostossa [`config.js`](config.js):
 
 | Plussa | Pisteet | Huomio |
 | --- | --- | --- |
-| 🌿 **Parveke** | 50 | "Aika oleellinen": painaa enemmän kuin kaikki muut plussat yhteensä (46), mutta parvekkeeton kohde ei putoa pois |
+| 🔝 **Ylin kerros** | 90 | **Tärkein**: painaa enemmän kuin kaikki muut plussat yhteensä (86), joten ylimmän kerroksen kohteet ovat aina listan kärjessä. Rakenteinen kerrostieto (esim. 5/5) tai maininta kuvauksessa |
+| 🌿 **Parveke** | 50 | "Aika oleellinen": nostaa kärjessä ja muuten, mutta parvekkeeton kohde ei putoa pois |
 | 💰 **Hinta** | 0–20 | Täydet pisteet ≤400 000 €, laskee lineaarisesti nollaan 475 000 €:ssa |
-| 🔝 **Ylin kerros** | 10 | Rakenteinen kerrostieto (esim. 5/5) tai maininta kuvauksessa |
 | 📮 **00200** | 8 | 00210 kelpaa mutta ei saa plussaa |
 | 🏛️ **Rakennettu ≤1960** | 8 | |
 
