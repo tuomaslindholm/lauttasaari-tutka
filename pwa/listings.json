@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-05T14:31:18.497Z",
-  "count": 22,
+  "updatedAt": "2026-11-05T14:46:06.113Z",
+  "count": 23,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
@@ -440,6 +440,38 @@
         }
       ],
       "detailAt": "2026-11-05T14:01:30.661Z"
+    },
+    {
+      "source": "oikotie",
+      "id": "24753355",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24753355",
+      "rooms": 3,
+      "size": 70,
+      "price": 475000,
+      "address": "Lauttasaarentie 52 B, Helsinki",
+      "district": "Lauttasaari",
+      "title": "MUUTA MERELLISEEN LAUTTASAAREEN MUUTTOVALMIISEEN KOTIIN!\n\nViihtyisä ja kaunis lähes uuden veroinen huoneisto rauhallisella paikalla Lauttasaaress",
+      "text": "MUUTA MERELLISEEN LAUTTASAAREEN MUUTTOVALMIISEEN KOTIIN!\n\nViihtyisä ja kaunis lähes uuden veroinen huoneisto rauhallisella paikalla Lauttasaaress 3h,avokeittiö,kph,sauna, lasitettu parveke",
+      "image": null,
+      "published": "2026-10-22T15:23:00Z",
+      "yearBuilt": 2017,
+      "floor": 2,
+      "floorCount": 6,
+      "postalCode": "00200",
+      "balcony": true,
+      "topFloor": false,
+      "key": "lauttasaarentie52b|70",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24753355"
+        },
+        {
+          "source": "etuovi",
+          "url": "https://www.etuovi.com/kohde/21261441"
+        }
+      ],
+      "detailAt": "2026-11-05T14:46:05.182Z"
     },
     {
       "source": "oikotie",
