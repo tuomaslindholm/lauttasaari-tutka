@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T06:31:05.175Z",
+  "updatedAt": "2026-11-05T06:45:51.638Z",
   "count": 22,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -174,6 +174,34 @@
     },
     {
       "source": "oikotie",
+      "id": "24679652",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24679652",
+      "rooms": 3,
+      "size": 68.5,
+      "price": 408000,
+      "address": "Katajaharjuntie 2-4 C, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Kodikas kolmio meren läheisyydessä\n\nKatajanharjuntie 2:ssa löytyy kodikas ja viihtyisä koti hyvällä pohjaratkaisulla. Viihtyvyyttä lisää vuonna 2",
+      "text": "Kodikas kolmio meren läheisyydessä\n\nKatajanharjuntie 2:ssa löytyy kodikas ja viihtyisä koti hyvällä pohjaratkaisulla. Viihtyvyyttä lisää vuonna 2 3h, k",
+      "image": null,
+      "published": "2026-09-05T06:40:13Z",
+      "yearBuilt": 1963,
+      "floor": 1,
+      "floorCount": 5,
+      "postalCode": "00200",
+      "balcony": true,
+      "topFloor": false,
+      "key": "katajaharjuntie24c|69",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24679652"
+        }
+      ],
+      "detailAt": "2026-11-05T06:45:51.633Z"
+    },
+    {
+      "source": "oikotie",
       "id": "24487158",
       "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24487158",
       "rooms": 3,
@@ -203,34 +231,6 @@
         }
       ],
       "detailAt": "2026-11-05T02:01:23.816Z"
-    },
-    {
-      "source": "oikotie",
-      "id": "24679652",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24679652",
-      "rooms": 3,
-      "size": 68.5,
-      "price": 420000,
-      "address": "Katajaharjuntie 2-4 C, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Kodikas kolmio meren läheisyydessä\n\nKatajanharjuntie 2:ssa löytyy kodikas ja viihtyisä koti hyvällä pohjaratkaisulla. Viihtyvyyttä lisää vuonna 2",
-      "text": "Kodikas kolmio meren läheisyydessä\n\nKatajanharjuntie 2:ssa löytyy kodikas ja viihtyisä koti hyvällä pohjaratkaisulla. Viihtyvyyttä lisää vuonna 2 3h, k",
-      "image": null,
-      "published": "2026-09-05T06:40:13Z",
-      "yearBuilt": 1963,
-      "floor": 1,
-      "floorCount": 5,
-      "postalCode": "00200",
-      "balcony": true,
-      "topFloor": false,
-      "key": "katajaharjuntie24c|69",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24679652"
-        }
-      ],
-      "detailAt": "2026-11-05T02:01:20.304Z"
     },
     {
       "source": "oikotie",
