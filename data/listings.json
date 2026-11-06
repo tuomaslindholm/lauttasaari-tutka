@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-06T08:31:02.921Z",
-  "count": 23,
+  "updatedAt": "2026-11-06T08:45:57.539Z",
+  "count": 24,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
@@ -500,6 +500,35 @@
         }
       ],
       "detailAt": "2026-11-06T02:15:56.918Z"
+    },
+    {
+      "source": "oikotie",
+      "id": "24775642",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24775642",
+      "rooms": 3,
+      "size": 56,
+      "price": 459900,
+      "address": "Melkonkatu 16 A12, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Avara kolmio, jossa erilliset makuuhuoneet ja tilaa isollekin ruokapöydälle\n\nAvarassa kolmiossa jokainen neliö on käytetty harkiten: lasiliukuovi j",
+      "text": "Avara kolmio, jossa erilliset makuuhuoneet ja tilaa isollekin ruokapöydälle\n\nAvarassa kolmiossa jokainen neliö on käytetty harkiten: lasiliukuovi j 3H+KT",
+      "image": null,
+      "published": "2026-11-06T08:44:21Z",
+      "yearBuilt": 2028,
+      "floor": 3,
+      "floorCount": 8,
+      "postalCode": "00210",
+      "balcony": true,
+      "topFloor": false,
+      "key": "melkonkatu16a12|56",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24775642"
+        }
+      ],
+      "availableFrom": "2028-05-31",
+      "detailAt": "2026-11-06T08:45:56.547Z"
     },
     {
       "source": "oikotie",
