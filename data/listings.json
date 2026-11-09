@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-09T15:31:02.701Z",
+  "updatedAt": "2026-11-09T15:45:52.319Z",
   "count": 9,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -29,7 +29,7 @@
           "url": "https://www.etuovi.com/kohde/80508480"
         }
       ],
-      "detailAt": "2026-11-09T03:31:13.768Z"
+      "detailAt": "2026-11-09T15:45:51.562Z"
     },
     {
       "source": "etuovi",
@@ -57,8 +57,7 @@
           "url": "https://www.etuovi.com/kohde/612024"
         }
       ],
-      "availableFrom": "heti",
-      "detailAt": "2026-11-09T03:31:12.322Z"
+      "detailAt": "2026-11-09T15:45:47.684Z"
     },
     {
       "source": "etuovi",
@@ -86,7 +85,7 @@
           "url": "https://www.etuovi.com/kohde/80441164"
         }
       ],
-      "detailAt": "2026-11-09T03:31:14.258Z"
+      "detailAt": "2026-11-09T15:45:52.312Z"
     },
     {
       "source": "etuovi",
@@ -114,7 +113,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-09T03:31:12.807Z"
+      "detailAt": "2026-11-09T15:45:49.187Z"
     },
     {
       "source": "etuovi",
@@ -170,8 +169,7 @@
           "url": "https://www.etuovi.com/kohde/80516742"
         }
       ],
-      "availableFrom": "heti",
-      "detailAt": "2026-11-09T03:31:11.353Z"
+      "detailAt": "2026-11-09T15:45:50.836Z"
     },
     {
       "source": "etuovi",
@@ -199,7 +197,7 @@
           "url": "https://www.etuovi.com/kohde/ge3429"
         }
       ],
-      "detailAt": "2026-11-09T03:31:13.291Z"
+      "detailAt": "2026-11-09T15:45:49.959Z"
     },
     {
       "source": "etuovi",
@@ -227,7 +225,7 @@
           "url": "https://www.etuovi.com/kohde/80533268"
         }
       ],
-      "detailAt": "2026-11-09T03:31:11.839Z"
+      "detailAt": "2026-11-09T15:45:46.901Z"
     },
     {
       "source": "etuovi",
@@ -255,8 +253,7 @@
           "url": "https://www.etuovi.com/kohde/80522085"
         }
       ],
-      "availableFrom": "heti",
-      "detailAt": "2026-11-09T03:31:10.859Z"
+      "detailAt": "2026-11-09T15:45:48.477Z"
     }
   ]
 }
