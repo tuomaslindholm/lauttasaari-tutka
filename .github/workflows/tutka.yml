@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: tutka
+  group: tutka-2 # uusi nimi 16.11.2026: vanha jono jäi jumiin (ajo #2307, deploy 'waiting', ei peruttavissa)
   cancel-in-progress: false
 
 jobs:
