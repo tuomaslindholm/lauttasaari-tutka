@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-17T07:15:58.908Z",
-  "count": 26,
+  "updatedAt": "2026-11-17T07:31:13.642Z",
+  "count": 24,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
@@ -439,7 +439,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-17T07:15:58.059Z"
+      "detailAt": "2026-11-17T07:31:13.635Z"
     },
     {
       "source": "oikotie",
@@ -503,34 +503,6 @@
     },
     {
       "source": "oikotie",
-      "id": "24708542",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24708542",
-      "rooms": 3,
-      "size": 69,
-      "price": 448000,
-      "address": "Länsisatamankatu 18, Helsinki",
-      "district": "Lauttasaari",
-      "title": "**Myydään uusi 69m2 läpitalon luksuskolmio Jätkäsaaren arvoyhtiöstä**",
-      "text": "**Myydään uusi 69m2 läpitalon luksuskolmio Jätkäsaaren arvoyhtiöstä** 3h+avok+kph+s+p",
-      "image": null,
-      "published": "2026-09-24T15:42:32Z",
-      "yearBuilt": 2024,
-      "floor": 4,
-      "floorCount": 8,
-      "postalCode": "00180",
-      "balcony": true,
-      "topFloor": false,
-      "key": "länsisatamankatu18|69",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24708542"
-        }
-      ],
-      "detailAt": "2026-11-17T07:15:57.610Z"
-    },
-    {
-      "source": "oikotie",
       "id": "24775642",
       "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24775642",
       "rooms": 3,
@@ -590,35 +562,6 @@
       ],
       "availableFrom": "heti",
       "detailAt": "2026-11-17T02:01:29.202Z"
-    },
-    {
-      "source": "oikotie",
-      "id": "24781189",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24781189",
-      "rooms": 3,
-      "size": 73,
-      "price": 467000,
-      "address": "Länsisatamankatu 18 A, Helsinki",
-      "district": "Lauttasaari",
-      "title": "*Myydään 73m2 luksuskolmio upeilla maisemilla Jätkäsaaren arvoyhtiöstä**",
-      "text": "*Myydään 73m2 luksuskolmio upeilla maisemilla Jätkäsaaren arvoyhtiöstä** 3h+avok+kph+wc+vh+p",
-      "image": null,
-      "published": "2026-11-11T09:58:17Z",
-      "yearBuilt": 2024,
-      "floor": 3,
-      "floorCount": 6,
-      "postalCode": "00180",
-      "balcony": true,
-      "topFloor": false,
-      "key": "länsisatamankatu18a|73",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24781189"
-        }
-      ],
-      "availableFrom": "heti",
-      "detailAt": "2026-11-17T02:01:24.375Z"
     },
     {
       "source": "oikotie",
