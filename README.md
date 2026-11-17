@@ -42,7 +42,7 @@ Kaikki on tiedostossa [`config.js`](config.js):
 
 - vähintään **3 huonetta**
 - **velaton hinta enintään 475 000 €**
-- alue **Lauttasaari** (postinumerot 00200 ja 00210)
+- alue **Lauttasaari** (postinumerot 00200 ja 00210); muut postinumerot (esim. Jätkäsaari 00180) karsitaan
 
 **Plussat (eivät karsi, nostavat kohteen ylemmäs listassa).** Painot ovat `config.js`:n
 `weights`-kohdassa; suurempi pistemäärä = ylemmäs.

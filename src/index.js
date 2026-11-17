@@ -194,10 +194,10 @@ async function runOnce() {
     console.error(`  Rikastus ohitettu: ${e.message}`);
   }
 
-  // Tarkka velaton hinta voi poiketa kortin hinnasta -> karsitaan uudelleen rikastuksen jälkeen.
+  // Tarkka velaton hinta ja postinumero tulevat vasta rikastuksessa -> karsitaan uudelleen sen jälkeen.
   const before = unique.length;
   unique = unique.filter((l) => rejectReasons(l).length === 0);
-  if (unique.length < before) console.log(`  − ${before - unique.length} kohdetta karsittu tarkan hinnan perusteella`);
+  if (unique.length < before) console.log(`  − ${before - unique.length} kohdetta karsittu rikastuksen jälkeen (tarkka hinta / postinumero)`);
 
   // Järjestetään vasta rikastuksen jälkeen (parveke, hinta, ylin kerros, 00200, vuosi nostavat).
   unique.sort((a, b) => {

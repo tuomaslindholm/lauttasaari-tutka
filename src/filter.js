@@ -8,6 +8,9 @@ export function rejectReasons(l) {
   if (l.rooms != null && l.rooms < config.minRooms) reasons.push("liian vähän huoneita");
   if (l.price != null && l.price > config.maxPrice) reasons.push("liian kallis");
   if (config.minSize != null && l.size != null && l.size < config.minSize) reasons.push("liian pieni");
+  // Alue: Oikotien Lauttasaari-haku palauttaa myös naapurialueen kohteita (esim. Jätkäsaari, 00180).
+  // Postinumero tunnetaan vasta rikastuksen jälkeen; puuttuva tieto ei karsi.
+  if (l.postalCode && !config.area.postalCodes.includes(l.postalCode)) reasons.push("alueen ulkopuolella");
   return reasons;
 }
 
