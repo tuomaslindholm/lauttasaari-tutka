@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T07:01:22.679Z",
+  "updatedAt": "2026-11-17T07:15:58.908Z",
   "count": 26,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -439,7 +439,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-17T07:01:22.672Z"
+      "detailAt": "2026-11-17T07:15:58.059Z"
     },
     {
       "source": "oikotie",
@@ -508,7 +508,7 @@
       "rooms": 3,
       "size": 69,
       "price": 448000,
-      "address": "Länisatamankatu 18 E, Helsinki",
+      "address": "Länsisatamankatu 18, Helsinki",
       "district": "Lauttasaari",
       "title": "**Myydään uusi 69m2 läpitalon luksuskolmio Jätkäsaaren arvoyhtiöstä**",
       "text": "**Myydään uusi 69m2 läpitalon luksuskolmio Jätkäsaaren arvoyhtiöstä** 3h+avok+kph+s+p",
@@ -520,14 +520,14 @@
       "postalCode": "00180",
       "balcony": true,
       "topFloor": false,
-      "key": "länisatamankatu18e|69",
+      "key": "länsisatamankatu18|69",
       "sources": [
         {
           "source": "oikotie",
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24708542"
         }
       ],
-      "detailAt": "2026-11-17T02:01:23.769Z"
+      "detailAt": "2026-11-17T07:15:57.610Z"
     },
     {
       "source": "oikotie",
