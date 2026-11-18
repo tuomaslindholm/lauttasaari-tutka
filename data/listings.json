@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-18T18:46:02.180Z",
-  "count": 25,
+  "updatedAt": "2026-11-18T19:01:19.177Z",
+  "count": 26,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
@@ -30,6 +30,35 @@
         }
       ],
       "detailAt": "2026-11-18T10:31:31.438Z"
+    },
+    {
+      "source": "oikotie",
+      "id": "24789788",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24789788",
+      "rooms": 3,
+      "size": 50,
+      "price": 349000,
+      "address": "Gyldénintie 13 A, Helsinki",
+      "district": "Lauttasaari",
+      "title": "Muuttovalmis kaksio Lauttasaaren ytimessä",
+      "text": "Muuttovalmis kaksio Lauttasaaren ytimessä 2-3 h+k+kh+p",
+      "image": null,
+      "published": "2026-11-18T18:52:05Z",
+      "yearBuilt": 1963,
+      "floor": 2,
+      "floorCount": 4,
+      "postalCode": "00200",
+      "balcony": true,
+      "topFloor": false,
+      "key": "gyldnintie13a|50",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24789788"
+        }
+      ],
+      "availableFrom": "2027-02-01",
+      "detailAt": "2026-11-18T19:01:16.872Z"
     },
     {
       "source": "oikotie",
@@ -471,7 +500,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-18T18:46:02.175Z"
+      "detailAt": "2026-11-18T19:01:18.344Z"
     },
     {
       "source": "oikotie",
