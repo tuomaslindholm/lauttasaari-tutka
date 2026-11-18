@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T16:01:26.031Z",
+  "updatedAt": "2026-11-18T16:16:03.940Z",
   "count": 25,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -32,18 +32,18 @@
       "detailAt": "2026-11-18T10:31:31.438Z"
     },
     {
-      "source": "etuovi",
-      "id": "2774837",
-      "url": "https://www.etuovi.com/kohde/80551852",
+      "source": "oikotie",
+      "id": "24789661",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24789661",
       "rooms": 3,
       "size": 58,
       "price": 398000,
-      "address": "Lauttasaarentie 22 C, Lauttasaari Helsinki",
+      "address": "Lauttasaarentie 22 C, Helsinki",
       "district": "Lauttasaari",
-      "title": "3H, AVOK, KPH, LASIT. PARV — Lauttasaarentie 22 C",
-      "text": "3H, AVOK, KPH, LASIT. PARV Lauttasaarentie 22 C Lauttasaari Helsinki",
+      "title": "Valoisa ja avara kolmio Lauttasaaren parhaiden palveluiden äärellä!",
+      "text": "Valoisa ja avara kolmio Lauttasaaren parhaiden palveluiden äärellä! 3H, AVOK, KPH, LASIT. PARV",
       "image": null,
-      "published": "2026-11-18T18:00:15.398+02:00",
+      "published": "2026-11-18T16:02:04Z",
       "yearBuilt": null,
       "floor": 2,
       "floorCount": 7,
@@ -52,6 +52,10 @@
       "topFloor": false,
       "key": "lauttasaarentie22c|58",
       "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24789661"
+        },
         {
           "source": "etuovi",
           "url": "https://www.etuovi.com/kohde/80551852"
@@ -467,7 +471,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-18T16:01:24.021Z"
+      "detailAt": "2026-11-18T16:16:03.935Z"
     },
     {
       "source": "oikotie",
