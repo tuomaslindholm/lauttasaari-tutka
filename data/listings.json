@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T19:01:19.177Z",
+  "updatedAt": "2026-11-18T19:15:56.169Z",
   "count": 26,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -40,8 +40,8 @@
       "price": 349000,
       "address": "Gyldénintie 13 A, Helsinki",
       "district": "Lauttasaari",
-      "title": "Muuttovalmis kaksio Lauttasaaren ytimessä",
-      "text": "Muuttovalmis kaksio Lauttasaaren ytimessä 2-3 h+k+kh+p",
+      "title": "Muuttovalmis kolmio Lauttasaaren ytimessä",
+      "text": "Muuttovalmis kolmio Lauttasaaren ytimessä 2-3 h+k+kh+p",
       "image": null,
       "published": "2026-11-18T18:52:05Z",
       "yearBuilt": 1963,
@@ -500,7 +500,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-18T19:01:18.344Z"
+      "detailAt": "2026-11-18T19:15:56.162Z"
     },
     {
       "source": "oikotie",
