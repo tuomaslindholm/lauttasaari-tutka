@@ -12,17 +12,38 @@ async function collect() {
   if (config.portals.etuovi) jobs.push(["etuovi", fetchEtuovi]);
 
   const all = [];
+  const failed = [];
   for (const [name, fn] of jobs) {
     try {
       const items = await fn();
       console.log(`  ${name}: ${items.length} kohdetta haettu`);
+      // Tyhjä tulos on käytännössä aina esto tai vika (Lauttasaaressa on aina myytäviä).
+      if (!items.length) throw new Error("0 kohdetta");
       all.push(...items);
     } catch (e) {
       // Yhden portaalin hajoaminen ei kaada muita.
       console.error(`  ${name}: VIRHE — ${e.message}`);
+      failed.push(name);
     }
   }
-  return all;
+  return { all, failed };
+}
+
+// Kaatuneen portaalin edelliset kohteet palautetaan "haettuina", jotta ne eivät katoa listalta
+// (eikä saman asunnon toisen portaalin versio näytä uudelta ja hälytä). Ne kulkevat normaalin
+// putken läpi, joten yhdistäminen ja avaimet pysyvät ennallaan.
+function carryOver(failed, prevFeed) {
+  const items = [];
+  for (const portal of failed) {
+    for (const p of prevFeed) {
+      const src = (p.sources || []).find((s) => s.source === portal);
+      if (!src) continue;
+      items.push({ ...p, source: portal, id: src.url.split("/").pop(), url: src.url, sources: undefined });
+    }
+    const n = items.filter((i) => i.source === portal).length;
+    console.log(`  ⟳ ${portal} epäonnistui: säilytetään ${n} edellisen ajon kohdetta`);
+  }
+  return items;
 }
 
 // Deduplikointi: sama asunto voi olla monessa portaalissa.
@@ -87,7 +108,9 @@ function applyCached(l, prev) {
 
 async function runOnce() {
   console.log(`\n[${new Date().toLocaleString("fi-FI")}] Haetaan...`);
-  const raw = await collect();
+  const { all: raw, failed } = await collect();
+  const fetchedPortals = new Set(raw.map((l) => l.source)); // portaalimerkit vain oikeasti haetuista
+  if (failed.length) raw.unshift(...carryOver(failed, await loadFeed()));
 
   // Arvioi + karsi
   const kept = [];
@@ -230,7 +253,7 @@ async function runOnce() {
     if (!firstRun && l.sources.every((s) => !ready(s.source))) seeded++;
     else newOnes.push(l);
   }
-  for (const p of new Set(raw.map((l) => l.source))) seen[`portal:${p}`] ??= new Date().toISOString();
+  for (const p of fetchedPortals) seen[`portal:${p}`] ??= new Date().toISOString();
   if (seeded) console.log(`  ⊘ ${seeded} uuden portaalin kohdetta merkitty hiljaa nähdyiksi (ei hälytystä)`);
 
   if (newOnes.length) {
