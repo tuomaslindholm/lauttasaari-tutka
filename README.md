@@ -14,7 +14,9 @@ heti uudesta kohteesta ja tarjoaa **PWA-selailunäkymän** puhelimeen.
 
 Jokaisella hakukierroksella ([`src/index.js`](src/index.js)):
 
-1. **Hae** myytävät kohteet portaaleista. Yhden portaalin hajoaminen ei kaada muita.
+1. **Hae** myytävät kohteet portaaleista. Yhden portaalin hajoaminen ei kaada muita: jos portaali
+   kaatuu tai palauttaa tyhjää (esim. Oikotie 403), sen edellisen ajon kohteet säilyvät listalla
+   eivätkä aiheuta turhia hälytyksiä.
    - *Oikotie*: kortti-API, aluekoodilla rajattu Lauttasaareen.
    - *Etuovi*: selainrajapinta (`/api/v3/announcements/search/listpage`, ei kirjautumista). Haetaan
      vapaatekstillä "lauttasaari" ja "vattuniemi" (jälkimmäinen löytää kohteita, joita edellinen ei),
