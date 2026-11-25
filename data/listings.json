@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-25T12:16:01.029Z",
-  "count": 26,
+  "updatedAt": "2026-11-25T12:31:14.984Z",
+  "count": 25,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
@@ -500,7 +500,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-25T12:16:01.024Z"
+      "detailAt": "2026-11-25T12:31:14.979Z"
     },
     {
       "source": "oikotie",
@@ -590,39 +590,6 @@
       ],
       "availableFrom": "2028-05-31",
       "detailAt": "2026-11-25T08:01:21.897Z"
-    },
-    {
-      "source": "oikotie",
-      "id": "24552722",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24552722",
-      "rooms": 3,
-      "size": 64.5,
-      "price": 464500,
-      "address": "Vattuniemenkatu 10 B, Helsinki",
-      "district": "Lauttasaari",
-      "title": "Valoisa läpitalon kolmio merellisessä Vattuniemessä",
-      "text": "Valoisa läpitalon kolmio merellisessä Vattuniemessä 3h +kt + kph + s + las.parv",
-      "image": null,
-      "published": "2026-06-18T07:52:08Z",
-      "yearBuilt": 2001,
-      "floor": 7,
-      "floorCount": 8,
-      "postalCode": "00210",
-      "balcony": true,
-      "topFloor": false,
-      "key": "vattuniemenkatu10b|65",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24552722"
-        },
-        {
-          "source": "etuovi",
-          "url": "https://www.etuovi.com/kohde/80516742"
-        }
-      ],
-      "availableFrom": "heti",
-      "detailAt": "2026-11-25T03:16:01.664Z"
     },
     {
       "source": "oikotie",
