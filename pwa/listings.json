@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T03:16:06.859Z",
+  "updatedAt": "2026-11-26T03:31:17.183Z",
   "count": 25,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -291,7 +291,7 @@
           "url": "https://www.etuovi.com/kohde/80508480"
         }
       ],
-      "detailAt": "2026-11-25T15:31:11.341Z"
+      "detailAt": "2026-11-26T03:31:16.601Z"
     },
     {
       "source": "oikotie",
@@ -324,7 +324,7 @@
         }
       ],
       "availableFrom": "heti",
-      "detailAt": "2026-11-25T15:31:09.955Z"
+      "detailAt": "2026-11-26T03:31:15.053Z"
     },
     {
       "source": "oikotie",
@@ -356,7 +356,7 @@
           "url": "https://www.etuovi.com/kohde/80441164"
         }
       ],
-      "detailAt": "2026-11-25T15:31:11.803Z"
+      "detailAt": "2026-11-26T03:31:17.107Z"
     },
     {
       "source": "oikotie",
@@ -500,7 +500,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-26T03:16:06.853Z"
+      "detailAt": "2026-11-26T03:31:15.560Z"
     },
     {
       "source": "oikotie",
@@ -621,7 +621,7 @@
           "url": "https://www.etuovi.com/kohde/ge3429"
         }
       ],
-      "detailAt": "2026-11-25T15:31:10.891Z"
+      "detailAt": "2026-11-26T03:31:16.088Z"
     },
     {
       "source": "oikotie",
@@ -710,7 +710,7 @@
           "url": "https://www.etuovi.com/kohde/80533268"
         }
       ],
-      "detailAt": "2026-11-25T15:31:09.505Z"
+      "detailAt": "2026-11-26T03:31:14.552Z"
     },
     {
       "source": "oikotie",
@@ -743,7 +743,7 @@
         }
       ],
       "availableFrom": "heti",
-      "detailAt": "2026-11-25T15:31:09.052Z"
+      "detailAt": "2026-11-26T03:31:14.043Z"
     }
   ]
 }
