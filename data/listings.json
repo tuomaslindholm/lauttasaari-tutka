@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T07:31:08.304Z",
+  "updatedAt": "2026-11-26T07:45:56.361Z",
   "count": 26,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -32,32 +32,36 @@
       "detailAt": "2026-11-25T20:16:05.225Z"
     },
     {
-      "source": "etuovi",
-      "id": "2781246",
-      "url": "https://www.etuovi.com/kohde/21901944",
+      "source": "oikotie",
+      "id": "24797900",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24797900",
       "rooms": 3,
       "size": 63,
       "price": 335000,
-      "address": "Lahnaruohontie 4, Lauttasaari Helsinki",
+      "address": "Lahnaruohontie 4 B, Helsinki",
       "district": "Lauttasaari",
-      "title": "3h + kk + kph + vh + p ( yj. mukaan 3h + kk + kh + vh + p) — Lahnaruohontie 4",
-      "text": "3h + kk + kph + vh + p ( yj. mukaan 3h + kk + kh + vh + p) Lahnaruohontie 4 Lauttasaari Helsinki",
+      "title": "Merellisessä Lauttasaaressa sijaitsevan kolmion toisesta kerroksesta näkymät avautuvat sekä pihalle että kadulle.\n\nMakuuhuoneet ja erillinen keit",
+      "text": "Merellisessä Lauttasaaressa sijaitsevan kolmion toisesta kerroksesta näkymät avautuvat sekä pihalle että kadulle.\n\nMakuuhuoneet ja erillinen keit 3h+kk+kph+vh+p ( yj. mukaan 3h+kk+kh+vh+p)",
       "image": null,
-      "published": "2026-11-26T09:30:03.992+02:00",
+      "published": "2026-11-26T07:33:29Z",
       "yearBuilt": 1964,
       "floor": 2,
       "floorCount": 4,
       "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
-      "key": "lahnaruohontie4|63",
+      "key": "lahnaruohontie4b|63",
       "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24797900"
+        },
         {
           "source": "etuovi",
           "url": "https://www.etuovi.com/kohde/21901944"
         }
       ],
-      "detailAt": "2026-11-26T07:31:07.498Z"
+      "detailAt": "2026-11-26T07:45:53.770Z"
     },
     {
       "source": "oikotie",
@@ -528,7 +532,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-26T07:31:06.768Z"
+      "detailAt": "2026-11-26T07:45:55.647Z"
     },
     {
       "source": "oikotie",
