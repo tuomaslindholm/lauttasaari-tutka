@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-26T07:15:55.641Z",
-  "count": 25,
+  "updatedAt": "2026-11-26T07:31:08.304Z",
+  "count": 26,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
     {
@@ -30,6 +30,34 @@
         }
       ],
       "detailAt": "2026-11-25T20:16:05.225Z"
+    },
+    {
+      "source": "etuovi",
+      "id": "2781246",
+      "url": "https://www.etuovi.com/kohde/21901944",
+      "rooms": 3,
+      "size": 63,
+      "price": 335000,
+      "address": "Lahnaruohontie 4, Lauttasaari Helsinki",
+      "district": "Lauttasaari",
+      "title": "3h + kk + kph + vh + p ( yj. mukaan 3h + kk + kh + vh + p) — Lahnaruohontie 4",
+      "text": "3h + kk + kph + vh + p ( yj. mukaan 3h + kk + kh + vh + p) Lahnaruohontie 4 Lauttasaari Helsinki",
+      "image": null,
+      "published": "2026-11-26T09:30:03.992+02:00",
+      "yearBuilt": 1964,
+      "floor": 2,
+      "floorCount": 4,
+      "postalCode": "00200",
+      "balcony": true,
+      "topFloor": false,
+      "key": "lahnaruohontie4|63",
+      "sources": [
+        {
+          "source": "etuovi",
+          "url": "https://www.etuovi.com/kohde/21901944"
+        }
+      ],
+      "detailAt": "2026-11-26T07:31:07.498Z"
     },
     {
       "source": "oikotie",
@@ -500,7 +528,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-26T07:15:55.634Z"
+      "detailAt": "2026-11-26T07:31:06.768Z"
     },
     {
       "source": "oikotie",
