@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T09:31:13.774Z",
+  "updatedAt": "2026-11-27T09:46:02.889Z",
   "count": 26,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -38,10 +38,10 @@
       "rooms": 3,
       "size": 63,
       "price": 335000,
-      "address": "Lahnaruohontie 4 B, Helsinki",
+      "address": "Lahnaruohontie 4, Helsinki",
       "district": "Lauttasaari",
-      "title": "Merellisessä Lauttasaaressa sijaitsevan kolmion toisesta kerroksesta näkymät avautuvat sekä pihalle että kadulle.\n\nMakuuhuoneet ja erillinen keit",
-      "text": "Merellisessä Lauttasaaressa sijaitsevan kolmion toisesta kerroksesta näkymät avautuvat sekä pihalle että kadulle.\n\nMakuuhuoneet ja erillinen keit 3h+kk+kph+vh+p ( yj. mukaan 3h+kk+kh+vh+p)",
+      "title": "Merellisessä Lauttasaaressa sijaitsevan kolmion toisesta kerroksesta näkymät avautuvat sekä pihalle että kadulle.\n\nMakuuhuoneet ja erillinen keitti",
+      "text": "Merellisessä Lauttasaaressa sijaitsevan kolmion toisesta kerroksesta näkymät avautuvat sekä pihalle että kadulle.\n\nMakuuhuoneet ja erillinen keitti 3h+kk+kph+vh+p ( yj. mukaan 3h+kk+kh+vh+p)",
       "image": null,
       "published": "2026-11-26T07:33:29Z",
       "yearBuilt": 1964,
@@ -50,7 +50,7 @@
       "postalCode": "00200",
       "balcony": true,
       "topFloor": false,
-      "key": "lahnaruohontie4b|63",
+      "key": "lahnaruohontie4|63",
       "sources": [
         {
           "source": "oikotie",
@@ -61,7 +61,7 @@
           "url": "https://www.etuovi.com/kohde/21901944"
         }
       ],
-      "detailAt": "2026-11-27T08:01:21.151Z"
+      "detailAt": "2026-11-27T09:46:00.596Z"
     },
     {
       "source": "oikotie",
@@ -532,7 +532,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-27T09:31:13.770Z"
+      "detailAt": "2026-11-27T09:46:02.884Z"
     },
     {
       "source": "oikotie",
