@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T09:15:58.905Z",
+  "updatedAt": "2026-11-27T09:31:13.774Z",
   "count": 26,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -187,7 +187,7 @@
       "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24711797",
       "rooms": 3,
       "size": 53,
-      "price": 338000,
+      "price": 298000,
       "address": "Hakolahdentie 23 A, Helsinki",
       "district": "Lauttasaari",
       "title": "Unelmiesi kodin avaimet odottavat sinua Hakolahdentien pientaloalueella!\n\nTervetuloa tutustumaan tähän harvoin myynnissä olevaan, sympaattiseen pie",
@@ -207,7 +207,7 @@
           "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24711797"
         }
       ],
-      "detailAt": "2026-11-27T08:46:04.091Z"
+      "detailAt": "2026-11-27T09:31:13.282Z"
     },
     {
       "source": "oikotie",
@@ -532,7 +532,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-27T09:15:58.898Z"
+      "detailAt": "2026-11-27T09:31:13.770Z"
     },
     {
       "source": "oikotie",
