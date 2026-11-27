@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-27T21:01:26.573Z",
+  "updatedAt": "2026-11-27T21:15:54.544Z",
   "count": 27,
   "criteria": "3h+ · ≤475 000 € (velaton)",
   "listings": [
@@ -560,7 +560,7 @@
           "url": "https://www.etuovi.com/kohde/80521224"
         }
       ],
-      "detailAt": "2026-11-27T21:01:25.009Z"
+      "detailAt": "2026-11-27T21:15:54.540Z"
     },
     {
       "source": "oikotie",
@@ -685,6 +685,35 @@
     },
     {
       "source": "oikotie",
+      "id": "24443293",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293",
+      "rooms": 3,
+      "size": 60.3,
+      "price": 399000,
+      "address": "Pajalahdentie 9 A 13, Helsinki",
+      "district": "Lauttasaari",
+      "title": "40-luvun tunnelmaa ja designparvi – 3h Lauttasaaressa",
+      "text": "40-luvun tunnelmaa ja designparvi – 3h Lauttasaaressa 3h + avok + vh + kph + parvi (yj. 2h+kk)",
+      "image": null,
+      "published": "2026-04-17T06:43:15Z",
+      "yearBuilt": 1940,
+      "floor": 4,
+      "floorCount": 6,
+      "postalCode": "00200",
+      "balcony": false,
+      "topFloor": false,
+      "key": "pajalahdentie9a13|60",
+      "sources": [
+        {
+          "source": "oikotie",
+          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293"
+        }
+      ],
+      "availableFrom": "heti",
+      "detailAt": "2026-11-27T21:15:54.106Z"
+    },
+    {
+      "source": "oikotie",
       "id": "24648313",
       "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24648313",
       "rooms": 3,
@@ -710,35 +739,6 @@
         }
       ],
       "detailAt": "2026-11-27T21:01:24.534Z"
-    },
-    {
-      "source": "oikotie",
-      "id": "24443293",
-      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293",
-      "rooms": 3,
-      "size": 60.3,
-      "price": 419000,
-      "address": "Pajalahdentie 9 A 13, Helsinki",
-      "district": "Lauttasaari",
-      "title": "40-luvun tunnelmaa ja designparvi – 3h Lauttasaaressa",
-      "text": "40-luvun tunnelmaa ja designparvi – 3h Lauttasaaressa 3h + avok + vh + kph + parvi (yj. 2h+kk)",
-      "image": null,
-      "published": "2026-04-17T06:43:15Z",
-      "yearBuilt": 1940,
-      "floor": 4,
-      "floorCount": 6,
-      "postalCode": "00200",
-      "balcony": false,
-      "topFloor": false,
-      "key": "pajalahdentie9a13|60",
-      "sources": [
-        {
-          "source": "oikotie",
-          "url": "https://asunnot.oikotie.fi/myytavat-asunnot/helsinki/24443293"
-        }
-      ],
-      "availableFrom": "2026-11-02",
-      "detailAt": "2026-11-27T21:01:22.630Z"
     },
     {
       "source": "oikotie",
